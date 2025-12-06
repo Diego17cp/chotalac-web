@@ -1,0 +1,6 @@
+# Archivos lock de manejadores de paquetes
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+npm-shrinkwrap.json
