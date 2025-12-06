@@ -1,1 +1,23 @@
+:root {
+    --color-primary: #4F0097;
+    --color-primary-light: #EBE6F8;
+    --color-secondary: #F5A0BA;
+    --color-secondary-light: #FFE0E2;
+    --color-tertiary: #BFE2EF;
+    --color-tertiary-light: #E2F2F8;
+    --color-quaternary: #EFE4BF;
+    --color-quaternary-light: #F8F3E2;
+}
+
 @import "tailwindcss";
+@plugin "tailwind-scrollbar";
+@theme {
+    --color-primary: var(--color-primary);
+    --color-primary-light: var(--color-primary-light);
+    --color-secondary: var(--color-secondary);
+    --color-secondary-light: var(--color-secondary-light);
+    --color-tertiary: var(--color-tertiary);
+    --color-tertiary-light: var(--color-tertiary-light);
+    --color-quaternary: var(--color-quaternary);
+    --color-quaternary-light: var(--color-quaternary-light);
+}
