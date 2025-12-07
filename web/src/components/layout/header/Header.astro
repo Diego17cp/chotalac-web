@@ -1,0 +1,109 @@
+---
+import { NAV_ITEMS } from "@/constants";
+import NavItem from "./NavItem.astro";
+import { Icon } from 'astro-icon/components'
+---
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+	<div class="container mx-auto px-4">
+		<div class="flex items-center justify-between h-20">
+			<a href="/" class="shrink-0">
+				<img
+                    src="/chotalac-logo.webp"
+                    alt="Chotalac Logo"
+                    class="h-16 md:h-16 w-auto"
+                />
+			</a>
+			<nav class="hidden md:flex items-center space-x-8">
+				{
+					NAV_ITEMS.map((item) => (
+						<NavItem label={item.label} href={item.href} />
+					))
+				}
+			</nav>
+			<div class="hidden md:flex items-center space-x-4">
+				<div class="relative group">
+					<button
+						id="searchToggle"
+						class="p-2 hover:bg-gray-100 text-gray-600 rounded-full transition-colors"
+						aria-label="Buscar"
+					>
+                        <Icon name="magnifying-glass" size={25} />
+					</button>
+					<div
+						id="searchInput"
+						class="absolute right-0 -top-2 w-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out p-2"
+					>
+						<div
+							class="flex items-center bg-white border border-gray-300 rounded-full"
+						>
+							<input
+								type="search"
+								placeholder="Buscar productos..."
+								class="pl-4 pr-12 py-2 w-64 rounded-full focus:ring-2 focus:ring-primary focus:outline-none transition-all duration-300"
+							/>
+							<button
+								class="absolute right-2 p-1 hover:bg-gray-100 text-gray-600 rounded-full"
+							>
+                                <Icon name="magnifying-glass" size={20} />
+							</button>
+						</div>
+					</div>
+				</div>
+				<a
+					href="/cuenta"
+					class="p-2 hover:bg-gray-100 text-gray-600 rounded-full transition-colors"
+					aria-label="Mi cuenta"
+				>
+					<Icon name="user-outline" size={25} />
+				</a>
+				<button
+					class="relative p-2 hover:bg-gray-100 text-gray-600 rounded-full transition-colors"
+					aria-label="Carrito"
+				>
+					<Icon name="cart-outline" size={25} />
+					<span
+						class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
+					>
+						0
+					</span>
+				</button>
+			</div>
+			<button
+				id="mobileMenuToggle"
+				class="md:hidden p-2 hover:bg-gray-100 text-gray-600 rounded-lg transition-colors"
+				aria-label="Menú"
+			>
+                <Icon name="burger-menu" size={30} />
+			</button>
+		</div>
+	</div>
+</header>
+
+<script>
+	const searchToggle = document.getElementById("searchToggle");
+	const searchInput = document.getElementById("searchInput");
+	let isSearchOpen = false;
+
+	searchToggle?.addEventListener("click", () => {
+		isSearchOpen = !isSearchOpen;
+		if (isSearchOpen) {
+			searchInput?.classList.remove("w-0", "opacity-0");
+			searchInput?.classList.add("w-auto", "opacity-100");
+			searchInput?.querySelector("input")?.focus();
+		} else {
+			searchInput?.classList.add("w-0", "opacity-0");
+			searchInput?.classList.remove("w-auto", "opacity-100");
+		}
+	});
+	document.addEventListener("click", (e) => {
+		if (
+			isSearchOpen &&
+			!searchToggle?.contains(e.target as Node) &&
+			!searchInput?.contains(e.target as Node)
+		) {
+			isSearchOpen = false;
+			searchInput?.classList.add("w-0", "opacity-0");
+			searchInput?.classList.remove("w-auto", "opacity-100");
+		}
+	});
+</script>
