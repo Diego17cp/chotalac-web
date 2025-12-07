@@ -1,0 +1,97 @@
+---
+import type { CarouselItem } from "@/types";
+
+interface Props {
+	items: CarouselItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="carousel-container relative w-full">
+	<div class="swiper mySwiper">
+		<div class="swiper-wrapper">
+			{
+				items.map((item) => (
+					<div class="swiper-slide">
+						<div
+							class="relative h-[400px] md:h-[500px] lg:h-[600px] w-full bg-cover bg-center"
+							style={`background-image: url('${item.imageUrl}');`}
+						>
+							<div class="absolute inset-0 bg-black/30" />
+							<div class="container mx-auto px-4 h-full flex items-center">
+								<div class="relative z-10 max-w-2xl text-white">
+									<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+										{item.title}
+									</h2>
+									<a
+										href={`/productos/${item.id}`}
+										class="inline-block bg-quaternary hover:bg-quaternary/90 text-white font-semibold px-8 py-3 rounded-full transition-colors"
+									>
+										Ver más
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				))
+			}
+		</div>
+		<div class="swiper-button-next text-white"></div>
+		<div class="swiper-button-prev text-white"></div>
+		<div class="swiper-pagination"></div>
+	</div>
+</div>
+
+<style>
+	.swiper {
+		width: 100%;
+		height: 100%;
+	}
+
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		color: white;
+	}
+
+	.swiper-pagination-bullet {
+		background: white;
+	}
+
+	.swiper-pagination-bullet-active {
+		background: white;
+	}
+</style>
+
+<script>
+	import Swiper from "swiper";
+	import { Navigation, Pagination, Autoplay } from "swiper/modules";
+	import "swiper/css";
+	import "swiper/css/navigation";
+	import "swiper/css/pagination";
+
+	const swiper = new Swiper(".mySwiper", {
+		modules: [Navigation, Pagination, Autoplay],
+		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
+</script>
