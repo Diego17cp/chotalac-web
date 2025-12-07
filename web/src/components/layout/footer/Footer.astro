@@ -1,0 +1,125 @@
+---
+import { NAV_ITEMS } from "@/constants";
+import { Icon } from "astro-icon/components"
+---
+
+<footer class="bg-secondary-light">
+	<div class="container mx-auto px-4 pt-12">
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
+			<div class="space-y-4">
+				<a href="/" class="shrink-0 flex justify-center">
+					<img
+						src="/chotalac-logo.webp"
+						alt="Chotalac Logo"
+						class="h-40 md:h-50 w-auto"
+					/>
+				</a>
+                <div class="flex justify-center">
+                    <p class="text-gray-600 text-lg text-center leading-relaxed max-w-md">
+                        Proporcionamos productos lácteos de alta calidad y frescura
+                        que nutran a las familias, promoviendo un estilo de vida
+                        saludable y sostenible.
+                    </p>
+                </div>
+			</div>
+			<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+				<div class="space-y-6">
+					<div>
+						<h3 class="text-xl font-semibold text-gray-800 mb-3">
+							Contáctanos
+						</h3>
+						<div class="space-y-2 text-sm text-gray-600">
+							<p>+51 910 017 026</p>
+							<p>ventas@chotalac.com</p>
+						</div>
+					</div>
+					<div>
+						<h4 class="font-semibold text-gray-800 mb-2">
+							Chiclayo
+						</h4>
+						<div class="space-y-1 text-sm text-gray-600">
+							<p>Av. Paúl Harris 1710 - La Victoria</p>
+							<p>Av. Juan Cuglievan 1322</p>
+						</div>
+					</div>
+					<div>
+						<h4 class="font-semibold text-gray-800 mb-2">
+							Trujillo
+						</h4>
+						<div class="space-y-1 text-sm text-gray-600">
+							<p>Mz. F, Lote 14 - Urb. Las Casuarias</p>
+							<!-- <p>Plaza Mayor</p> -->
+						</div>
+					</div>
+					<div>
+						<h4 class="font-semibold text-gray-800 mb-2">Lima</h4>
+						<div class="space-y-1 text-sm text-gray-600">
+							<p>Mz. M, Lote 8 Cooperativa Vivienda El Olivar 39 - Los Olivos</p>
+							<!-- <p>San Isidro</p> -->
+						</div>
+					</div>
+				</div>
+				<div class="space-y-4">
+					<h3 class="text-xl font-semibold text-gray-800 mb-3">
+						Accesos Directos
+					</h3>
+					<nav class="flex flex-col space-y-2">
+						{
+							NAV_ITEMS.map((item) => (
+								<a
+									href={item.href}
+									class="text-base text-gray-600 hover:text-primary/60 transition-colors"
+								>
+									{item.label}
+								</a>
+							))
+						}
+					</nav>
+					<div class="pt-4">
+						<a
+							href="/cuenta"
+							class="inline-block text-2xl font-semibold text-primary hover:text-primary/80 transition-colors"
+						>
+							Regístrate
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div
+			class="flex flex-col items-center space-y-4 py-6 border-t border-gray-300"
+		>
+			<div class="flex items-center space-x-6">
+				<a
+					href="#"
+					class="text-gray-600 hover:text-primary/60 transition-colors"
+					aria-label="Facebook"
+				>
+					<Icon name="facebook-filled" size={28} />
+				</a>
+				<a
+					href="#"
+					class="text-gray-600 hover:text-primary/60 transition-colors"
+					aria-label="Instagram"
+				>
+					<Icon name="instagram-filled" size={28} />
+				</a>
+				<a
+					href="#"
+					class="text-gray-600 hover:text-primary/60 transition-colors"
+					aria-label="WhatsApp"
+				>
+					<Icon name="whatsapp-filled" size={28} />
+				</a>
+			</div>
+			<p class="text-sm text-gray-600">2025, Chotalac</p>
+		</div>
+	</div>
+	<div class="bg-tertiary-light py-4">
+		<div class="container mx-auto px-4">
+			<p class="text-center text-sm text-gray-700">
+				Chotalac &copy; 2025 Derechos reservados
+			</p>
+		</div>
+	</div>
+</footer>
