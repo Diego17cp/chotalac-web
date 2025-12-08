@@ -1,10 +1,12 @@
 ---
-import { Carousel } from '@/components/home';
-import Layout from '../layouts/Layout.astro';
-import { CAROUSEL_MOCK } from '@/constants';
+import Layout from '@/layouts/Layout.astro';
+import { Carousel, FeaturedProductsSection, AboutUs } from '@/components/home';
+import { CAROUSEL_MOCK, FEATURED_PRODUCTS_MOCK } from '@/constants';
 
 ---
 
 <Layout>
 	<Carousel items={CAROUSEL_MOCK} />
+	<FeaturedProductsSection products={FEATURED_PRODUCTS_MOCK} />
+	<AboutUs />
 </Layout>
