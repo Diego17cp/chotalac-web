@@ -2,6 +2,7 @@
 const { title } = Astro.props;
 import "@/styles/global.css";
 ---
+
 <!doctype html>
 <html lang="es">
 	<head>
@@ -10,6 +11,12 @@ import "@/styles/global.css";
 		<link rel="icon" type="image/webp" href="/chotalac-logo.webp" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<slot />
