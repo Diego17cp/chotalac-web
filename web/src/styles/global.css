@@ -8,6 +8,7 @@
     --color-quaternary: #EFE4BF;
     --color-quaternary-light: #F8F3E2;
     --font-titles: 'Unna', serif;
+    --font-titles-2: 'Rosario', sans-serif;
 }
 
 @import "tailwindcss";
@@ -22,4 +23,5 @@
     --color-quaternary: var(--color-quaternary);
     --color-quaternary-light: var(--color-quaternary-light);
     --font-titles: var(--font-titles);
+    --font-titles-2: var(--font-titles-2);
 }
