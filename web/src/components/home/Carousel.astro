@@ -19,17 +19,22 @@ const { items } = Astro.props;
 							style={`background-image: url('${item.imageUrl}');`}
 						>
 							<div class="absolute inset-0 bg-black/30" />
-							<div class="container mx-auto px-4 h-full flex items-center">
-								<div class="relative z-10 max-w-2xl text-white">
-									<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-										{item.title}
-									</h2>
+							<div class="container px-4 h-full flex items-end justify-center md:justify-start pb-8 md:pb-12 lg:pb-16">
+								<div class="relative z-10 w-full max-w-3xl">
 									<a
 										href={`/productos/${item.id}`}
-										class="inline-block bg-quaternary hover:bg-quaternary/90 text-white font-semibold px-8 py-3 rounded-full transition-colors"
+										class="inline-block mb-3 bg-quaternary hover:scale-110 hover:brightness-90 text-white font-semibold px-8 py-3 md:px-15 md:py-4 rounded-full transition-all duration-300 ease-in-out text-xl md:text-4xl text-shadow-lg"
 									>
 										Ver más
 									</a>
+									<div class="text-white space-y-2 md:space-y-3 font-titles uppercase text-shadow-lg text-shadow-gray-500">
+										<h2 class="text-5xl mb-0 md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-none">
+											{item.title.split(' ')[0]}
+										</h2>
+										<p class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold leading-tight">
+											{item.title.split(' ').slice(1).join(' ')}
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
