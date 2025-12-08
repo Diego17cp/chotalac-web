@@ -1,0 +1,58 @@
+---
+import type { FeaturedProduct } from "@/types";
+
+interface Props {
+	products: FeaturedProduct[];
+}
+
+const { products } = Astro.props;
+
+const lightColors = [
+	"bg-primary-light",
+	"bg-secondary-light",
+	"bg-tertiary-light",
+	"bg-quaternary-light",
+];
+---
+
+<section class="py-12 md:py-16 lg:py-20">
+	<div class="container mx-auto px-4">
+		<h2
+			class="text-3xl md:text-4xl lg:text-5xl font-titles-2 text-shadow-lg font-bold text-center mb-8 md:mb-12 text-gray-800"
+		>
+			Productos Destacados
+		</h2>
+
+		<div
+			class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6"
+		>
+			{
+				products.map((product, index) => {
+					const bgColor = lightColors[index % lightColors.length];
+					return (
+						<a
+							href={`/productos/${product.id}`}
+							class={`${bgColor} rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col`}
+						>
+							<div class="mb-4">
+								<h3 class="text-xl font-bold text-gray-800 mb-2">
+									{product.name}
+								</h3>
+								<p class="text-sm text-gray-600">
+									{product.presentationName}
+								</p>
+							</div>
+							<div class="mt-auto flex items-center justify-center">
+								<img
+									src={product.imageUrl}
+									alt={`${product.name} - ${product.presentationName}`}
+									class="w-full h-48 object-contain"
+								/>
+							</div>
+						</a>
+					);
+				})
+			}
+		</div>
+	</div>
+</section>
