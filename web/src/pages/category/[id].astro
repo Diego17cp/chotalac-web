@@ -1,0 +1,70 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import type { Category } from "@/types";
+import {
+	getCategoryById,
+	getAllCategories,
+	getProductsByCategoryName,
+} from "@/services";
+import { NotFound, CategoryItem, ProductsGrid } from "@/components/categories";
+
+const { id } = Astro.params;
+
+let category: Category | undefined = undefined;
+let products = undefined;
+
+if (id) {
+	category = await getCategoryById(id);
+	if (category) products = await getProductsByCategoryName(category.name.toLowerCase());
+}
+
+export const getStaticPaths = async () => {
+	const categories = await getAllCategories();
+	return categories.map((category) => ({
+		params: { id: category.id },
+	}));
+};
+
+const lightColors = [
+	"bg-secondary-light",
+	"bg-tertiary-light",
+	"bg-quaternary-light",
+];
+
+const colorIndex = category ? parseInt(category.id) - 1 : 0;
+const bgColor = lightColors[colorIndex % lightColors.length];
+---
+
+<Layout
+	title={`${category ? category.name : "Categoría no encontrada"} - Chotalac`}
+>
+	{
+		category ? (
+			<div>
+				<CategoryItem
+					id={category.id}
+					name={category.name}
+					imageUrl={category.imageUrl}
+					bgColor={bgColor}
+					isReversed={false}
+				/>
+				{products && products.length > 0 ? (
+					<ProductsGrid products={products} cardBg={bgColor} />
+				) : (
+					<section class="py-12 md:py-16 lg:py-20">
+						<div class="container mx-auto px-4">
+							<div class="text-center text-gray-600 py-12">
+								<p class="text-lg">
+									No hay productos disponibles en esta
+									categoría.
+								</p>
+							</div>
+						</div>
+					</section>
+				)}
+			</div>
+		) : (
+			<NotFound />
+		)
+	}
+</Layout>
