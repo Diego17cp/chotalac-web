@@ -1,0 +1,26 @@
+---
+import { CATEGORIES } from "@/constants/categories";
+import CategoryItem from "./CategoryItem.astro";
+
+const lightColors = [
+    "bg-secondary-light",
+    "bg-tertiary-light",
+    "bg-quaternary-light",
+];
+---
+
+<section class="w-full">
+    {CATEGORIES.map((category, index) => {
+        const bgColor = lightColors[index % lightColors.length];
+        const isEven = index % 2 === 0;
+        return (
+            <CategoryItem
+                id={category.id}
+                name={category.name}
+                imageUrl={category.imageUrl}
+                bgColor={bgColor}
+                isReversed={!isEven}
+            />
+        );
+    })}
+</section>
