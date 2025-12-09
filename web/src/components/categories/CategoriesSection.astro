@@ -7,11 +7,17 @@ const lightColors = [
     "bg-tertiary-light",
     "bg-quaternary-light",
 ];
+const bgColors = [
+    "bg-secondary",
+    "bg-tertiary",
+    "bg-quaternary",
+]
 ---
 
 <section class="w-full">
     {CATEGORIES.map((category, index) => {
         const bgColor = lightColors[index % lightColors.length];
+        const bgTextColor = bgColors[index % bgColors.length];
         const isEven = index % 2 === 0;
         return (
             <CategoryItem
@@ -20,6 +26,7 @@ const lightColors = [
                 imageUrl={category.imageUrl}
                 bgColor={bgColor}
                 isReversed={!isEven}
+                bgTextColor={bgTextColor}
             />
         );
     })}
