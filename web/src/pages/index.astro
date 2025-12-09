@@ -1,6 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { Carousel, FeaturedProductsSection, AboutUs } from '@/components/home';
+import { Carousel, FeaturedProductsSection, AboutUs, OurFacilities } from '@/components/home';
 import { CAROUSEL_MOCK, FEATURED_PRODUCTS_MOCK } from '@/constants';
 
 ---
@@ -9,4 +9,5 @@ import { CAROUSEL_MOCK, FEATURED_PRODUCTS_MOCK } from '@/constants';
 	<Carousel items={CAROUSEL_MOCK} />
 	<FeaturedProductsSection products={FEATURED_PRODUCTS_MOCK} />
 	<AboutUs />
+	<OurFacilities />
 </Layout>
