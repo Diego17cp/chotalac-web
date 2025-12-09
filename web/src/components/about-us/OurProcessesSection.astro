@@ -1,0 +1,24 @@
+---
+import { OUR_PROCESSES } from "@/constants";
+import ProcessCard from "./ProcessCard.astro";
+---
+
+<section class="py-12 md:py-16 lg:py-20">
+    <div class="container mx-auto px-4">
+        <h2
+            class="text-3xl md:text-4xl lg:text-6xl font-titles-2 text-shadow-lg font-bold text-center mb-8 md:mb-12 text-gray-800"
+        >
+            Nuestros Procesos
+        </h2>
+        <div class="space-y-12 md:space-y-16">
+            {OUR_PROCESSES.map((process, index) => (
+                <ProcessCard
+                    title={process.title}
+                    description={process.description}
+                    imagePath={process.imagePath}
+                    index={index}
+                />
+            ))}
+        </div>
+    </div>
+</section>
