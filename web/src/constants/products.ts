@@ -1,4 +1,4 @@
-import type { FeaturedProduct, Product } from "@/types";
+import type { FeaturedProduct, Product, ProductCategory } from "@/types";
 
 export const FEATURED_PRODUCTS_MOCK: FeaturedProduct[] = [
     {
@@ -32,6 +32,484 @@ export const FEATURED_PRODUCTS_MOCK: FeaturedProduct[] = [
         presentationName: "500 gr"
     }
 ]
+
+export const PRODUCT_CATEGORIES_MOCK: Record<string, ProductCategory[]> = {
+    quesos: [
+        {
+            name: "Queso Suizo",
+            presentations: [
+                {
+                    id: "1",
+                    name: "3.5 kg",
+                    imageUrl: "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-1.webp"
+                },
+                {
+                    id: "2",
+                    name: "1 kg",
+                    imageUrl: "/images/products/queso/suizo/1kg/queso-suizo-1kg-1.webp"
+                },
+                {
+                    id: "3",
+                    name: "500 gr",
+                    imageUrl: "/images/products/queso/suizo/500gr/queso-suizo-500gr-1.webp"
+                },
+                {
+                    id: "4",
+                    name: "250 gr",
+                    imageUrl: "/images/products/queso/suizo/250gr/queso-suizo-250gr-1.webp"
+                }
+            ]
+        },
+        {
+            name: "Queso Suizo Laminado",
+            presentations: [
+                {
+                    id: "5",
+                    name: "500 gr",
+                    imageUrl: "/images/products/queso/suizo-laminado/500gr/queso-suizo-laminado-500gr-1.webp"
+                },
+                {
+                    id: "6",
+                    name: "250 gr",
+                    imageUrl: "/images/products/queso/suizo-laminado/250gr/queso-suizo-laminado-250gr-1.webp"
+                }
+            ]
+        },
+        {
+            name: "Queso Suizo con Orégano",
+            presentations: [
+                {
+                    id: "7",
+                    name: "3.5 kg",
+                    imageUrl: "/images/products/queso/suizo-con-oregano/3.5kg/queso-suizo-con-oregano-3.5kg-1.webp"
+                },
+                {
+                    id: "8",
+                    name: "1 kg",
+                    imageUrl: "/images/products/queso/suizo-con-oregano/1kg/queso-suizo-con-oregano-1kg-1.webp"
+                },
+                {
+                    id: "9",
+                    name: "500 gr",
+                    imageUrl: "/images/products/queso/suizo-con-oregano/500gr/queso-suizo-con-oregano-500gr-1.webp"
+                },
+                {
+                    id: "10",
+                    name: "250 gr",
+                    imageUrl: "/images/products/queso/suizo-con-oregano/250gr/queso-suizo-con-oregano-250gr-1.webp"
+                },
+                {
+                    id: "11",
+                    name: "Redondo 500 gr",
+                    imageUrl: "/images/products/queso/suizo-con-oregano-redondo/500gr/queso-suizo-con-oregano-redondo-500gr-1.webp"
+                }
+            ]
+        },
+        {
+            name: "Queso de Corte",
+            presentations: [
+                {
+                    id: "12",
+                    name: "3.5 kg",
+                    imageUrl: "/images/products/queso/de-corte/3.5kg/queso-de-corte-3.5kg-1.webp"
+                },
+                {
+                    id: "13",
+                    name: "1 kg",
+                    imageUrl: "/images/products/queso/de-corte/1kg/queso-de-corte-1kg-1.webp"
+                },
+                {
+                    id: "14",
+                    name: "500 gr",
+                    imageUrl: "/images/products/queso/de-corte/500gr/queso-de-corte-500gr-1.webp"
+                },
+                {
+                    id: "15",
+                    name: "250 gr",
+                    imageUrl: "/images/products/queso/de-corte/250gr/queso-de-corte-250gr-1.webp"
+                }
+            ]
+        },
+        {
+            name: "Queso Fresco",
+            presentations: [
+                {
+                    id: "16",
+                    name: "3.5 kg",
+                    imageUrl: "/images/products/queso/fresco/3.5kg/queso-fresco-3.5kg-1.webp"
+                },
+                {
+                    id: "17",
+                    name: "1 kg",
+                    imageUrl: "/images/products/queso/fresco/1kg/queso-fresco-1kg-1.webp"
+                },
+                {
+                    id: "18",
+                    name: "500 gr",
+                    imageUrl: "/images/products/queso/fresco/500gr/queso-fresco-500gr-1.webp"
+                },
+                {
+                    id: "19",
+                    name: "250 gr",
+                    imageUrl: "/images/products/queso/fresco/250gr/queso-fresco-250gr-1.webp"
+                }
+            ]
+        },
+        {
+            name: "Queso Dambo",
+            presentations: [
+                {
+                    id: "20",
+                    name: "3.5 kg",
+                    imageUrl: "/images/products/queso/dambo/3.5kg/queso-dambo-3.5kg-1.webp"
+                },
+                {
+                    id: "21",
+                    name: "1 kg",
+                    imageUrl: "/images/products/queso/dambo/1kg/queso-dambo-1kg-1.webp"
+                },
+                {
+                    id: "22",
+                    name: "500 gr",
+                    imageUrl: "/images/products/queso/dambo/500gr/queso-dambo-500gr-1.webp"
+                },
+                {
+                    id: "23",
+                    name: "250 gr",
+                    imageUrl: "/images/products/queso/dambo/250gr/queso-dambo-250gr-1.webp"
+                }
+            ]
+        },
+        {
+            name: "Queso Dambo Laminado",
+            presentations: [
+                {
+                    id: "24",
+                    name: "500 gr",
+                    imageUrl: "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-1.webp"
+                },
+                {
+                    id: "25",
+                    name: "250 gr",
+                    imageUrl: "/images/products/queso/dambo-laminado/250gr/queso-dambo-laminado-250gr-1.webp"
+                }
+            ]
+        },
+        {
+            name: "Queso Mantecoso",
+            presentations: [
+                {
+                    id: "26",
+                    name: "1 kg",
+                    imageUrl: "/images/products/queso/mantecoso/1kg/queso-mantecoso-1kg-1.webp"
+                },
+                {
+                    id: "27",
+                    name: "500 gr",
+                    imageUrl: "/images/products/queso/mantecoso/500gr/queso-mantecoso-500gr-1.webp"
+                },
+                {
+                    id: "28",
+                    name: "250 gr",
+                    imageUrl: "/images/products/queso/mantecoso/250gr/queso-mantecoso-250gr-1.webp"
+                }
+            ]
+        },
+        {
+            name: "Queso Edam",
+            presentations: [
+                {
+                    id: "29",
+                    name: "3.5 kg",
+                    imageUrl: "/images/products/queso/edam/3.5kg/queso-edam-3.5kg-1.webp"
+                },
+                {
+                    id: "30",
+                    name: "Laminado 500 gr",
+                    imageUrl: "/images/products/queso/edam/500gr/queso-edam-laminado-500gr-1.webp",
+                },
+                {
+                    id: "31",
+                    name: "Laminado 250 gr",
+                    imageUrl: "/images/products/queso/edam/250gr/queso-edam-laminado-250gr-1.webp"
+                }
+            ]
+        },
+        {
+            name: "Queso Parmesano",
+            presentations: [
+                {
+                    id: "32",
+                    name: "Para Rallar 250 gr",
+                    imageUrl: "/images/products/queso/parmesano/para-rallar/250gr/queso-parmesano-para-rallar-250gr-1.webp"
+                },
+                {
+                    id: "33",
+                    name: "Rallado 200 gr",
+                    imageUrl: "/images/products/queso/parmesano/rallado/200gr/queso-parmesano-rallado-200gr-1.webp"
+                }
+            ]
+        },
+        {
+            name: "Queso Mozzarella",
+            presentations: [
+                {
+                    id: "34",
+                    name: "Con Sal 2 kg",
+                    imageUrl: "/images/products/queso/mozzarella/2kg/queso-mozzarella-2kg-1.webp"
+                },
+                {
+                    id: "35",
+                    name: "Paquete 5 kg",
+                    imageUrl: "/images/products/queso/mozzarella/5kg/queso-mozzarella-paquete-5kg-1.webp"
+                },
+                {
+                    id: "36",
+                    name: "Sin Sal 250 gr",
+                    imageUrl: "/images/products/queso/mozzarella/250gr/queso-mozzarella-250gr-1.webp"
+                }
+            ]
+        },
+        {
+            name: "Otros Quesos",
+            presentations: [
+                {
+                    id: "37",
+                    name: "Quesillo 800 gr",
+                    imageUrl: "/images/products/queso/otros/quesillo/800gr/quesillo-800gr-1.webp"
+                },
+                {
+                    id: "38",
+                    name: "Queso Paria 800 gr",
+                    imageUrl: "/images/products/queso/otros/paria/800gr/queso-paria-800gr-1.webp"
+                },
+                {
+                    id: "39",
+                    name: "Queso Ricotta 250 gr",
+                    imageUrl: "/images/products/queso/otros/ricotta/250gr/queso-ricotta-250gr-1.webp"
+                },
+                {
+                    id: "40",
+                    name: "Queso Ricotta 500 gr",
+                    imageUrl: "/images/products/queso/otros/ricotta/500gr/queso-ricotta-500gr-1.webp"
+                }
+            ]
+        }
+    ],
+    yogurt: [
+        {
+            name: "Yogurt Batido",
+            presentations: [
+                {
+                    id: "41",
+                    name: "Natural",
+                    imageUrl: "/images/products/yogurt/batido/natural/yogurt-batido-natural-1.webp"
+                },
+                {
+                    id: "42",
+                    name: "Natural sin azúcar",
+                    imageUrl: "/images/products/yogurt/batido/natural-sin-azucar/yogurt-batido-natural-sin-azucar-1.webp"
+                },
+                {
+                    id: "43",
+                    name: "Piña",
+                    imageUrl: "/images/products/yogurt/batido/pinia/yogurt-batido-pinia-1.webp"
+                },
+                {
+                    id: "44",
+                    name: "Vainilla",
+                    imageUrl: "/images/products/yogurt/batido/vainilla/yogurt-batido-vainilla-1.webp"
+                },
+                {
+                    id: "45",
+                    name: "Lúcuma",
+                    imageUrl: "/images/products/yogurt/batido/lucuma/yogurt-batido-lucuma-1.webp"
+                },
+                {
+                    id: "46",
+                    name: "Fresa",
+                    imageUrl: "/images/products/yogurt/batido/fresa/yogurt-batido-fresa-1.webp"
+                },
+                {
+                    id: "47",
+                    name: "Durazno",
+                    imageUrl: "/images/products/yogurt/batido/durazno/yogurt-batido-durazno-1.webp"
+                },
+                {
+                    id: "48",
+                    name: "Higo",
+                    imageUrl: "/images/products/yogurt/batido/higo/yogurt-batido-higo-1.webp"
+                },
+                {
+                    id: "49",
+                    name: "Guanábana",
+                    imageUrl: "/images/products/yogurt/batido/guanabana/yogurt-batido-guanabana-1.webp"
+                }
+            ]
+        },
+        {
+            name: "Yogurt Frutado Grande",
+            presentations: [
+                {
+                    id: "50",
+                    name: "Higo",
+                    imageUrl: "/images/products/yogurt/frutado/grande/higo/yogurt-frutado-grande-higo-1.webp"
+                },
+                {
+                    id: "53",
+                    name: "Mango",
+                    imageUrl: "/images/products/yogurt/frutado/grande/mango/yogurt-frutado-grande-mango-1.webp"
+                },
+                {
+                    id: "56",
+                    name: "Arándano",
+                    imageUrl: "/images/products/yogurt/frutado/grande/arandano/yogurt-frutado-grande-arandano-1.webp"
+                },
+                {
+                    id: "59",
+                    name: "Fresa",
+                    imageUrl: "/images/products/yogurt/frutado/grande/fresa/yogurt-frutado-grande-fresa-1.webp"
+                }
+            ]
+        },
+        {
+            name: "Yogurt Frutado Pequeño",
+            presentations: [
+                {
+                    id: "51",
+                    name: "Higo",
+                    imageUrl: "/images/products/yogurt/frutado/pequeno/higo/yogurt-frutado-pequeno-higo-1.webp"
+                },
+                {
+                    id: "54",
+                    name: "Mango",
+                    imageUrl: "/images/products/yogurt/frutado/pequeno/mango/yogurt-frutado-pequeno-mango-1.webp"
+                },
+                {
+                    id: "57",
+                    name: "Arándano",
+                    imageUrl: "/images/products/yogurt/frutado/pequeno/arandano/yogurt-frutado-pequeno-arandano-1.webp"
+                },
+                {
+                    id: "60",
+                    name: "Fresa",
+                    imageUrl: "/images/products/yogurt/frutado/pequeno/fresa/yogurt-frutado-pequeno-fresa-1.webp"
+                }
+            ]
+        },
+        {
+            name: "Yogurt Frutado Cuchareable",
+            presentations: [
+                {
+                    id: "52",
+                    name: "Higo",
+                    imageUrl: "/images/products/yogurt/frutado/cuchareable/higo/yogurt-frutado-cuchareable-higo-1.webp"
+                },
+                {
+                    id: "55",
+                    name: "Mango",
+                    imageUrl: "/images/products/yogurt/frutado/cuchareable/mango/yogurt-frutado-cuchareable-mango-1.webp"
+                },
+                {
+                    id: "58",
+                    name: "Arándano",
+                    imageUrl: "/images/products/yogurt/frutado/cuchareable/arandano/yogurt-frutado-cuchareable-arandano-1.webp"
+                },
+                {
+                    id: "61",
+                    name: "Fresa",
+                    imageUrl: "/images/products/yogurt/frutado/cuchareable/fresa/yogurt-frutado-cuchareable-fresa-1.webp"
+                }
+            ]
+        },
+        {
+            name: "Yogurt Griego Natural",
+            presentations: [
+                {
+                    id: "62",
+                    name: "1 kg",
+                    imageUrl: "/images/products/yogurt/griego/natural/1kg/yogurt-griego-natural-1kg-1.webp"
+                },
+                {
+                    id: "63",
+                    name: "500 gr",
+                    imageUrl: "/images/products/yogurt/griego/natural/500gr/yogurt-griego-natural-500gr-1.webp"
+                },
+                {
+                    id: "64",
+                    name: "250 gr",
+                    imageUrl: "/images/products/yogurt/griego/natural/250gr/yogurt-griego-natural-250gr-1.webp"
+                }
+            ]
+        },
+        {
+            name: "Yogurt Griego Frutado",
+            presentations: [
+                {
+                    id: "65",
+                    name: "Fresa",
+                    imageUrl: "/images/products/yogurt/griego/frutado/fresa/yogurt-griego-fresa-1.webp"
+                },
+                {
+                    id: "66",
+                    name: "Arándano",
+                    imageUrl: "/images/products/yogurt/griego/frutado/arandano/yogurt-griego-arandano-1.webp"
+                },
+                {
+                    id: "67",
+                    name: "Aguaymanto",
+                    imageUrl: "/images/products/yogurt/griego/frutado/aguaymanto/yogurt-griego-aguaymanto-1.webp"
+                }
+            ]
+        }
+    ],
+    mantequilla: [
+        {
+            name: "Mantequilla",
+            presentations: [
+                {
+                    id: "68",
+                    name: "500 gr",
+                    imageUrl: "/images/products/mantequilla/500gr/mantequilla-500gr-1.webp"
+                },
+                {
+                    id: "69",
+                    name: "250 gr",
+                    imageUrl: "/images/products/mantequilla/250gr/mantequilla-250gr-1.webp"
+                }
+            ]
+        }
+    ],
+    leche: [
+        {
+            name: "Leche Fresca Pasteurizada",
+            presentations: [
+                {
+                    id: "70",
+                    name: "1 lt",
+                    imageUrl: "/images/products/leche/fresca/pasteurizada/1lt/leche-fresca-pasteurizada-1lt-1.webp"
+                }
+            ]
+        }
+    ],
+    "crema-de-leche": [
+        {
+            name: "Crema de Leche",
+            presentations: [
+                {
+                    id: "71",
+                    name: "50% Grasa",
+                    imageUrl: "/images/products/crema-de-leche/50/crema-de-leche-50-1.webp"
+                },
+                {
+                    id: "72",
+                    name: "35% Grasa",
+                    imageUrl: "/images/products/crema-de-leche/35/crema-de-leche-35-1.webp"
+                }
+            ]
+        }
+    ]
+}
 
 export const PRODUCTS_MOCK: Product[] = [
     {
@@ -389,10 +867,10 @@ export const PRODUCTS_MOCK: Product[] = [
     {
         id: "33",
         name: "Queso Parmesano Rallado",
-        meditionUnit: "250 gr",
+        meditionUnit: "200 gr",
         imagesUrls: [""],
         specifications: [],
-        description: "Queso Parmesano Rallado de 250gr",
+        description: "Queso Parmesano Rallado de 200gr",
         featuresDetails: "",
         uses: [],
         relatedProducts: []
