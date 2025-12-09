@@ -5,7 +5,6 @@ export interface FeaturedProduct {
     presentationName?: string;
 }
 export interface ProductCategory {
-    id: string;
     name: string;
     presentations: {
         id: string;
