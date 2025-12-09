@@ -1,0 +1,186 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="Contáctanos - Chotalac">
+	<section class="py-12 md:py-16 lg:py-20">
+		<div class="container mx-auto px-4">
+			<h1
+				class="text-3xl md:text-4xl lg:text-6xl font-titles-2 text-shadow-lg font-bold text-center mb-12 md:mb-16 text-gray-800"
+			>
+				Contáctanos
+			</h1>
+			<div class="mb-12 md:mb-16">
+				<h2
+					class="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-primary mb-8 md:mb-12"
+				>
+					Ubícanos en:
+				</h2>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div class="bg-primary-light rounded-lg p-6 space-y-4">
+						<h3
+							class="text-xl md:text-2xl font-bold text-primary mb-4"
+						>
+							Chiclayo
+						</h3>
+
+						<div class="space-y-3">
+							<div class="flex items-start gap-3">
+								<Icon
+									name="map-pin-duotone"
+									class="w-6 h-6 text-primary shrink-0 mt-1"
+								/>
+								<div class="text-gray-700">
+									<p>Av. Paúl Harris 1710 - La Victoria</p>
+								</div>
+							</div>
+							<div class="flex items-start gap-3">
+								<Icon
+									name="map-pin-duotone"
+									class="w-6 h-6 text-primary shrink-0 mt-1"
+								/>
+								<div class="text-gray-700">
+									<p>Av. Juan Cuglievan 1322</p>
+								</div>
+							</div>
+							<div class="flex items-center gap-3 pt-2">
+								<Icon
+									name="phone-duotone"
+									class="w-5 h-5 text-primary"
+								/>
+								<a
+									href="tel:+519460349772"
+									class="text-gray-700 hover:text-primary transition-colors"
+								>
+									+51 946 349 772
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="bg-secondary-light rounded-lg p-6 space-y-4">
+						<h3
+							class="text-xl md:text-2xl font-bold text-primary mb-4"
+						>
+							Trujillo
+						</h3>
+
+						<div class="space-y-3">
+							<div class="flex items-start gap-3">
+								<Icon
+									name="map-pin-duotone"
+									class="w-6 h-6 text-primary shrink-0 mt-1"
+								/>
+								<div class="text-gray-700">
+									<p>Mz. F, Lote 14 - Urb. Las Casuarias</p>
+								</div>
+							</div>
+							<div class="flex items-center gap-3 pt-2">
+								<Icon
+									name="phone-duotone"
+									class="w-5 h-5 text-primary"
+								/>
+								<a
+									href="tel:+51977818729"
+									class="text-gray-700 hover:text-primary transition-colors"
+								>
+									+51 977 818 729
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="bg-tertiary-light rounded-lg p-6 space-y-4">
+						<h3
+							class="text-xl md:text-2xl font-bold text-primary mb-4"
+						>
+							Lima
+						</h3>
+
+						<div class="space-y-3">
+							<div class="flex items-start gap-3">
+								<Icon
+									name="map-pin-duotone"
+									class="w-6 h-6 text-primary shrink-0 mt-1"
+								/>
+								<div class="text-gray-700">
+									<p>
+										Mz. M, Lote 8 Cooperativa Vivienda El
+										Olivar 39 - Los Olivos
+									</p>
+								</div>
+								<div class="text-gray-500">
+									<p>
+										Referencia: Cuadra 32 de la Av.
+										Universitaria, al costado del parque El
+										Olivar.
+									</p>
+								</div>
+							</div>
+							<div class="flex items-center gap-3 pt-2">
+								<Icon
+									name="phone-duotone"
+									class="w-5 h-5 text-primary"
+								/>
+								<a
+									href="tel:+51977818729"
+									class="text-gray-700 hover:text-primary transition-colors"
+								>
+									+51 977 818 729
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<h2
+					class="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-primary mb-8"
+				>
+					Otros Contactos
+				</h2>
+				<div class="max-w-2xl mx-auto space-y-6">
+					<div
+						class="flex items-center justify-center gap-4 bg-quaternary-light rounded-lg p-6"
+					>
+						<Icon
+							name="phone-duotone"
+							class="w-8 h-8 text-primary"
+						/>
+						<a
+							href="tel:+51910017026"
+							class="text-xl md:text-2xl text-gray-700 hover:text-primary transition-colors font-semibold"
+						>
+							+51 910 017 026
+						</a>
+					</div>
+					<div
+						class="flex items-center justify-center gap-4 bg-quaternary-light rounded-lg p-6"
+					>
+						<Icon
+							name="email-duotone"
+							class="w-8 h-8 text-primary"
+						/>
+						<a
+							href="mailto:ventas@chotalac.com"
+							class="text-xl md:text-2xl text-gray-700 hover:text-primary transition-colors font-semibold"
+						>
+							ventas@chotalac.com
+						</a>
+					</div>
+					<div class="flex justify-center pt-4">
+						<a
+							href="https://wa.me/51910017026"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold px-8 py-4 rounded-lg transition-colors text-lg md:text-xl shadow-lg hover:shadow-xl"
+						>
+							<Icon name="whatsapp-filled" class="w-8 h-8" />
+							<span>Escríbenos por WhatsApp</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
