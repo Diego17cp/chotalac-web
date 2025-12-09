@@ -15,7 +15,7 @@ let products = undefined;
 
 if (id) {
 	category = await getCategoryById(id);
-	if (category) products = await getProductsByCategoryName(category.name.toLowerCase());
+	if (category) products = await getProductsByCategoryName(category.name.toLowerCase().split(" ").join("-"));
 }
 
 export const getStaticPaths = async () => {
@@ -30,9 +30,15 @@ const lightColors = [
 	"bg-tertiary-light",
 	"bg-quaternary-light",
 ];
+const bgColors = [
+    "bg-secondary",
+    "bg-tertiary",
+    "bg-quaternary",
+]
 
 const colorIndex = category ? parseInt(category.id) - 1 : 0;
 const bgColor = lightColors[colorIndex % lightColors.length];
+const bgTextColor = bgColors[colorIndex % bgColors.length];
 ---
 
 <Layout
@@ -47,6 +53,7 @@ const bgColor = lightColors[colorIndex % lightColors.length];
 					imageUrl={category.imageUrl}
 					bgColor={bgColor}
 					isReversed={false}
+					bgTextColor={bgTextColor}
 				/>
 				{products && products.length > 0 ? (
 					<ProductsGrid products={products} cardBg={bgColor} />
