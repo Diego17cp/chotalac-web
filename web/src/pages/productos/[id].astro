@@ -1,0 +1,59 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import type { Product } from "@/types";
+import { getProductInfoById, getAllProducts } from "@/services";
+import { 
+    ProductGallery, 
+    ProductInfo, 
+    ProductDetails, 
+    RelatedProducts,
+    NotFound 
+} from "@/components/products";
+
+const { id } = Astro.params;
+
+let product: Product | undefined = undefined;
+
+if (id) product = await getProductInfoById(id);
+
+export const getStaticPaths = async () => {
+    const products = await getAllProducts();
+    return products.map((product) => ({
+        params: { id: product.id },
+    }));
+};
+---
+
+<Layout title={`${product ? `${product.name}${product.presentationName ? ' - ' + product.presentationName : ''}` : "Producto no encontrado"} - Chotalac`}>
+    {product ? (
+        <div class="py-12 md:py-16 lg:py-20">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-16 md:mb-20">
+                    <ProductGallery images={product.imagesUrls} name={product.name} />
+                    <ProductInfo 
+                        name={product.name}
+                        presentationName={product.presentationName}
+                        meditionUnit={product.meditionUnit}
+                        productId={product.id}
+                    />
+                </div>
+                <ProductDetails 
+                    specifications={product.specifications}
+                    description={product.description}
+                    featuresDetails={product.featuresDetails}
+                    uses={product.uses}
+                />
+                {product.relatedProducts.length > 0 && (
+                    <RelatedProducts products={product.relatedProducts} />
+                )}
+            </div>
+        </div>
+    ) : (
+        <NotFound 
+            title="Producto no encontrado"
+            message="Lo sentimos, el producto que buscas no existe o ha sido movido."
+            ctaText="Ver todos los productos"
+            ctaLink="/productos"
+        />
+    )}
+</Layout>
