@@ -1,0 +1,39 @@
+---
+interface Props {
+    name: string;
+    presentationName?: string;
+    meditionUnit: string;
+    productId: string;
+}
+
+const { name, presentationName, meditionUnit, productId } = Astro.props;
+---
+
+<div class="flex flex-col justify-center space-y-6">
+    <div class="space-y-4">
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-titles-2 font-bold text-gray-800">
+            {name}
+        </h1>
+        
+        {presentationName && (
+            <p class="text-xl md:text-2xl text-primary font-semibold">
+                {presentationName}
+            </p>
+        )}
+        
+        <p class="text-lg md:text-xl text-gray-600">
+            <span class="font-semibold">Presentación:</span> {meditionUnit}
+        </p>
+    </div>
+
+    <div class="pt-4">
+        <a
+            href={`https://wa.me/51910017026?text=Hola, estoy interesado en el producto: ${name}${presentationName ? ' - ' + presentationName : ''}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-primary hover:bg-primary/90 text-white font-bold text-lg px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl w-full text-center"
+        >
+            Comprar por WhatsApp
+        </a>
+    </div>
+</div>
