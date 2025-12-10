@@ -1280,58 +1280,498 @@ export const PRODUCTS_MOCK: Product[] = [
         id: "68",
         name: "Mantequilla",
         meditionUnit: "500 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/mantequilla/500gr/mantequilla-500gr-1.webp",
+            "/images/products/mantequilla/500gr/mantequilla-500gr-2.webp",
+            "/images/products/mantequilla/500gr/mantequilla-500gr-3.webp",
+            "/images/products/mantequilla/500gr/mantequilla-500gr-4.webp"
+        ],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Taper"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Mantequilla"
+            },
+            {
+                name: "Contenido",
+                value: "500 gramos"
+            },
+            {
+                name: "Formato",
+                value: "Taper de 500 gramos"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "15 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
         description: "Mantequilla de 500 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        featuresDetails: `Producto graso obtenido al batir la crema de leche.
+            De color amarillo pálido o blanco, según la alimentación de la vaca.
+            Tiene textura sólida y cremosa a temperatura fría.
+            Aporta vitaminas A, D y E, además de energía.
+        `,
+        uses: [
+            {
+                title: "Cocina y repostería",
+                content: "Base para tortas, galletas, panes y masas."
+            },
+            {
+                title: "Para cocinar",
+                content: "Ideal para saltear, freír o dorar alimentos por su sabor y aroma."
+            },
+            {
+                title: "Como acompañamiento",
+                content: "Untada en panes, tostadas o panqueques."
+            },
+            {
+                title: "En salsas",
+                content: "Como la mantequilla derretida o la salsa a la holandesa."
+            },
+            {
+                title: "En purés y verduras",
+                content:"Para dar brillo, sabor y suavidad."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "69",
+                name: "Mantequilla",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/mantequilla/250gr/mantequilla-250gr-1.webp"
+            },
+            {
+                id: "70",
+                name: "Leche Fresca",
+                presentationName: "Pasteurizada",
+                imageUrl: "/images/products/leche/fresca/pasteurizada/1lt/leche-fresca-pasteurizada-1lt-1.webp"
+            },
+            {
+                id: "71",
+                name: "Crema de Leche",
+                presentationName: "50% Grasa",
+                imageUrl: "/images/products/crema-de-leche/50/crema-de-leche-50-1.webp"
+            },
+            {
+                id: "72",
+                name: "Crema de Leche",
+                presentationName: "35% Grasa",
+                imageUrl: "/images/products/crema-de-leche/35/crema-de-leche-35-1.webp"
+            },
+            {
+                id: "42",
+                name: "Yogurt",
+                presentationName: "Natural",
+                imageUrl: "/images/products/yogurt/batido/natural-sin-azucar/yogurt-batido-natural-sin-azucar-1.webp"
+            }
+        ]
     },
     {
         id: "69",
         name: "Mantequilla",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/mantequilla/250gr/mantequilla-250gr-1.webp",
+            "/images/products/mantequilla/250gr/mantequilla-250gr-2.webp",
+            "/images/products/mantequilla/250gr/mantequilla-250gr-3.webp",
+            "/images/products/mantequilla/250gr/mantequilla-250gr-4.webp"
+        ],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Taper"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Mantequilla"
+            },
+            {
+                name: "Contenido",
+                value: "250 gramos"
+            },
+            {
+                name: "Formato",
+                value: "Taper de 250 gramos"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "15 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
         description: "Mantequilla de 250 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        featuresDetails: `Producto graso obtenido al batir la crema de leche.
+            De color amarillo pálido o blanco, según la alimentación de la vaca.
+            Tiene textura sólida y cremosa a temperatura fría.
+            Aporta vitaminas A, D y E, además de energía.
+        `,
+        uses: [
+            {
+                title: "Cocina y repostería",
+                content: "Base para tortas, galletas, panes y masas."
+            },
+            {
+                title: "Para cocinar",
+                content: "Ideal para saltear, freír o dorar alimentos por su sabor y aroma."
+            },
+            {
+                title: "Como acompañamiento",
+                content: "Untada en panes, tostadas o panqueques."
+            },
+            {
+                title: "En salsas",
+                content: "Como la mantequilla derretida o la salsa a la holandesa."
+            },
+            {
+                title: "En purés y verduras",
+                content:"Para dar brillo, sabor y suavidad."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "68",
+                name: "Mantequilla",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/mantequilla/500gr/mantequilla-500gr-1.webp"
+            },
+            {
+                id: "70",
+                name: "Leche Fresca",
+                presentationName: "Pasteurizada",
+                imageUrl: "/images/products/leche/fresca/pasteurizada/1lt/leche-fresca-pasteurizada-1lt-1.webp"
+            },
+            {
+                id: "71",
+                name: "Crema de Leche",
+                presentationName: "50% Grasa",
+                imageUrl: "/images/products/crema-de-leche/50/crema-de-leche-50-1.webp"
+            },
+            {
+                id: "72",
+                name: "Crema de Leche",
+                presentationName: "35% Grasa",
+                imageUrl: "/images/products/crema-de-leche/35/crema-de-leche-35-1.webp"
+            },
+            {
+                id: "42",
+                name: "Yogurt",
+                presentationName: "Natural",
+                imageUrl: "/images/products/yogurt/batido/natural-sin-azucar/yogurt-batido-natural-sin-azucar-1.webp"
+            }
+        ]
     },
     {
         id: "70",
         name: "Leche Fresca",
         presentationName: "Pasteurizada",
         meditionUnit: "1 litro",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/leche/fresca/pasteurizada/1lt/leche-fresca-pasteurizada-1lt-1.webp",
+            "/images/products/leche/fresca/pasteurizada/1lt/leche-fresca-pasteurizada-1lt-2.webp",
+            "/images/products/leche/fresca/pasteurizada/1lt/leche-fresca-pasteurizada-1lt-3.webp",
+            "/images/products/leche/fresca/pasteurizada/1lt/leche-fresca-pasteurizada-1lt-4.webp"
+        ],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Leche Fresca Pasteurizada"
+            },
+            {
+                name: "Contenido",
+                value: "1 Litro"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 1 litro"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "10 a 12 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
         description: "Leche Fresca Pasteurizada de 1 litro",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        featuresDetails: `Contiene aproximadamente 3 a 3.5% de grasa, lo que le da su sabor cremoso y textura suave.
+            Es rica en calcio, proteínas y vitaminas (A, D y B12).
+            Debe mantenerse refrigerada para conservar su frescura y evitar su descomposición.`,
+        uses: [
+            {
+                title: "Bebidas frías o calientes",
+                content: "Ideal para desayunos y cenas."
+            },
+            {
+                title: "Postres",
+                content: "Base para preparar flanes, natillas, arroz con leche, y otros dulces."
+            },
+            {
+                title: "Bebidas con café o cacao",
+                content: "Se usa en cafés con leche, lattes, capuchinos y chocolates calientes."
+            },
+            {
+                title: "Cocina general",
+                content: "En salsas, cremas o purés para dar textura y sabor."
+            },
+            {
+                title: "Batidos o licuados",
+                content: "Combinada con frutas o avenas para bebidas nutritivas."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "71",
+                name: "Crema de Leche",
+                presentationName: "50% Grasa",
+                imageUrl: "/images/products/crema-de-leche/50/crema-de-leche-50-1.webp"
+            },
+            {
+                id: "72",
+                name: "Crema de Leche",
+                presentationName: "35% Grasa",
+                imageUrl: "/images/products/crema-de-leche/35/crema-de-leche-35-1.webp"
+            },
+            {
+                id: "41",
+                name: "Yogurt natural",
+                presentationName: "Sin azúcar",
+                imageUrl: "/images/products/yogurt/batido/natural-sin-azucar/yogurt-batido-natural-sin-azucar-1.webp"
+            },
+            {
+                id: "42",
+                name: "Yogurt",
+                presentationName: "Natural",
+                imageUrl: "/images/products/yogurt/batido/natural/yogurt-batido-natural-1.webp"
+            },
+            {
+                id: "68",
+                name: "Mantequilla",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/mantequilla/500gr/mantequilla-500gr-1.webp"
+            }
+        ]
     },
     {
         id: "71",
         name: "Crema de Leche",
         presentationName: "50% Grasa",
         meditionUnit: "1 litro",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/crema-de-leche/50/crema-de-leche-50-1.webp",
+            "/images/products/crema-de-leche/50/crema-de-leche-50-2.webp",
+            "/images/products/crema-de-leche/50/crema-de-leche-50-3.webp",
+            "/images/products/crema-de-leche/50/crema-de-leche-50-4.webp"
+        ],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Bolsa"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Crema de Leche"
+            },
+            {
+                name: "Contenido",
+                value: "1 Litro"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de 1 litro"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "15 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
         description: "Crema de Leche 50% Grasa de 1 litro",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        featuresDetails: "Es la parte grasa que se separa de la leche. Tiene textura espesa y sabor suave. Aporta vitamina A, calcio y energía. Su color es blanco o ligeramente amarillento. Se puede batir o cocinar sin que se corte fácilmente.",
+        uses: [
+            {
+                title: "En postres",
+                content: "Chantilly, mousses, helados y tortas."
+            },
+            {
+                title: "En salsas",
+                content: "Para pastas, carnes y guisos."
+            },
+            {
+                title: "En sopas y cremas",
+                content: "Aporta suavidad y espesor."
+            },
+            {
+                title: "En bebidas",
+                content: "Café, chocolate caliente o batidos."
+            },
+            {
+                title: "En cocina general",
+                content: "Para dar textura cremosa y sabor más rico a los platos."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "72",
+                name: "Crema de Leche",
+                presentationName: "35% Grasa",
+                imageUrl: "/images/products/crema-de-leche/35/crema-de-leche-35-1.webp"
+            },
+            {
+                id: "41",
+                name: "Yogurt natural",
+                presentationName: "Sin azúcar",
+                imageUrl: "/images/products/yogurt/batido/natural-sin-azucar/yogurt-batido-natural-sin-azucar-1.webp"
+            },
+            {
+                id: "42",
+                name: "Yogurt",
+                presentationName: "Natural",
+                imageUrl: "/images/products/yogurt/batido/natural/yogurt-batido-natural-1.webp"
+            },
+            {
+                id: "70",
+                name: "Leche Fresca",
+                presentationName: "Pasteurizada",
+                imageUrl: "/images/products/leche/fresca/pasteurizada/1lt/leche-fresca-pasteurizada-1lt-1.webp"
+            },
+            {
+                id: "68",
+                name: "Mantequilla",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/mantequilla/500gr/mantequilla-500gr-1.webp"
+            }
+        ]
     },
     {
         id: "72",
         name: "Crema de Leche",
         presentationName: "35% Grasa",
         meditionUnit: "1 litro",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/crema-de-leche/50/crema-de-leche-50-1.webp",
+            "/images/products/crema-de-leche/50/crema-de-leche-50-2.webp",
+            "/images/products/crema-de-leche/50/crema-de-leche-50-3.webp",
+            "/images/products/crema-de-leche/50/crema-de-leche-50-4.webp"
+        ],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Bolsa"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Crema de Leche"
+            },
+            {
+                name: "Contenido",
+                value: "1 Litro"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de 1 litro"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "15 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
         description: "Crema de Leche 35% Grasa de 1 litro",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        featuresDetails: "Es la parte grasa que se separa de la leche. Tiene textura espesa y sabor suave. Aporta vitamina A, calcio y energía. Su color es blanco o ligeramente amarillento. Se puede batir o cocinar sin que se corte fácilmente.",
+        uses: [
+            {
+                title: "En postres",
+                content: "Chantilly, mousses, helados y tortas."
+            },
+            {
+                title: "En salsas",
+                content: "Para pastas, carnes y guisos."
+            },
+            {
+                title: "En sopas y cremas",
+                content: "Aporta suavidad y espesor."
+            },
+            {
+                title: "En bebidas",
+                content: "Café, chocolate caliente o batidos."
+            },
+            {
+                title: "En cocina general",
+                content: "Para dar textura cremosa y sabor más rico a los platos."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "71",
+                name: "Crema de Leche",
+                presentationName: "50% Grasa",
+                imageUrl: "/images/products/crema-de-leche/50/crema-de-leche-50-1.webp"
+            },
+            {
+                id: "41",
+                name: "Yogurt natural",
+                presentationName: "Sin azúcar",
+                imageUrl: "/images/products/yogurt/batido/natural-sin-azucar/yogurt-batido-natural-sin-azucar-1.webp"
+            },
+            {
+                id: "42",
+                name: "Yogurt",
+                presentationName: "Natural",
+                imageUrl: "/images/products/yogurt/batido/natural/yogurt-batido-natural-1.webp"
+            },
+            {
+                id: "70",
+                name: "Leche Fresca",
+                presentationName: "Pasteurizada",
+                imageUrl: "/images/products/leche/fresca/pasteurizada/1lt/leche-fresca-pasteurizada-1lt-1.webp"
+            },
+            {
+                id: "68",
+                name: "Mantequilla",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/mantequilla/500gr/mantequilla-500gr-1.webp"
+            }
+        ]
     }
 ];
