@@ -1,0 +1,49 @@
+---
+interface Props {
+    images: string[];
+    name: string;
+}
+
+const { images, name } = Astro.props;
+---
+
+<div class="space-y-4">
+    <div class="bg-white rounded-lg p-8 shadow-lg">
+        <img
+            id="main-image"
+            src={images[0]}
+            alt={name}
+            class="w-full h-96 object-contain"
+        />
+    </div>
+    {images.length > 1 && (
+        <div class="grid grid-cols-4 gap-4">
+            {images.map((image, index) => (
+                <button
+                    class="thumbnail bg-white rounded-lg p-4 hover:shadow-lg transition-all duration-300 ease-in-out cursor-pointer border-2 border-transparent hover:border-primary"
+                    data-image={image}
+                >
+                    <img
+                        src={image}
+                        alt={`${name} - Vista ${index + 1}`}
+                        class="w-full h-20 object-contain"
+                    />
+                </button>
+            ))}
+        </div>
+    )}
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mainImage = document.getElementById('main-image') as HTMLImageElement;
+        const thumbnails = document.querySelectorAll('.thumbnail');
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                const imageSrc = thumbnail.getAttribute('data-image');
+                if (imageSrc && mainImage) mainImage.src = imageSrc;
+            });
+        });
+    });
+</script>
