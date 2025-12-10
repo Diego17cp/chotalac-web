@@ -1,0 +1,72 @@
+---
+interface Props {
+    specifications: { name: string; value: string }[];
+    description: string;
+    featuresDetails: string;
+    uses: { title: string; content: string }[];
+}
+
+const { specifications, description, featuresDetails, uses } = Astro.props;
+---
+
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-16 md:mb-20">
+    <div class="space-y-6">
+        <h2 class="text-2xl md:text-3xl font-titles-2 font-bold text-gray-800">
+            Especificaciones
+        </h2>
+        {specifications.length > 0 ? (
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <table class="w-full">
+                    <tbody>
+                        {specifications.map((spec, index) => (
+                            <tr class={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                                <td class="px-6 py-4 font-semibold text-gray-700 border-r border-gray-200">
+                                    {spec.name}
+                                </td>
+                                <td class="px-6 py-4 text-gray-600">
+                                    {spec.value}
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+        ) : (
+            <p class="text-gray-600">No hay especificaciones disponibles.</p>
+        )}
+    </div>
+    <div class="space-y-8">
+        <div class="space-y-4">
+            <h3 class="text-xl md:text-2xl font-titles-2 font-bold text-gray-800">
+                Descripción
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+                {description}
+            </p>
+        </div>
+        {featuresDetails && (
+            <div class="space-y-4">
+                <h3 class="text-xl md:text-2xl font-titles-2 font-bold text-gray-800">
+                    Características
+                </h3>
+                <p class="text-gray-700 leading-relaxed">
+                    {featuresDetails}
+                </p>
+            </div>
+        )}
+        {uses.length > 0 && (
+            <div class="space-y-4">
+                <h3 class="text-xl md:text-2xl font-titles-2 font-bold text-gray-800">
+                    Usos
+                </h3>
+                <div class="space-y-3">
+                    {uses.map((use) => (
+                        <p class="text-gray-700 leading-relaxed">
+                            <span class="font-bold">{use.title}:</span> {use.content}
+                        </p>
+                    ))}
+                </div>
+            </div>
+        )}
+    </div>
+</div>
