@@ -9,6 +9,7 @@ import {
     RelatedProducts,
     NotFound 
 } from "@/components/products";
+import { Icon } from "astro-icon/components";
 
 const { id } = Astro.params;
 
@@ -28,6 +29,14 @@ export const getStaticPaths = async () => {
     {product ? (
         <div class="py-12 md:py-16 lg:py-20">
             <div class="container mx-auto px-4">
+                <button
+                    id="back-button"
+                    class="inline-flex items-center gap-2 text-primary hover:text-primary/80 cursor-pointer font-semibold mb-8 transition-colors"
+                >
+                    <Icon name="left-arrow-duotone" size={24} />
+                    <span>Volver</span>
+                </button>
+
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-16 md:mb-20">
                     <ProductGallery images={product.imagesUrls} name={product.name} />
                     <ProductInfo 
@@ -57,3 +66,17 @@ export const getStaticPaths = async () => {
         />
     )}
 </Layout>
+
+<script>
+    function initBackButton() {
+        const backButton = document.getElementById('back-button');
+        if (backButton) {
+            backButton.addEventListener('click', () => {
+                window.history.back();
+            });
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', initBackButton);
+    document.addEventListener('astro:page-load', initBackButton);
+</script>
