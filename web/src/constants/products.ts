@@ -957,143 +957,1130 @@ export const PRODUCTS_MOCK: Product[] = [
         name: "Yogurt Batido",
         presentationName: "Natural",
         meditionUnit: "950 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/batido/natural/yogurt-batido-natural-1.webp",
+            "/images/products/yogurt/batido/natural/yogurt-batido-natural-2.webp",
+            "/images/products/yogurt/batido/natural/yogurt-batido-natural-3.webp",
+            "/images/products/yogurt/batido/natural/yogurt-batido-natural-4.webp"
+        ],
         description: "Yogurt Batido Natural de 950 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Batido"
+            },
+            {
+                name: "Contenido",
+                value: "950 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 950 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "42",
+                name: "Yogurt Natural",
+                presentationName: "Sin azúcar",
+                imageUrl: "/images/products/yogurt/batido/natural-sin-azucar/yogurt-batido-natural-sin-azucar-1.webp"
+            },
+            {
+                id: "43",
+                name: "Yogurt Batido",
+                presentationName: "Piña",
+                imageUrl: "/images/products/yogurt/batido/pinia/yogurt-batido-pinia-1.webp"
+            },
+            {
+                id: "45",
+                name: "Yogurt Batido",
+                presentationName: "Lúcuma",
+                imageUrl: "/images/products/yogurt/batido/lucuma/yogurt-batido-lucuma-1.webp"
+            },
+            {
+                id: "44",
+                name: "Yogurt Batido",
+                presentationName: "Vainilla",
+                imageUrl: "/images/products/yogurt/batido/vainilla/yogurt-batido-vainilla-1.webp"
+            },
+            {
+                id: "47",
+                name: "Yogurt Batido",
+                presentationName: "Durazno",
+                imageUrl: "/images/products/yogurt/batido/durazno/yogurt-batido-durazno-1.webp"
+            }
+        ]
     },
     {
         id: "42",
         name: "Yogurt Batido",
         presentationName: "Natural sin azúcar",
         meditionUnit: "950 gr",
-        imagesUrls: [""],
-        specifications: [],
         description: "Yogurt Batido Natural sin azúcar de 950 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        imagesUrls: [
+            "/images/products/yogurt/batido/natural-sin-azucar/yogurt-batido-natural-sin-azucar-1.webp",
+            "/images/products/yogurt/batido/natural-sin-azucar/yogurt-batido-natural-sin-azucar-2.webp",
+            "/images/products/yogurt/batido/natural-sin-azucar/yogurt-batido-natural-sin-azucar-3.webp",
+            "/images/products/yogurt/batido/natural/yogurt-batido-natural-4.webp"
+        ],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Batido"
+            },
+            {
+                name: "Contenido",
+                value: "950 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 950 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "41",
+                name: "Yogurt Batido",
+                presentationName: "Natural",
+                imageUrl: "/images/products/yogurt/batido/natural/yogurt-batido-natural-1.webp"
+            },
+            {
+                id: "43",
+                name: "Yogurt Batido",
+                presentationName: "Piña",
+                imageUrl: "/images/products/yogurt/batido/pinia/yogurt-batido-pinia-1.webp"
+            },
+            {
+                id: "45",
+                name: "Yogurt Batido",
+                presentationName: "Lúcuma",
+                imageUrl: "/images/products/yogurt/batido/lucuma/yogurt-batido-lucuma-1.webp"
+            },
+            {
+                id: "44",
+                name: "Yogurt Batido",
+                presentationName: "Vainilla",
+                imageUrl: "/images/products/yogurt/batido/vainilla/yogurt-batido-vainilla-1.webp"
+            },
+            {
+                id: "47",
+                name: "Yogurt Batido",
+                presentationName: "Durazno",
+                imageUrl: "/images/products/yogurt/batido/durazno/yogurt-batido-durazno-1.webp"
+            }
+        ]
     },
     {
         id: "43",
         name: "Yogurt Batido",
         presentationName: "Piña",
         meditionUnit: "950 gr",
-        imagesUrls: [""],
-        specifications: [],
         description: "Yogurt Batido Piña de 950 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        imagesUrls: [
+            "/images/products/yogurt/batido/pinia/yogurt-batido-pinia-1.webp",
+            "/images/products/yogurt/batido/pinia/yogurt-batido-pinia-2.webp",
+            "/images/products/yogurt/batido/pinia/yogurt-batido-pinia-3.webp",
+            "/images/products/yogurt/batido/natural/yogurt-batido-natural-4.webp"
+        ],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Batido"
+            },
+            {
+                name: "Contenido",
+                value: "950 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 950 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "48",
+                name: "Yogurt Batido",
+                presentationName: "Higo",
+                imageUrl: "/images/products/yogurt/batido/higo/yogurt-batido-higo-1.webp"
+            },
+            {
+                id: "49",
+                name: "Yogurt Batido",
+                presentationName: "Guanábana",
+                imageUrl: "/images/products/yogurt/batido/guanabana/yogurt-batido-guanabana-1.webp"
+            },
+            {
+                id: "45",
+                name: "Yogurt Batido",
+                presentationName: "Lúcuma",
+                imageUrl: "/images/products/yogurt/batido/lucuma/yogurt-batido-lucuma-1.webp"
+            },
+            {
+                id: "41",
+                name: "Yogurt Batido",
+                presentationName: "Natural",
+                imageUrl: "/images/products/yogurt/batido/natural/yogurt-batido-natural-1.webp"
+            },
+            {
+                id: "47",
+                name: "Yogurt Batido",
+                presentationName: "Durazno",
+                imageUrl: "/images/products/yogurt/batido/durazno/yogurt-batido-durazno-1.webp"
+            }
+        ]
     },
     {
         id: "44",
         name: "Yogurt Batido",
         presentationName: "Vainilla",
         meditionUnit: "950 gr",
-        imagesUrls: [""],
-        specifications: [],
         description: "Yogurt Batido Vainilla de 950 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        imagesUrls: [
+            "/images/products/yogurt/batido/vainilla/yogurt-batido-vainilla-1.webp",
+            "/images/products/yogurt/batido/vainilla/yogurt-batido-vainilla-2.webp",
+            "/images/products/yogurt/batido/vainilla/yogurt-batido-vainilla-3.webp",
+            "/images/products/yogurt/batido/natural/yogurt-batido-natural-4.webp"
+        ],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Batido"
+            },
+            {
+                name: "Contenido",
+                value: "950 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 950 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "46",
+                name: "Yogurt Batido",
+                presentationName: "Fresa",
+                imageUrl: "/images/products/yogurt/batido/fresa/yogurt-batido-fresa-1.webp"
+            },
+            {
+                id: "49",
+                name: "Yogurt Batido",
+                presentationName: "Guanábana",
+                imageUrl: "/images/products/yogurt/batido/guanabana/yogurt-batido-guanabana-1.webp"
+            },
+            {
+                id: "45",
+                name: "Yogurt Batido",
+                presentationName: "Lúcuma",
+                imageUrl: "/images/products/yogurt/batido/lucuma/yogurt-batido-lucuma-1.webp"
+            },
+            {
+                id: "41",
+                name: "Yogurt Batido",
+                presentationName: "Natural",
+                imageUrl: "/images/products/yogurt/batido/natural/yogurt-batido-natural-1.webp"
+            },
+            {
+                id: "47",
+                name: "Yogurt Batido",
+                presentationName: "Durazno",
+                imageUrl: "/images/products/yogurt/batido/durazno/yogurt-batido-durazno-1.webp"
+            }
+        ]
     },
     {
         id: "45",
         name: "Yogurt Batido",
         presentationName: "Lúcuma",
         meditionUnit: "950 gr",
-        imagesUrls: [""],
-        specifications: [],
         description: "Yogurt Batido Lúcuma de 950 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        imagesUrls: [
+            "/images/products/yogurt/batido/lucuma/yogurt-batido-lucuma-1.webp",
+            "/images/products/yogurt/batido/lucuma/yogurt-batido-lucuma-2.webp",
+            "/images/products/yogurt/batido/lucuma/yogurt-batido-lucuma-3.webp",
+            "/images/products/yogurt/batido/natural/yogurt-batido-natural-4.webp"
+        ],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Batido"
+            },
+            {
+                name: "Contenido",
+                value: "950 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 950 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "47",
+                name: "Yogurt Batido",
+                presentationName: "Durazno",
+                imageUrl: "/images/products/yogurt/batido/durazno/yogurt-batido-durazno-1.webp"
+            },
+            {
+                id: "46",
+                name: "Yogurt Batido",
+                presentationName: "Fresa",
+                imageUrl: "/images/products/yogurt/batido/fresa/yogurt-batido-fresa-1.webp"
+            },
+            {
+                id: "49",
+                name: "Yogurt Batido",
+                presentationName: "Guanábana",
+                imageUrl: "/images/products/yogurt/batido/guanabana/yogurt-batido-guanabana-1.webp"
+            },
+            {
+                id: "41",
+                name: "Yogurt Batido",
+                presentationName: "Natural",
+                imageUrl: "/images/products/yogurt/batido/natural/yogurt-batido-natural-1.webp"
+            },
+            {
+                id: "44",
+                name: "Yogurt Batido",
+                presentationName: "Vainilla",
+                imageUrl: "/images/products/yogurt/batido/vainilla/yogurt-batido-vainilla-1.webp"
+            },
+        ]
     },
     {
         id: "46",
         name: "Yogurt Batido",
         presentationName: "Fresa",
         meditionUnit: "950 gr",
-        imagesUrls: [""],
-        specifications: [],
         description: "Yogurt Batido Fresa de 950 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        imagesUrls: [
+            "/images/products/yogurt/batido/fresa/yogurt-batido-fresa-1.webp",
+            "/images/products/yogurt/batido/fresa/yogurt-batido-fresa-2.webp",
+            "/images/products/yogurt/batido/fresa/yogurt-batido-fresa-3.webp",
+            "/images/products/yogurt/batido/natural/yogurt-batido-natural-4.webp"
+        ],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Batido"
+            },
+            {
+                name: "Contenido",
+                value: "950 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 950 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "47",
+                name: "Yogurt Batido",
+                presentationName: "Durazno",
+                imageUrl: "/images/products/yogurt/batido/durazno/yogurt-batido-durazno-1.webp"
+            },
+            {
+                id: "49",
+                name: "Yogurt Batido",
+                presentationName: "Guanábana",
+                imageUrl: "/images/products/yogurt/batido/guanabana/yogurt-batido-guanabana-1.webp"
+            },
+            {
+                id: "45",
+                name: "Yogurt Batido",
+                presentationName: "Lúcuma",
+                imageUrl: "/images/products/yogurt/batido/lucuma/yogurt-batido-lucuma-1.webp"
+            },
+            {
+                id: "41",
+                name: "Yogurt Batido",
+                presentationName: "Natural",
+                imageUrl: "/images/products/yogurt/batido/natural/yogurt-batido-natural-1.webp"
+            },
+            {
+                id: "44",
+                name: "Yogurt Batido",
+                presentationName: "Vainilla",
+                imageUrl: "/images/products/yogurt/batido/vainilla/yogurt-batido-vainilla-1.webp"
+            },
+        ]
     },
     {
         id: "47",
         name: "Yogurt Batido",
         presentationName: "Durazno",
         meditionUnit: "950 gr",
-        imagesUrls: [""],
-        specifications: [],
         description: "Yogurt Batido Durazno de 950 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        imagesUrls: [
+            "/images/products/yogurt/batido/durazno/yogurt-batido-durazno-1.webp",
+            "/images/products/yogurt/batido/durazno/yogurt-batido-durazno-2.webp",
+            "/images/products/yogurt/batido/durazno/yogurt-batido-durazno-3.webp",
+            "/images/products/yogurt/batido/natural/yogurt-batido-natural-4.webp"
+        ],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Batido"
+            },
+            {
+                name: "Contenido",
+                value: "950 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 950 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "46",
+                name: "Yogurt Batido",
+                presentationName: "Fresa",
+                imageUrl: "/images/products/yogurt/batido/fresa/yogurt-batido-fresa-1.webp"
+            },
+            {
+                id: "49",
+                name: "Yogurt Batido",
+                presentationName: "Guanábana",
+                imageUrl: "/images/products/yogurt/batido/guanabana/yogurt-batido-guanabana-1.webp"
+            },
+            {
+                id: "45",
+                name: "Yogurt Batido",
+                presentationName: "Lúcuma",
+                imageUrl: "/images/products/yogurt/batido/lucuma/yogurt-batido-lucuma-1.webp"
+            },
+            {
+                id: "41",
+                name: "Yogurt Batido",
+                presentationName: "Natural",
+                imageUrl: "/images/products/yogurt/batido/natural/yogurt-batido-natural-1.webp"
+            },
+            {
+                id: "44",
+                name: "Yogurt Batido",
+                presentationName: "Vainilla",
+                imageUrl: "/images/products/yogurt/batido/vainilla/yogurt-batido-vainilla-1.webp"
+            },
+        ]
     },
     {
         id: "48",
         name: "Yogurt Batido",
         presentationName: "Higo",
         meditionUnit: "950 gr",
-        imagesUrls: [""],
-        specifications: [],
         description: "Yogurt Batido Higo de 950 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        imagesUrls: [
+            "/images/products/yogurt/batido/higo/yogurt-batido-higo-1.webp",
+            "/images/products/yogurt/batido/higo/yogurt-batido-higo-2.webp",
+            "/images/products/yogurt/batido/higo/yogurt-batido-higo-3.webp",
+            "/images/products/yogurt/batido/natural/yogurt-batido-natural-4.webp"
+        ],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Batido"
+            },
+            {
+                name: "Contenido",
+                value: "950 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 950 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "43",
+                name: "Yogurt Batido",
+                presentationName: "Piña",
+                imageUrl: "/images/products/yogurt/batido/pinia/yogurt-batido-pinia-1.webp"
+            },
+            {
+                id: "49",
+                name: "Yogurt Batido",
+                presentationName: "Guanábana",
+                imageUrl: "/images/products/yogurt/batido/guanabana/yogurt-batido-guanabana-1.webp"
+            },
+            {
+                id: "45",
+                name: "Yogurt Batido",
+                presentationName: "Lúcuma",
+                imageUrl: "/images/products/yogurt/batido/lucuma/yogurt-batido-lucuma-1.webp"
+            },
+            {
+                id: "41",
+                name: "Yogurt Batido",
+                presentationName: "Natural",
+                imageUrl: "/images/products/yogurt/batido/natural/yogurt-batido-natural-1.webp"
+            },
+            {
+                id: "47",
+                name: "Yogurt Batido",
+                presentationName: "Durazno",
+                imageUrl: "/images/products/yogurt/batido/durazno/yogurt-batido-durazno-1.webp"
+            }
+        ]
     },
     {
         id: "49",
         name: "Yogurt Batido",
         presentationName: "Guanábana",
         meditionUnit: "950 gr",
-        imagesUrls: [""],
-        specifications: [],
         description: "Yogurt Batido Guanábana de 950 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        imagesUrls: [
+            "/images/products/yogurt/batido/guanabana/yogurt-batido-guanabana-1.webp",
+            "/images/products/yogurt/batido/guanabana/yogurt-batido-guanabana-2.webp",
+            "/images/products/yogurt/batido/guanabana/yogurt-batido-guanabana-3.webp",
+            "/images/products/yogurt/batido/natural/yogurt-batido-natural-4.webp"
+        ],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Batido"
+            },
+            {
+                name: "Contenido",
+                value: "950 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 950 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "47",
+                name: "Yogurt Batido",
+                presentationName: "Durazno",
+                imageUrl: "/images/products/yogurt/batido/durazno/yogurt-batido-durazno-1.webp"
+            },
+            {
+                id: "46",
+                name: "Yogurt Batido",
+                presentationName: "Fresa",
+                imageUrl: "/images/products/yogurt/batido/fresa/yogurt-batido-fresa-1.webp"
+            },
+            {
+                id: "45",
+                name: "Yogurt Batido",
+                presentationName: "Lúcuma",
+                imageUrl: "/images/products/yogurt/batido/lucuma/yogurt-batido-lucuma-1.webp"
+            },
+            {
+                id: "41",
+                name: "Yogurt Batido",
+                presentationName: "Natural",
+                imageUrl: "/images/products/yogurt/batido/natural/yogurt-batido-natural-1.webp"
+            },
+            {
+                id: "44",
+                name: "Yogurt Batido",
+                presentationName: "Vainilla",
+                imageUrl: "/images/products/yogurt/batido/vainilla/yogurt-batido-vainilla-1.webp"
+            },
+        ]
     },
     {
         id: "50",
         name: "Yogurt Frutado",
         presentationName: "Higo",
         meditionUnit: "900 gr",
-        imagesUrls: [""],
-        specifications: [],
         description: "Yogurt Frutado Higo de 900 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        imagesUrls: [
+            "/images/products/yogurt/frutado/grande/higo/yogurt-frutado-grande-higo-1.webp",
+            "/images/products/yogurt/frutado/grande/higo/yogurt-frutado-grande-higo-2.webp",
+            "/images/products/yogurt/frutado/grande/higo/yogurt-frutado-grande-higo-3.webp",
+            "/images/products/yogurt/batido/natural/yogurt-batido-natural-4.webp"
+        ],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Frutado"
+            },
+            {
+                name: "Contenido",
+                value: "900 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 900 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "51",
+                name: "Yogurt Frutado Higo",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/frutado/pequeno/higo/yogurt-frutado-pequeno-higo-1.webp"
+            },
+            {
+                id: "52",
+                name: "Yogurt Frutado Cuchareable",
+                presentationName: "Higo",
+                imageUrl: "/images/products/yogurt/frutado/cuchareable/higo/yogurt-frutado-cuchareable-higo-1.webp"
+            },
+            {
+                id: "56",
+                name: "Yogurt Frutado",
+                presentationName: "Arándano",
+                imageUrl: "/images/products/yogurt/frutado/grande/arandano/yogurt-frutado-grande-arandano-1.webp"
+            },
+            {
+                id: "59",
+                name: "Yogurt Frutado",
+                presentationName: "Fresa",
+                imageUrl: "/images/products/yogurt/frutado/grande/fresa/yogurt-frutado-grande-fresa-1.webp"
+            },
+            {
+                id: "53",
+                name: "Yogurt Frutado",
+                presentationName: "Mango",
+                imageUrl: "/images/products/yogurt/frutado/grande/mango/yogurt-frutado-grande-mango-1.webp"
+            }
+        ]
     },
     {
         id: "51",
         name: "Yogurt Frutado",
         presentationName: "Higo",
         meditionUnit: "450 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/frutado/pequeno/higo/yogurt-frutado-pequeno-higo-1.webp",
+            "/images/products/yogurt/frutado/pequeno/higo/yogurt-frutado-pequeno-higo-2.webp",
+            "/images/products/yogurt/frutado/pequeno/higo/yogurt-frutado-pequeno-higo-3.webp",
+            "/images/products/yogurt/frutado/pequeno/yogurt-frutado-pequeno-back.webp"
+        ],
         description: "Yogurt Frutado Higo de 450 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Frutado"
+            },
+            {
+                name: "Contenido",
+                value: "450 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 450 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "50",
+                name: "Yogurt Frutado Higo",
+                presentationName: "Grande",
+                imageUrl: "/images/products/yogurt/frutado/grande/higo/yogurt-frutado-grande-higo-1.webp"
+            },
+            {
+                id: "52",
+                name: "Yogurt Frutado Cuchareable",
+                presentationName: "Higo",
+                imageUrl: "/images/products/yogurt/frutado/cuchareable/higo/yogurt-frutado-cuchareable-higo-1.webp"
+            },
+            {
+                id: "57",
+                name: "Yogurt Frutado Arándano",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/frutado/pequeno/arandano/yogurt-frutado-pequeno-arandano-1.webp"
+            },
+            {
+                id: "60",
+                name: "Yogurt Frutado Fresa",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/frutado/pequeno/fresa/yogurt-frutado-pequeno-fresa-1.webp"
+            },
+            {
+                id: "54",
+                name: "Yogurt Frutado Mango",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/frutado/pequeno/mango/yogurt-frutado-pequeno-mango-1.webp"
+            }
+        ]
     },
     {
         id: "52",
         name: "Yogurt Frutado Cuchareable",
         presentationName: "Higo",
         meditionUnit: "200 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/frutado/cuchareable/higo/yogurt-frutado-cuchareable-higo-1.webp",
+            "/images/products/yogurt/frutado/cuchareable/higo/yogurt-frutado-cuchareable-higo-2.webp",
+        ],
         description: "Yogurt Frutado Cuchareable Higo de 200 gr",
-        featuresDetails: "",
-        uses: [],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Vaso de Cartón"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Frutado Cuchareable"
+            },
+            {
+                name: "Contenido",
+                value: "200 gr"
+            },
+            {
+                name: "Formato",
+                value: "Vaso de Cartón de 200 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
         relatedProducts: []
     },
     {
@@ -1101,35 +2088,257 @@ export const PRODUCTS_MOCK: Product[] = [
         name: "Yogurt Frutado",
         presentationName: "Mango",
         meditionUnit: "900 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/frutado/grande/mango/yogurt-frutado-grande-mango-1.webp",
+            "/images/products/yogurt/frutado/grande/mango/yogurt-frutado-grande-mango-2.webp",
+            "/images/products/yogurt/frutado/grande/mango/yogurt-frutado-grande-mango-3.webp",
+            "/images/products/yogurt/batido/natural/yogurt-batido-natural-4.webp"
+        ],
         description: "Yogurt Frutado Mango de 900 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Frutado"
+            },
+            {
+                name: "Contenido",
+                value: "900 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 900 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "54",
+                name: "Yogurt Frutado Mango",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/frutado/pequeno/mango/yogurt-frutado-pequeno-mango-1.webp"
+            },
+            {
+                id: "55",
+                name: "Yogurt Frutado Cuchareable",
+                presentationName: "Mango",
+                imageUrl: "/images/products/yogurt/frutado/cuchareable/mango/yogurt-frutado-cuchareable-mango-1.webp"
+            },
+            {
+                id: "56",
+                name: "Yogurt Frutado",
+                presentationName: "Arándano",
+                imageUrl: "/images/products/yogurt/frutado/grande/arandano/yogurt-frutado-grande-arandano-1.webp"
+            },
+            {
+                id: "59",
+                name: "Yogurt Frutado",
+                presentationName: "Fresa",
+                imageUrl: "/images/products/yogurt/frutado/grande/fresa/yogurt-frutado-grande-fresa-1.webp"
+            },
+            {
+                id: "50",
+                name: "Yogurt Frutado",
+                presentationName: "Higo",
+                imageUrl: "/images/products/yogurt/frutado/grande/higo/yogurt-frutado-grande-higo-1.webp"
+            }
+        ]
     },
     {
         id: "54",
         name: "Yogurt Frutado",
         presentationName: "Mango",
         meditionUnit: "450 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/frutado/pequeno/mango/yogurt-frutado-pequeno-mango-1.webp",
+            "/images/products/yogurt/frutado/pequeno/mango/yogurt-frutado-pequeno-mango-2.webp",
+            "/images/products/yogurt/frutado/pequeno/mango/yogurt-frutado-pequeno-mango-3.webp",
+            "/images/products/yogurt/frutado/pequeno/yogurt-frutado-pequeno-back.webp"
+        ],
         description: "Yogurt Frutado Mango de 450 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Frutado"
+            },
+            {
+                name: "Contenido",
+                value: "450 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 450 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "53",
+                name: "Yogurt Frutado Mango",
+                presentationName: "Grande",
+                imageUrl: "/images/products/yogurt/frutado/grande/mango/yogurt-frutado-grande-mango-1.webp"
+            },
+            {
+                id: "52",
+                name: "Yogurt Frutado Cuchareable",
+                presentationName: "Higo",
+                imageUrl: "/images/products/yogurt/frutado/cuchareable/higo/yogurt-frutado-cuchareable-higo-1.webp"
+            },
+            {
+                id: "57",
+                name: "Yogurt Frutado Arándano",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/frutado/pequeno/arandano/yogurt-frutado-pequeno-arandano-1.webp"
+            },
+            {
+                id: "60",
+                name: "Yogurt Frutado Fresa",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/frutado/pequeno/fresa/yogurt-frutado-pequeno-fresa-1.webp"
+            },
+            {
+                id: "51",
+                name: "Yogurt Frutado Higo",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/frutado/pequeno/higo/yogurt-frutado-pequeno-higo-1.webp"
+            }
+        ]
     },
     {
         id: "55",
         name: "Yogurt Frutado Cuchareable",
         presentationName: "Mango",
         meditionUnit: "200 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/frutado/cuchareable/mango/yogurt-frutado-cuchareable-mango-1.webp",
+            "/images/products/yogurt/frutado/cuchareable/mango/yogurt-frutado-cuchareable-mango-2.webp",
+        ],
         description: "Yogurt Frutado Cuchareable Mango de 200 gr",
-        featuresDetails: "",
-        uses: [],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Vaso de Cartón"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Frutado Cuchareable"
+            },
+            {
+                name: "Contenido",
+                value: "200 gr"
+            },
+            {
+                name: "Formato",
+                value: "Vaso de Cartón de 200 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
         relatedProducts: []
     },
     {
@@ -1137,35 +2346,257 @@ export const PRODUCTS_MOCK: Product[] = [
         name: "Yogurt Frutado",
         presentationName: "Arándano",
         meditionUnit: "900 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/frutado/grande/arandano/yogurt-frutado-grande-arandano-1.webp",
+            "/images/products/yogurt/frutado/grande/arandano/yogurt-frutado-grande-arandano-2.webp",
+            "/images/products/yogurt/frutado/grande/arandano/yogurt-frutado-grande-arandano-3.webp",
+            "/images/products/yogurt/batido/natural/yogurt-batido-natural-4.webp"
+        ],
         description: "Yogurt Frutado Arándano de 900 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Frutado"
+            },
+            {
+                name: "Contenido",
+                value: "900 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 900 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "57",
+                name: "Yogurt Frutado Arándano",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/frutado/pequeno/arandano/yogurt-frutado-pequeno-arandano-1.webp"
+            },
+            {
+                id: "58",
+                name: "Yogurt Frutado Cuchareable",
+                presentationName: "Arándano",
+                imageUrl: "/images/products/yogurt/frutado/cuchareable/arandano/yogurt-frutado-cuchareable-arandano-1.webp"
+            },
+            {
+                id: "50",
+                name: "Yogurt Frutado",
+                presentationName: "Higo",
+                imageUrl: "/images/products/yogurt/frutado/grande/higo/yogurt-frutado-grande-higo-1.webp"
+            },
+            {
+                id: "59",
+                name: "Yogurt Frutado",
+                presentationName: "Fresa",
+                imageUrl: "/images/products/yogurt/frutado/grande/fresa/yogurt-frutado-grande-fresa-1.webp"
+            },
+            {
+                id: "53",
+                name: "Yogurt Frutado",
+                presentationName: "Mango",
+                imageUrl: "/images/products/yogurt/frutado/grande/mango/yogurt-frutado-grande-mango-1.webp"
+            }
+        ]
     },
     {
         id: "57",
         name: "Yogurt Frutado",
         presentationName: "Arándano",
         meditionUnit: "450 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/frutado/pequeno/arandano/yogurt-frutado-pequeno-arandano-1.webp",
+            "/images/products/yogurt/frutado/pequeno/arandano/yogurt-frutado-pequeno-arandano-2.webp",
+            "/images/products/yogurt/frutado/pequeno/arandano/yogurt-frutado-pequeno-arandano-3.webp",
+            "/images/products/yogurt/frutado/pequeno/yogurt-frutado-pequeno-back.webp"
+        ],
         description: "Yogurt Frutado Arándano de 450 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Frutado"
+            },
+            {
+                name: "Contenido",
+                value: "450 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 450 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "56",
+                name: "Yogurt Frutado Arándano",
+                presentationName: "Grande",
+                imageUrl: "/images/products/yogurt/frutado/grande/arandano/yogurt-frutado-grande-arandano-1.webp"
+            },
+            {
+                id: "58",
+                name: "Yogurt Frutado Cuchareable",
+                presentationName: "Arándano",
+                imageUrl: "/images/products/yogurt/frutado/cuchareable/arandano/yogurt-frutado-cuchareable-arandano-1.webp"
+            },
+            {
+                id: "51",
+                name: "Yogurt Frutado Higo",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/frutado/pequeno/higo/yogurt-frutado-pequeno-higo-1.webp"
+            },
+            {
+                id: "60",
+                name: "Yogurt Frutado Fresa",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/frutado/pequeno/fresa/yogurt-frutado-pequeno-fresa-1.webp"
+            },
+            {
+                id: "54",
+                name: "Yogurt Frutado Mango",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/frutado/pequeno/mango/yogurt-frutado-pequeno-mango-1.webp"
+            }
+        ]
     },
     {
         id: "58",
         name: "Yogurt Frutado Cuchareable",
         presentationName: "Arándano",
         meditionUnit: "200 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/frutado/cuchareable/arandano/yogurt-frutado-cuchareable-arandano-1.webp",
+            "/images/products/yogurt/frutado/cuchareable/arandano/yogurt-frutado-cuchareable-arandano-2.webp",
+        ],
         description: "Yogurt Frutado Cuchareable Arándano de 200 gr",
-        featuresDetails: "",
-        uses: [],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Vaso de Cartón"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Frutado Cuchareable"
+            },
+            {
+                name: "Contenido",
+                value: "200 gr"
+            },
+            {
+                name: "Formato",
+                value: "Vaso de Cartón de 200 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
         relatedProducts: []
     },
     {
@@ -1173,35 +2604,257 @@ export const PRODUCTS_MOCK: Product[] = [
         name: "Yogurt Frutado",
         presentationName: "Fresa",
         meditionUnit: "900 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/frutado/grande/fresa/yogurt-frutado-grande-fresa-1.webp",
+            "/images/products/yogurt/frutado/grande/fresa/yogurt-frutado-grande-fresa-2.webp",
+            "/images/products/yogurt/frutado/grande/fresa/yogurt-frutado-grande-fresa-3.webp",
+            "/images/products/yogurt/batido/natural/yogurt-batido-natural-4.webp"
+        ],
         description: "Yogurt Frutado Fresa de 900 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Frutado"
+            },
+            {
+                name: "Contenido",
+                value: "900 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 900 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "60",
+                name: "Yogurt Frutado Fresa",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/frutado/pequeno/fresa/yogurt-frutado-pequeno-fresa-1.webp"
+            },
+            {
+                id: "61",
+                name: "Yogurt Frutado Cuchareable",
+                presentationName: "Fresa",
+                imageUrl: "/images/products/yogurt/frutado/cuchareable/fresa/yogurt-frutado-cuchareable-fresa-1.webp"
+            },
+            {
+                id: "56",
+                name: "Yogurt Frutado",
+                presentationName: "Arándano",
+                imageUrl: "/images/products/yogurt/frutado/grande/arandano/yogurt-frutado-grande-arandano-1.webp"
+            },
+            {
+                id: "50",
+                name: "Yogurt Frutado",
+                presentationName: "Higo",
+                imageUrl: "/images/products/yogurt/frutado/grande/higo/yogurt-frutado-grande-higo-1.webp"
+            },
+            {
+                id: "53",
+                name: "Yogurt Frutado",
+                presentationName: "Mango",
+                imageUrl: "/images/products/yogurt/frutado/grande/mango/yogurt-frutado-grande-mango-1.webp"
+            }
+        ]
     },
     {
         id: "60",
         name: "Yogurt Frutado",
         presentationName: "Fresa",
         meditionUnit: "450 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/frutado/pequeno/fresa/yogurt-frutado-pequeno-fresa-1.webp",
+            "/images/products/yogurt/frutado/pequeno/fresa/yogurt-frutado-pequeno-fresa-2.webp",
+            "/images/products/yogurt/frutado/pequeno/fresa/yogurt-frutado-pequeno-fresa-3.webp",
+            "/images/products/yogurt/frutado/pequeno/yogurt-frutado-pequeno-back.webp"
+        ],
         description: "Yogurt Frutado Fresa de 450 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Botella"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Frutado"
+            },
+            {
+                name: "Contenido",
+                value: "450 gr"
+            },
+            {
+                name: "Formato",
+                value: "Botella de 450 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "59",
+                name: "Yogurt Frutado Fresa",
+                presentationName: "Grande",
+                imageUrl: "/images/products/yogurt/frutado/grande/fresa/yogurt-frutado-grande-fresa-1.webp"
+            },
+            {
+                id: "61",
+                name: "Yogurt Frutado Cuchareable",
+                presentationName: "Fresa",
+                imageUrl: "/images/products/yogurt/frutado/cuchareable/fresa/yogurt-frutado-cuchareable-fresa-1.webp"
+            },
+            {
+                id: "57",
+                name: "Yogurt Frutado Arándano",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/frutado/pequeno/arandano/yogurt-frutado-pequeno-arandano-1.webp"
+            },
+            {
+                id: "51",
+                name: "Yogurt Frutado Higo",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/frutado/pequeno/higo/yogurt-frutado-pequeno-higo-1.webp"
+            },
+            {
+                id: "54",
+                name: "Yogurt Frutado Mango",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/frutado/pequeno/mango/yogurt-frutado-pequeno-mango-1.webp"
+            }
+        ]
     },
     {
         id: "61",
         name: "Yogurt Frutado Cuchareable",
         presentationName: "Fresa",
         meditionUnit: "200 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/frutado/cuchareable/fresa/yogurt-frutado-cuchareable-fresa-1.webp",
+            "/images/products/yogurt/frutado/cuchareable/fresa/yogurt-frutado-cuchareable-fresa-2.webp",
+        ],
         description: "Yogurt Frutado Cuchareable Fresa de 200 gr",
-        featuresDetails: "",
-        uses: [],
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Vaso de Cartón"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Frutado Cuchareable"
+            },
+            {
+                name: "Contenido",
+                value: "200 gr"
+            },
+            {
+                name: "Formato",
+                value: "Vaso de Cartón de 200 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "---"
+            }
+        ],
+        featuresDetails: `Posee un sabor cremoso, ligeramente ácido y refrescante.
+            Se obtiene mediante la fermentación de la leche con bacterias ácido-lácticas beneficiosas para la digestión.
+            Es rico en calcio, proteínas y probióticos, que ayudan a mantener una flora intestinal saludable.
+        `,
+        uses: [
+            {
+                title: "Consumo Directo",
+                content: "Ideal como snack o desayuno rápido."
+            }, 
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para mezclar con frutas, cereales, granola o miel."
+            },
+            {
+                title: "En batidos y smoothies",
+                content: "Agrega cremosidad y nutrición a tus bebidas favoritas."
+            },
+            {
+                title: "En postres y repostería",
+                content: "Se usa para preparar helados, pasteles o tortas más cremosas y suaves."
+            }
+        ],
         relatedProducts: []
     },
     {
@@ -1209,72 +2862,585 @@ export const PRODUCTS_MOCK: Product[] = [
         name: "Yogurt Griego",
         presentationName: "Natural",
         meditionUnit: "1 kg",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/griego/natural/1kg/yogurt-griego-natural-1kg-1.webp",
+            "/images/products/yogurt/griego/natural/1kg/yogurt-griego-natural-1kg-2.webp",
+        ],
         description: "Yogurt Griego Natural de 1 kg",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Taper de Plástico"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Griego"
+            },
+            {
+                name: "Contenido",
+                value: "1 kg"
+            },
+            {
+                name: "Formato",
+                value: "Taper de plástico de 1 kg"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "15 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Tiene una textura espesa, suave y cremosa.
+            Presenta un sabor intenso y lácteo, con un toque ligeramente ácido.
+            Es rico en proteínas y calcio, pero también puede tener un mayor contenido de grasa saturada.
+            Aporta saciedad y es ideal dentro de dietas equilibradas.
+            Debe mantenerse refrigerado para conservar su frescura y propiedades.
+        `,
+        uses: [
+            {
+                title: "Acompañamiento en Desayunos",
+                content: "Se puede consumir solo o con frutas, miel, granola o frutos secos."
+            },
+            {
+                title: "En tostadas y ensaladas",
+                content: "Como topping o como base cremosa."
+            },
+            {
+                title: "En postres y helados",
+                content: "Ideal para preparar helado de yogurt griego o cheescakes más ligeros."
+            },
+            {
+                title: "En cocina saludable",
+                content: "Se usa como alternativa a la mayonesas o crema agria"
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "63",
+                name: "Yogurt Griego",
+                presentationName: "Mediano",
+                imageUrl: "/images/products/yogurt/griego/natural/500gr/yogurt-griego-natural-500gr-1.webp"
+            },
+            {
+                id: "64",
+                name: "Yogurt Griego",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/griego/natural/250gr/yogurt-griego-natural-250gr-1.webp"
+            },
+            {
+                id: "65",
+                name: "Yogurt Griego",
+                presentationName: "Fresa",
+                imageUrl: "/images/products/yogurt/griego/frutado/fresa/yogurt-griego-fresa-1.webp"
+            },
+            {
+                id: "66",
+                name: "Yogurt Griego",
+                presentationName: "Arándano",
+                imageUrl: "/images/products/yogurt/griego/frutado/arandano/yogurt-griego-arandano-1.webp"
+            },
+            {
+                id: "67",
+                name: "Yogurt Griego",
+                presentationName: "Aguaymanto",
+                imageUrl: "/images/products/yogurt/griego/frutado/aguaymanto/yogurt-griego-aguaymanto-1.webp"
+            }
+        ]
     },
     {
         id: "63",
         name: "Yogurt Griego",
         presentationName: "Natural",
         meditionUnit: "500 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/griego/natural/500gr/yogurt-griego-natural-500gr-1.webp",
+            "/images/products/yogurt/griego/natural/500gr/yogurt-griego-natural-500gr-2.webp",
+        ],
         description: "Yogurt Griego Natural de 500 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Taper de Plástico"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Griego"
+            },
+            {
+                name: "Contenido",
+                value: "500 gr"
+            },
+            {
+                name: "Formato",
+                value: "Taper de plástico de 500 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "15 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Tiene una textura espesa, suave y cremosa.
+            Presenta un sabor intenso y lácteo, con un toque ligeramente ácido.
+            Es rico en proteínas y calcio, pero también puede tener un mayor contenido de grasa saturada.
+            Aporta saciedad y es ideal dentro de dietas equilibradas.
+            Debe mantenerse refrigerado para conservar su frescura y propiedades.
+        `,
+        uses: [
+            {
+                title: "Acompañamiento en Desayunos",
+                content: "Se puede consumir solo o con frutas, miel, granola o frutos secos."
+            },
+            {
+                title: "En tostadas y ensaladas",
+                content: "Como topping o como base cremosa."
+            },
+            {
+                title: "En postres y helados",
+                content: "Ideal para preparar helado de yogurt griego o cheescakes más ligeros."
+            },
+            {
+                title: "En cocina saludable",
+                content: "Se usa como alternativa a la mayonesas o crema agria"
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "62",
+                name: "Yogurt Griego",
+                presentationName: "Grande",
+                imageUrl: "/images/products/yogurt/griego/natural/1kg/yogurt-griego-natural-1kg-1.webp"
+            },
+            {
+                id: "64",
+                name: "Yogurt Griego",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/griego/natural/250gr/yogurt-griego-natural-250gr-1.webp"
+            },
+            {
+                id: "65",
+                name: "Yogurt Griego",
+                presentationName: "Fresa",
+                imageUrl: "/images/products/yogurt/griego/frutado/fresa/yogurt-griego-fresa-1.webp"
+            },
+            {
+                id: "66",
+                name: "Yogurt Griego",
+                presentationName: "Arándano",
+                imageUrl: "/images/products/yogurt/griego/frutado/arandano/yogurt-griego-arandano-1.webp"
+            },
+            {
+                id: "67",
+                name: "Yogurt Griego",
+                presentationName: "Aguaymanto",
+                imageUrl: "/images/products/yogurt/griego/frutado/aguaymanto/yogurt-griego-aguaymanto-1.webp"
+            }
+        ]
     },
     {
         id: "64",
         name: "Yogurt Griego",
         presentationName: "Natural",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/griego/natural/250gr/yogurt-griego-natural-250gr-1.webp",
+            "/images/products/yogurt/griego/natural/250gr/yogurt-griego-natural-250gr-2.webp",
+        ],
         description: "Yogurt Griego Natural de 250 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Taper de Plástico"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Griego"
+            },
+            {
+                name: "Contenido",
+                value: "250 gr"
+            },
+            {
+                name: "Formato",
+                value: "Taper de plástico de 250 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "15 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Tiene una textura espesa, suave y cremosa.
+            Presenta un sabor intenso y lácteo, con un toque ligeramente ácido.
+            Es rico en proteínas y calcio, pero también puede tener un mayor contenido de grasa saturada.
+            Aporta saciedad y es ideal dentro de dietas equilibradas.
+            Debe mantenerse refrigerado para conservar su frescura y propiedades.
+        `,
+        uses: [
+            {
+                title: "Acompañamiento en Desayunos",
+                content: "Se puede consumir solo o con frutas, miel, granola o frutos secos."
+            },
+            {
+                title: "En tostadas y ensaladas",
+                content: "Como topping o como base cremosa."
+            },
+            {
+                title: "En postres y helados",
+                content: "Ideal para preparar helado de yogurt griego o cheescakes más ligeros."
+            },
+            {
+                title: "En cocina saludable",
+                content: "Se usa como alternativa a la mayonesas o crema agria"
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "63",
+                name: "Yogurt Griego",
+                presentationName: "Mediano",
+                imageUrl: "/images/products/yogurt/griego/natural/500gr/yogurt-griego-natural-500gr-1.webp"
+            },
+            {
+                id: "62",
+                name: "Yogurt Griego",
+                presentationName: "Grande",
+                imageUrl: "/images/products/yogurt/griego/natural/1kg/yogurt-griego-natural-1kg-1.webp"
+            },
+            {
+                id: "65",
+                name: "Yogurt Griego",
+                presentationName: "Fresa",
+                imageUrl: "/images/products/yogurt/griego/frutado/fresa/yogurt-griego-fresa-1.webp"
+            },
+            {
+                id: "66",
+                name: "Yogurt Griego",
+                presentationName: "Arándano",
+                imageUrl: "/images/products/yogurt/griego/frutado/arandano/yogurt-griego-arandano-1.webp"
+            },
+            {
+                id: "67",
+                name: "Yogurt Griego",
+                presentationName: "Aguaymanto",
+                imageUrl: "/images/products/yogurt/griego/frutado/aguaymanto/yogurt-griego-aguaymanto-1.webp"
+            }
+        ]
     },
     {
         id: "65",
         name: "Yogurt Griego",
         presentationName: "Fresa",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/griego/frutado/fresa/yogurt-griego-fresa-1.webp",
+            "/images/products/yogurt/griego/frutado/fresa/yogurt-griego-fresa-2.webp",
+            "/images/products/yogurt/griego/frutado/fresa/yogurt-griego-fresa-3.webp",
+        ],
         description: "Yogurt Griego Fresa de 250 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Taper de Plástico"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Griego"
+            },
+            {
+                name: "Contenido",
+                value: "250 gr"
+            },
+            {
+                name: "Formato",
+                value: "Taper de plástico de 250 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "15 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Tiene una textura espesa, suave y cremosa.
+            Presenta un sabor intenso y lácteo, con un toque ligeramente ácido.
+            Es rico en proteínas y calcio, pero también puede tener un mayor contenido de grasa saturada.
+            Aporta saciedad y es ideal dentro de dietas equilibradas.
+            Debe mantenerse refrigerado para conservar su frescura y propiedades.
+        `,
+        uses: [
+            {
+                title: "Acompañamiento en Desayunos",
+                content: "Se puede consumir solo o con frutas, miel, granola o frutos secos."
+            },
+            {
+                title: "En tostadas y ensaladas",
+                content: "Como topping o como base cremosa."
+            },
+            {
+                title: "En postres y helados",
+                content: "Ideal para preparar helado de yogurt griego o cheescakes más ligeros."
+            },
+            {
+                title: "En cocina saludable",
+                content: "Se usa como alternativa a la mayonesas o crema agria"
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "62",
+                name: "Yogurt Griego",
+                presentationName: "Grande",
+                imageUrl: "/images/products/yogurt/griego/natural/1kg/yogurt-griego-natural-1kg-1.webp"
+            },
+            {
+                id: "63",
+                name: "Yogurt Griego",
+                presentationName: "Mediano",
+                imageUrl: "/images/products/yogurt/griego/natural/500gr/yogurt-griego-natural-500gr-1.webp"
+            },
+            {
+                id: "64",
+                name: "Yogurt Griego",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/griego/natural/250gr/yogurt-griego-natural-250gr-1.webp"
+            },
+            {
+                id: "66",
+                name: "Yogurt Griego",
+                presentationName: "Arándano",
+                imageUrl: "/images/products/yogurt/griego/frutado/arandano/yogurt-griego-arandano-1.webp"
+            },
+            {
+                id: "67",
+                name: "Yogurt Griego",
+                presentationName: "Aguaymanto",
+                imageUrl: "/images/products/yogurt/griego/frutado/aguaymanto/yogurt-griego-aguaymanto-1.webp"
+            }
+        ]
     },
     {
         id: "66",
         name: "Yogurt Griego",
         presentationName: "Arándano",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/griego/frutado/arandano/yogurt-griego-arandano-1.webp",
+            "/images/products/yogurt/griego/frutado/arandano/yogurt-griego-arandano-2.webp",
+            "/images/products/yogurt/griego/frutado/arandano/yogurt-griego-arandano-3.webp",
+        ],
         description: "Yogurt Griego Arándano de 250 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Taper de Plástico"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Griego"
+            },
+            {
+                name: "Contenido",
+                value: "250 gr"
+            },
+            {
+                name: "Formato",
+                value: "Taper de plástico de 250 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "15 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Tiene una textura espesa, suave y cremosa.
+            Presenta un sabor intenso y lácteo, con un toque ligeramente ácido.
+            Es rico en proteínas y calcio, pero también puede tener un mayor contenido de grasa saturada.
+            Aporta saciedad y es ideal dentro de dietas equilibradas.
+            Debe mantenerse refrigerado para conservar su frescura y propiedades.
+        `,
+        uses: [
+            {
+                title: "Acompañamiento en Desayunos",
+                content: "Se puede consumir solo o con frutas, miel, granola o frutos secos."
+            },
+            {
+                title: "En tostadas y ensaladas",
+                content: "Como topping o como base cremosa."
+            },
+            {
+                title: "En postres y helados",
+                content: "Ideal para preparar helado de yogurt griego o cheescakes más ligeros."
+            },
+            {
+                title: "En cocina saludable",
+                content: "Se usa como alternativa a la mayonesas o crema agria"
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "62",
+                name: "Yogurt Griego",
+                presentationName: "Grande",
+                imageUrl: "/images/products/yogurt/griego/natural/1kg/yogurt-griego-natural-1kg-1.webp"
+            },
+            {
+                id: "63",
+                name: "Yogurt Griego",
+                presentationName: "Mediano",
+                imageUrl: "/images/products/yogurt/griego/natural/500gr/yogurt-griego-natural-500gr-1.webp"
+            },
+            {
+                id: "64",
+                name: "Yogurt Griego",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/griego/natural/250gr/yogurt-griego-natural-250gr-1.webp"
+            },
+            {
+                id: "65",
+                name: "Yogurt Griego",
+                presentationName: "Fresa",
+                imageUrl: "/images/products/yogurt/griego/frutado/fresa/yogurt-griego-fresa-1.webp"
+            },
+            {
+                id: "67",
+                name: "Yogurt Griego",
+                presentationName: "Aguaymanto",
+                imageUrl: "/images/products/yogurt/griego/frutado/aguaymanto/yogurt-griego-aguaymanto-1.webp"
+            }
+        ]
     },
     {
         id: "67",
         name: "Yogurt Griego",
         presentationName: "Aguaymanto",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/yogurt/griego/frutado/aguaymanto/yogurt-griego-aguaymanto-1.webp",
+            "/images/products/yogurt/griego/frutado/aguaymanto/yogurt-griego-aguaymanto-2.webp",
+            "/images/products/yogurt/griego/frutado/aguaymanto/yogurt-griego-aguaymanto-3.webp",
+        ],
         description: "Yogurt Griego Aguaymanto de 250 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Taper de Plástico"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Yogurt Griego"
+            },
+            {
+                name: "Contenido",
+                value: "250 gr"
+            },
+            {
+                name: "Formato",
+                value: "Taper de plástico de 250 gr"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "15 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Tiene una textura espesa, suave y cremosa.
+            Presenta un sabor intenso y lácteo, con un toque ligeramente ácido.
+            Es rico en proteínas y calcio, pero también puede tener un mayor contenido de grasa saturada.
+            Aporta saciedad y es ideal dentro de dietas equilibradas.
+            Debe mantenerse refrigerado para conservar su frescura y propiedades.
+        `,
+        uses: [
+            {
+                title: "Acompañamiento en Desayunos",
+                content: "Se puede consumir solo o con frutas, miel, granola o frutos secos."
+            },
+            {
+                title: "En tostadas y ensaladas",
+                content: "Como topping o como base cremosa."
+            },
+            {
+                title: "En postres y helados",
+                content: "Ideal para preparar helado de yogurt griego o cheescakes más ligeros."
+            },
+            {
+                title: "En cocina saludable",
+                content: "Se usa como alternativa a la mayonesas o crema agria"
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "62",
+                name: "Yogurt Griego",
+                presentationName: "Grande",
+                imageUrl: "/images/products/yogurt/griego/natural/1kg/yogurt-griego-natural-1kg-1.webp"
+            },
+            {
+                id: "63",
+                name: "Yogurt Griego",
+                presentationName: "Mediano",
+                imageUrl: "/images/products/yogurt/griego/natural/500gr/yogurt-griego-natural-500gr-1.webp"
+            },
+            {
+                id: "64",
+                name: "Yogurt Griego",
+                presentationName: "Pequeño",
+                imageUrl: "/images/products/yogurt/griego/natural/250gr/yogurt-griego-natural-250gr-1.webp"
+            },
+            {
+                id: "65",
+                name: "Yogurt Griego",
+                presentationName: "Fresa",
+                imageUrl: "/images/products/yogurt/griego/frutado/fresa/yogurt-griego-fresa-1.webp"
+            },
+            {
+                id: "66",
+                name: "Yogurt Griego",
+                presentationName: "Arándano",
+                imageUrl: "/images/products/yogurt/griego/frutado/arandano/yogurt-griego-arandano-1.webp"
+            },
+        ]
     },
     {
         id: "68",
