@@ -19,14 +19,13 @@ const lightColors = [
     <h2 class="text-2xl md:text-3xl lg:text-4xl font-titles-2 font-bold text-center mb-8 md:mb-12 text-gray-800">
         Productos Relacionados
     </h2>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    <div class="flex flex-wrap justify-center gap-6">
         {products.map((product, index) => {
             const bgColor = lightColors[index % lightColors.length];
             return (
                 <a
                     href={`/productos/${product.id}`}
-                    class={`${bgColor} rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col`}
+                    class={`${bgColor} rounded-lg p-6 hover:shadow-lg transition-all duration-300 hover:scale-105 flex flex-col w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]`}
                 >
                     <div class="mb-4">
                         <h3 class="text-xl font-bold text-gray-800 mb-2">
