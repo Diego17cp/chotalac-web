@@ -516,441 +516,3914 @@ export const PRODUCTS_MOCK: Product[] = [
         id: "1",
         name: "Queso Suizo",
         meditionUnit: "3.5 kg",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-1.webp",
+            "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-2.webp",
+            "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-3.webp",
+            "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-4.webp"
+        ],
         description: "Queso Suizo de 3.5kg",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Suizo"
+            },
+            {
+                name: "Contenido",
+                value: "3.5 kg"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Ligero contenido de sal.
+            Su textura es firme, elástica y fácil de cortar, rebanar o rallar.
+            Su color es amarillo pálido y su aroma es suave y agradable.
+            Es rico en proteínas, calcio y grasas saturadas, lo que lo hace nutritivo y energético.
+            No contiene suero visible y debe mantenerse refrigerado para conservar su sabor y textura.`,
+        uses: [
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Se derrite fácilmente, ideal para preparaciones calientes o frías."
+            },
+            {
+                title: "Tablas de quesos y aperitivos",
+                content: "Combina muy bien con frutas, frutos secos y vino blanco o tinto"
+            },
+            {
+                title: "Ensaladas",
+                content: "Añade un toque de sabor y consistencia."
+            },
+            {
+                title: "Fondue y gratinados",
+                content: "Se funde uniformemente, perfecto para platos al horno."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "2",
+                name: "Queso Suizo",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/suizo/1kg/queso-suizo-1kg-1.webp"
+            },
+            {
+                id: "3",
+                name: "Queso Suizo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/suizo/500gr/queso-suizo-500gr-1.webp"
+            },
+            {
+                id: "4",
+                name: "Queso Suizo",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo/250gr/queso-suizo-250gr-1.webp"
+            },
+            {
+                id: "5",
+                name: "Queso Suizo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/suizo-laminado/500gr/queso-suizo-laminado-500gr-1.webp"
+            },
+            {
+                id: "6",
+                name: "Queso Suizo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo-laminado/250gr/queso-suizo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "2",
         name: "Queso Suizo",
         meditionUnit: "1 kg",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/suizo/1kg/queso-suizo-1kg-1.webp",
+            "/images/products/queso/suizo/1kg/queso-suizo-1kg-2.webp",
+            "/images/products/queso/suizo/1kg/queso-suizo-1kg-3.webp",
+            "/images/products/queso/suizo/1kg/queso-suizo-1kg-4.webp"
+        ],
         description: "Queso Suizo de 1kg",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Suizo"
+            },
+            {
+                name: "Contenido",
+                value: "1 kg"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Ligero contenido de sal.
+            Su textura es firme, elástica y fácil de cortar, rebanar o rallar.
+            Su color es amarillo pálido y su aroma es suave y agradable.
+            Es rico en proteínas, calcio y grasas saturadas, lo que lo hace nutritivo y energético.
+            No contiene suero visible y debe mantenerse refrigerado para conservar su sabor y textura.`,
+        uses: [
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Se derrite fácilmente, ideal para preparaciones calientes o frías."
+            },
+            {
+                title: "Tablas de quesos y aperitivos",
+                content: "Combina muy bien con frutas, frutos secos y vino blanco o tinto"
+            },
+            {
+                title: "Ensaladas",
+                content: "Añade un toque de sabor y consistencia."
+            },
+            {
+                title: "Fondue y gratinados",
+                content: "Se funde uniformemente, perfecto para platos al horno."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "1",
+                name: "Queso Suizo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-1.webp"
+            },
+            {
+                id: "3",
+                name: "Queso Suizo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/suizo/500gr/queso-suizo-500gr-1.webp"
+            },
+            {
+                id: "4",
+                name: "Queso Suizo",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo/250gr/queso-suizo-250gr-1.webp"
+            },
+            {
+                id: "5",
+                name: "Queso Suizo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/suizo-laminado/500gr/queso-suizo-laminado-500gr-1.webp"
+            },
+            {
+                id: "6",
+                name: "Queso Suizo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo-laminado/250gr/queso-suizo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "3",
         name: "Queso Suizo",
         meditionUnit: "500 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/suizo/500gr/queso-suizo-500gr-1.webp",
+            "/images/products/queso/suizo/500gr/queso-suizo-500gr-2.webp",
+            "/images/products/queso/suizo/500gr/queso-suizo-500gr-3.webp",
+            "/images/products/queso/suizo/500gr/queso-suizo-500gr-4.webp"
+        ],
         description: "Queso Suizo de 500gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Suizo"
+            },
+            {
+                name: "Contenido",
+                value: "500 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Ligero contenido de sal.
+            Su textura es firme, elástica y fácil de cortar, rebanar o rallar.
+            Su color es amarillo pálido y su aroma es suave y agradable.
+            Es rico en proteínas, calcio y grasas saturadas, lo que lo hace nutritivo y energético.
+            No contiene suero visible y debe mantenerse refrigerado para conservar su sabor y textura.`,
+        uses: [
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Se derrite fácilmente, ideal para preparaciones calientes o frías."
+            },
+            {
+                title: "Tablas de quesos y aperitivos",
+                content: "Combina muy bien con frutas, frutos secos y vino blanco o tinto"
+            },
+            {
+                title: "Ensaladas",
+                content: "Añade un toque de sabor y consistencia."
+            },
+            {
+                title: "Fondue y gratinados",
+                content: "Se funde uniformemente, perfecto para platos al horno."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "2",
+                name: "Queso Suizo",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/suizo/1kg/queso-suizo-1kg-1.webp"
+            },
+            {
+                id: "1",
+                name: "Queso Suizo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-1.webp"
+            },
+            {
+                id: "4",
+                name: "Queso Suizo",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo/250gr/queso-suizo-250gr-1.webp"
+            },
+            {
+                id: "5",
+                name: "Queso Suizo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/suizo-laminado/500gr/queso-suizo-laminado-500gr-1.webp"
+            },
+            {
+                id: "6",
+                name: "Queso Suizo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo-laminado/250gr/queso-suizo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "4",
         name: "Queso Suizo",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/suizo/250gr/queso-suizo-250gr-1.webp",
+            "/images/products/queso/suizo/250gr/queso-suizo-250gr-2.webp",
+            "/images/products/queso/suizo/250gr/queso-suizo-250gr-3.webp",
+            "/images/products/queso/suizo/250gr/queso-suizo-250gr-4.webp"
+        ],
         description: "Queso Suizo de 250gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Suizo"
+            },
+            {
+                name: "Contenido",
+                value: "250 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Ligero contenido de sal.
+            Su textura es firme, elástica y fácil de cortar, rebanar o rallar.
+            Su color es amarillo pálido y su aroma es suave y agradable.
+            Es rico en proteínas, calcio y grasas saturadas, lo que lo hace nutritivo y energético.
+            No contiene suero visible y debe mantenerse refrigerado para conservar su sabor y textura.`,
+        uses: [
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Se derrite fácilmente, ideal para preparaciones calientes o frías."
+            },
+            {
+                title: "Tablas de quesos y aperitivos",
+                content: "Combina muy bien con frutas, frutos secos y vino blanco o tinto"
+            },
+            {
+                title: "Ensaladas",
+                content: "Añade un toque de sabor y consistencia."
+            },
+            {
+                title: "Fondue y gratinados",
+                content: "Se funde uniformemente, perfecto para platos al horno."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "2",
+                name: "Queso Suizo",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/suizo/1kg/queso-suizo-1kg-1.webp"
+            },
+            {
+                id: "3",
+                name: "Queso Suizo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/suizo/500gr/queso-suizo-500gr-1.webp"
+            },
+            {
+                id: "1",
+                name: "Queso Suizo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-1.webp"
+            },
+            {
+                id: "5",
+                name: "Queso Suizo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/suizo-laminado/500gr/queso-suizo-laminado-500gr-1.webp"
+            },
+            {
+                id: "6",
+                name: "Queso Suizo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo-laminado/250gr/queso-suizo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "5",
         name: "Queso Suizo Laminado",
         meditionUnit: "500 gr",
-        imagesUrls: [""],
-        specifications: [],
-        description: "Queso Suizo Laminado de 500gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        imagesUrls: [
+            "/images/products/queso/suizo-laminado/500gr/queso-suizo-laminado-500gr-1.webp",
+            "/images/products/queso/suizo-laminado/500gr/queso-suizo-laminado-500gr-2.webp",
+            "/images/products/queso/suizo-laminado/500gr/queso-suizo-laminado-500gr-3.webp",
+            "/images/products/queso/suizo-laminado/500gr/queso-suizo-laminado-500gr-4.webp"
+        ],
+        description: `Queso Suizo Laminado de 500gr. Peso de cada lámina aprox. 20gr`,
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Suizo"
+            },
+            {
+                name: "Contenido",
+                value: "500 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Ligero contenido de sal.
+            Su textura es firme, elástica y fácil de cortar, rebanar o rallar.
+            Su color es amarillo pálido y su aroma es suave y agradable.
+            Es rico en proteínas, calcio y grasas saturadas, lo que lo hace nutritivo y energético.
+            No contiene suero visible y debe mantenerse refrigerado para conservar su sabor y textura.`,
+        uses: [
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Se derrite fácilmente, ideal para preparaciones calientes o frías."
+            },
+            {
+                title: "Tablas de quesos y aperitivos",
+                content: "Combina muy bien con frutas, frutos secos y vino blanco o tinto"
+            },
+            {
+                title: "Ensaladas",
+                content: "Añade un toque de sabor y consistencia."
+            },
+            {
+                title: "Fondue y gratinados",
+                content: "Se funde uniformemente, perfecto para platos al horno."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "2",
+                name: "Queso Suizo",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/suizo/1kg/queso-suizo-1kg-1.webp"
+            },
+            {
+                id: "3",
+                name: "Queso Suizo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/suizo/500gr/queso-suizo-500gr-1.webp"
+            },
+            {
+                id: "4",
+                name: "Queso Suizo",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo/250gr/queso-suizo-250gr-1.webp"
+            },
+            {
+                id: "1",
+                name: "Queso Suizo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-1.webp"
+            },
+            {
+                id: "6",
+                name: "Queso Suizo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo-laminado/250gr/queso-suizo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "6",
         name: "Queso Suizo Laminado",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
-        description: "Queso Suizo Laminado de 250gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        imagesUrls: [
+            "/images/products/queso/suizo-laminado/250gr/queso-suizo-laminado-250gr-1.webp",
+            "/images/products/queso/suizo-laminado/250gr/queso-suizo-laminado-250gr-2.webp",
+            "/images/products/queso/suizo-laminado/250gr/queso-suizo-laminado-250gr-3.webp",
+            "/images/products/queso/suizo-laminado/250gr/queso-suizo-laminado-250gr-4.webp"
+        ],
+        description: `Queso Suizo Laminado de 250gr. Peso de cada lámina aprox. 20gr`,
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Suizo"
+            },
+            {
+                name: "Contenido",
+                value: "250 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Ligero contenido de sal.
+            Su textura es firme, elástica y fácil de cortar, rebanar o rallar.
+            Su color es amarillo pálido y su aroma es suave y agradable.
+            Es rico en proteínas, calcio y grasas saturadas, lo que lo hace nutritivo y energético.
+            No contiene suero visible y debe mantenerse refrigerado para conservar su sabor y textura.`,
+        uses: [
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Se derrite fácilmente, ideal para preparaciones calientes o frías."
+            },
+            {
+                title: "Tablas de quesos y aperitivos",
+                content: "Combina muy bien con frutas, frutos secos y vino blanco o tinto"
+            },
+            {
+                title: "Ensaladas",
+                content: "Añade un toque de sabor y consistencia."
+            },
+            {
+                title: "Fondue y gratinados",
+                content: "Se funde uniformemente, perfecto para platos al horno."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "2",
+                name: "Queso Suizo",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/suizo/1kg/queso-suizo-1kg-1.webp"
+            },
+            {
+                id: "3",
+                name: "Queso Suizo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/suizo/500gr/queso-suizo-500gr-1.webp"
+            },
+            {
+                id: "4",
+                name: "Queso Suizo",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo/250gr/queso-suizo-250gr-1.webp"
+            },
+            {
+                id: "5",
+                name: "Queso Suizo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/suizo-laminado/500gr/queso-suizo-laminado-500gr-1.webp"
+            },
+            {
+                id: "1",
+                name: "Queso Suizo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-1.webp"
+            }
+        ]
     },
     {
         id: "7",
         name: "Queso Suizo con Orégano",
         meditionUnit: "3.5 kg",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/suizo-con-oregano/3.5kg/queso-suizo-con-oregano-3.5kg-1.webp",
+            "/images/products/queso/suizo-con-oregano/3.5kg/queso-suizo-con-oregano-3.5kg-2.webp",
+            "/images/products/queso/suizo-con-oregano/3.5kg/queso-suizo-con-oregano-3.5kg-3.webp",
+            "/images/products/queso/suizo-con-oregano/3.5kg/queso-suizo-con-oregano-3.5kg-4.webp"
+        ],
         description: "Queso Suizo con Orégano de 3.5kg",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Suizo con Orégano"
+            },
+            {
+                name: "Contenido",
+                value: "3.5 kg"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Punto de sal normal, que equilibra su sabor natural con un toque aromático.
+            Prensado, de textura firme y elástica, fácil de cortar o rallar.
+            Enriquecido con orégano natural, que aporta aroma, frescura y un sabor distintivo.
+            Color amarillo pálido y aroma lácteo con notas herbales.`,
+        uses: [
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Ideal para preparaciones calientes o frías, con un toque aromático."
+            },
+            {
+                title: "Pizzas y lasañas",
+                content: "Se funde fácilmente aportando un sabor y aroma irresistibles."
+            },
+            {
+                title: "Tablas de quesos y aperitivos",
+                content: "Combina muy bien con frutas, panes artesanales y vino blanco o tinto"
+            },
+            {
+                title: "Ensaladas",
+                content: "Añade un toque mediterráneo y perfumado."
+            },
+        ],
+        relatedProducts: [
+            {
+                id: "8",
+                name: "Queso Suizo con Orégano",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/suizo-con-oregano/1kg/queso-suizo-con-oregano-1kg-1.webp"
+            },
+            {
+                id: "9",
+                name: "Queso Suizo con Orégano",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/suizo-con-oregano/500gr/queso-suizo-con-oregano-500gr-1.webp"
+            },
+            {
+                id: "10",
+                name: "Queso Suizo con Orégano",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo-con-oregano/250gr/queso-suizo-con-oregano-250gr-1.webp"
+            },
+            {
+                id: "11",
+                name: "Queso Suizo con Orégano",
+                presentationName: "Redondo 500 gr",
+                imageUrl: "/images/products/queso/suizo-con-oregano-redondo/500gr/queso-suizo-con-oregano-redondo-500gr-1.webp"
+            },
+            {
+                id: "1",
+                name: "Queso Suizo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-1.webp"
+            }
+        ]
     },
     {
         id: "8",
         name: "Queso Suizo con Orégano",
         meditionUnit: "1 kg",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/suizo-con-oregano/1kg/queso-suizo-con-oregano-1kg-1.webp",
+            "/images/products/queso/suizo-con-oregano/1kg/queso-suizo-con-oregano-1kg-2.webp",
+            "/images/products/queso/suizo-con-oregano/1kg/queso-suizo-con-oregano-1kg-3.webp",
+            "/images/products/queso/suizo-con-oregano/1kg/queso-suizo-con-oregano-1kg-4.webp"
+        ],
         description: "Queso Suizo con Orégano de 1kg",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Suizo con Orégano"
+            },
+            {
+                name: "Contenido",
+                value: "1 kg"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Punto de sal normal, que equilibra su sabor natural con un toque aromático.
+            Prensado, de textura firme y elástica, fácil de cortar o rallar.
+            Enriquecido con orégano natural, que aporta aroma, frescura y un sabor distintivo.
+            Color amarillo pálido y aroma lácteo con notas herbales.`,
+        uses: [
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Ideal para preparaciones calientes o frías, con un toque aromático."
+            },
+            {
+                title: "Pizzas y lasañas",
+                content: "Se funde fácilmente aportando un sabor y aroma irresistibles."
+            },
+            {
+                title: "Tablas de quesos y aperitivos",
+                content: "Combina muy bien con frutas, panes artesanales y vino blanco o tinto"
+            },
+            {
+                title: "Ensaladas",
+                content: "Añade un toque mediterráneo y perfumado."
+            },
+        ],
+        relatedProducts: [
+            {
+                id: "7",
+                name: "Queso Suizo con Orégano",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo-con-oregano/3.5kg/queso-suizo-con-oregano-3.5kg-1.webp"
+            },
+            {
+                id: "9",
+                name: "Queso Suizo con Orégano",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/suizo-con-oregano/500gr/queso-suizo-con-oregano-500gr-1.webp"
+            },
+            {
+                id: "10",
+                name: "Queso Suizo con Orégano",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo-con-oregano/250gr/queso-suizo-con-oregano-250gr-1.webp"
+            },
+            {
+                id: "11",
+                name: "Queso Suizo con Orégano",
+                presentationName: "Redondo 500 gr",
+                imageUrl: "/images/products/queso/suizo-con-oregano-redondo/500gr/queso-suizo-con-oregano-redondo-500gr-1.webp"
+            },
+            {
+                id: "1",
+                name: "Queso Suizo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-1.webp"
+            }
+        ]
     },
     {
         id: "9",
         name: "Queso Suizo con Orégano",
         meditionUnit: "500 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/suizo-con-oregano/500gr/queso-suizo-con-oregano-500gr-1.webp",
+            "/images/products/queso/suizo-con-oregano/500gr/queso-suizo-con-oregano-500gr-2.webp",
+            "/images/products/queso/suizo-con-oregano/500gr/queso-suizo-con-oregano-500gr-3.webp",
+            "/images/products/queso/suizo-con-oregano/500gr/queso-suizo-con-oregano-500gr-4.webp"
+        ],
         description: "Queso Suizo con Orégano de 500gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Suizo con Orégano"
+            },
+            {
+                name: "Contenido",
+                value: "500 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Punto de sal normal, que equilibra su sabor natural con un toque aromático.
+            Prensado, de textura firme y elástica, fácil de cortar o rallar.
+            Enriquecido con orégano natural, que aporta aroma, frescura y un sabor distintivo.
+            Color amarillo pálido y aroma lácteo con notas herbales.`,
+        uses: [
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Ideal para preparaciones calientes o frías, con un toque aromático."
+            },
+            {
+                title: "Pizzas y lasañas",
+                content: "Se funde fácilmente aportando un sabor y aroma irresistibles."
+            },
+            {
+                title: "Tablas de quesos y aperitivos",
+                content: "Combina muy bien con frutas, panes artesanales y vino blanco o tinto"
+            },
+            {
+                title: "Ensaladas",
+                content: "Añade un toque mediterráneo y perfumado."
+            },
+        ],
+        relatedProducts: [
+            {
+                id: "8",
+                name: "Queso Suizo con Orégano",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/suizo-con-oregano/1kg/queso-suizo-con-oregano-1kg-1.webp"
+            },
+            {
+                id: "7",
+                name: "Queso Suizo con Orégano",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo-con-oregano/3.5kg/queso-suizo-con-oregano-3.5kg-1.webp"
+            },
+            {
+                id: "10",
+                name: "Queso Suizo con Orégano",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo-con-oregano/250gr/queso-suizo-con-oregano-250gr-1.webp"
+            },
+            {
+                id: "11",
+                name: "Queso Suizo con Orégano",
+                presentationName: "Redondo 500 gr",
+                imageUrl: "/images/products/queso/suizo-con-oregano-redondo/500gr/queso-suizo-con-oregano-redondo-500gr-1.webp"
+            },
+            {
+                id: "1",
+                name: "Queso Suizo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-1.webp"
+            }
+        ]
     },
     {
         id: "10",
         name: "Queso Suizo con Orégano",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/suizo-con-oregano/250gr/queso-suizo-con-oregano-250gr-1.webp",
+            "/images/products/queso/suizo-con-oregano/250gr/queso-suizo-con-oregano-250gr-2.webp",
+            "/images/products/queso/suizo-con-oregano/250gr/queso-suizo-con-oregano-250gr-3.webp",
+            "/images/products/queso/suizo-con-oregano/250gr/queso-suizo-con-oregano-250gr-4.webp"
+        ],
         description: "Queso Suizo con Orégano de 250gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Suizo con Orégano"
+            },
+            {
+                name: "Contenido",
+                value: "250 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Punto de sal normal, que equilibra su sabor natural con un toque aromático.
+            Prensado, de textura firme y elástica, fácil de cortar o rallar.
+            Enriquecido con orégano natural, que aporta aroma, frescura y un sabor distintivo.
+            Color amarillo pálido y aroma lácteo con notas herbales.`,
+        uses: [
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Ideal para preparaciones calientes o frías, con un toque aromático."
+            },
+            {
+                title: "Pizzas y lasañas",
+                content: "Se funde fácilmente aportando un sabor y aroma irresistibles."
+            },
+            {
+                title: "Tablas de quesos y aperitivos",
+                content: "Combina muy bien con frutas, panes artesanales y vino blanco o tinto"
+            },
+            {
+                title: "Ensaladas",
+                content: "Añade un toque mediterráneo y perfumado."
+            },
+        ],
+        relatedProducts: [
+            {
+                id: "8",
+                name: "Queso Suizo con Orégano",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/suizo-con-oregano/1kg/queso-suizo-con-oregano-1kg-1.webp"
+            },
+            {
+                id: "9",
+                name: "Queso Suizo con Orégano",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/suizo-con-oregano/500gr/queso-suizo-con-oregano-500gr-1.webp"
+            },
+            {
+                id: "7",
+                name: "Queso Suizo con Orégano",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo-con-oregano/3.5kg/queso-suizo-con-oregano-3.5kg-1.webp"
+            },
+            {
+                id: "11",
+                name: "Queso Suizo con Orégano",
+                presentationName: "Redondo 500 gr",
+                imageUrl: "/images/products/queso/suizo-con-oregano-redondo/500gr/queso-suizo-con-oregano-redondo-500gr-1.webp"
+            },
+            {
+                id: "1",
+                name: "Queso Suizo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-1.webp"
+            }
+        ]
     },
     {
         id: "11",
         name: "Queso Suizo con Orégano Redondo",
         meditionUnit: "500 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/suizo-con-oregano-redondo/500gr/queso-suizo-con-oregano-redondo-500gr-1.webp",
+            "/images/products/queso/suizo-con-oregano-redondo/500gr/queso-suizo-con-oregano-redondo-500gr-2.webp",
+            "/images/products/queso/suizo-con-oregano-redondo/500gr/queso-suizo-con-oregano-redondo-500gr-3.webp",
+            "/images/products/queso/suizo-con-oregano-redondo/500gr/queso-suizo-con-oregano-redondo-500gr-4.webp"
+        ],
         description: "Queso Suizo con Orégano Redondo de 500gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Suizo con Orégano"
+            },
+            {
+                name: "Contenido",
+                value: "500 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Punto de sal normal, que equilibra su sabor natural con un toque aromático.
+            Prensado, de textura firme y elástica, fácil de cortar o rallar.
+            Enriquecido con orégano natural, que aporta aroma, frescura y un sabor distintivo.
+            Color amarillo pálido y aroma lácteo con notas herbales.`,
+        uses: [
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Ideal para preparaciones calientes o frías, con un toque aromático."
+            },
+            {
+                title: "Pizzas y lasañas",
+                content: "Se funde fácilmente aportando un sabor y aroma irresistibles."
+            },
+            {
+                title: "Tablas de quesos y aperitivos",
+                content: "Combina muy bien con frutas, panes artesanales y vino blanco o tinto"
+            },
+            {
+                title: "Ensaladas",
+                content: "Añade un toque mediterráneo y perfumado."
+            },
+        ],
+        relatedProducts: [
+            {
+                id: "8",
+                name: "Queso Suizo con Orégano",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/suizo-con-oregano/1kg/queso-suizo-con-oregano-1kg-1.webp"
+            },
+            {
+                id: "9",
+                name: "Queso Suizo con Orégano",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/suizo-con-oregano/500gr/queso-suizo-con-oregano-500gr-1.webp"
+            },
+            {
+                id: "10",
+                name: "Queso Suizo con Orégano",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo-con-oregano/250gr/queso-suizo-con-oregano-250gr-1.webp"
+            },
+            {
+                id: "7",
+                name: "Queso Suizo con Orégano",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo-con-oregano/3.5kg/queso-suizo-con-oregano-3.5kg-1.webp"
+            },
+            {
+                id: "1",
+                name: "Queso Suizo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-1.webp"
+            }
+        ]
     },
     {
         id: "12",
         name: "Queso de Corte",
         meditionUnit: "3.5 kg",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/de-corte/3.5kg/queso-de-corte-3.5kg-1.webp",
+            "/images/products/queso/de-corte/3.5kg/queso-de-corte-3.5kg-2.webp",
+            "/images/products/queso/de-corte/3.5kg/queso-de-corte-3.5kg-3.webp",
+            "/images/products/queso/de-corte/3.5kg/queso-de-corte-3.5kg-4.webp"
+        ],
         description: "Queso de Corte de 3.5kg",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso de Corte"
+            },
+            {
+                name: "Contenido",
+                value: "3.5 kg"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Punto de sal equilibrado, ideal para realzar su sabor natural.
+            Molido y prensado, con textura suave y uniforme.
+            Poca presencia de suero, lo que le da una consistencia más firme.
+            Elaborado con leche entera pasteurizada.
+            Alto en grasas saturadas, lo que aporta cremosidad e intensidad al sabor.`,
+        uses: [
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para acompañar en desayunos o lonches."
+            },
+            {
+                title: "Ensaladas",
+                content: "Agrega suavidad y un toque salado equilibrado."
+            },
+            {
+                title: "Bocaditos",
+                content: "Ideal para tablas o aperitivos."
+            },
+            {
+                title: "Salsa Huancaína",
+                content: "Ingrediente clásico que aporta cremosidad."
+            },
+            {
+                title: "Entre otros aperitivos",
+                content: "Versátil y delicioso en múltiples preparaciones."
+            },
+        ],
+        relatedProducts: [
+            {
+                id: "13",
+                name: "Queso de Corte",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/de-corte/1kg/queso-de-corte-1kg-1.webp"
+            },
+            {
+                id: "14",
+                name: "Queso de Corte",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/de-corte/500gr/queso-de-corte-500gr-1.webp"
+            },
+            {
+                id: "15",
+                name: "Queso de Corte",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/de-corte/250gr/queso-de-corte-250gr-1.webp"
+            },
+            {
+                id: "1",
+                name: "Queso Suizo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-1.webp"
+            },
+            {
+                id: "6",
+                name: "Queso Suizo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo-laminado/250gr/queso-suizo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "13",
         name: "Queso de Corte",
         meditionUnit: "1 kg",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/de-corte/1kg/queso-de-corte-1kg-1.webp",
+            "/images/products/queso/de-corte/1kg/queso-de-corte-1kg-2.webp",
+            "/images/products/queso/de-corte/1kg/queso-de-corte-1kg-3.webp",
+            "/images/products/queso/de-corte/1kg/queso-de-corte-1kg-4.webp"
+        ],
         description: "Queso de Corte de 1kg",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso de Corte"
+            },
+            {
+                name: "Contenido",
+                value: "1 kg"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Punto de sal equilibrado, ideal para realzar su sabor natural.
+            Molido y prensado, con textura suave y uniforme.
+            Poca presencia de suero, lo que le da una consistencia más firme.
+            Elaborado con leche entera pasteurizada.
+            Alto en grasas saturadas, lo que aporta cremosidad e intensidad al sabor.`,
+        uses: [
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para acompañar en desayunos o lonches."
+            },
+            {
+                title: "Ensaladas",
+                content: "Agrega suavidad y un toque salado equilibrado."
+            },
+            {
+                title: "Bocaditos",
+                content: "Ideal para tablas o aperitivos."
+            },
+            {
+                title: "Salsa Huancaína",
+                content: "Ingrediente clásico que aporta cremosidad."
+            },
+            {
+                title: "Entre otros aperitivos",
+                content: "Versátil y delicioso en múltiples preparaciones."
+            },
+        ],
+        relatedProducts: [
+            {
+                id: "12",
+                name: "Queso de Corte",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/de-corte/3.5kg/queso-de-corte-3.5kg-1.webp"
+            },
+            {
+                id: "14",
+                name: "Queso de Corte",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/de-corte/500gr/queso-de-corte-500gr-1.webp"
+            },
+            {
+                id: "15",
+                name: "Queso de Corte",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/de-corte/250gr/queso-de-corte-250gr-1.webp"
+            },
+            {
+                id: "1",
+                name: "Queso Suizo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-1.webp"
+            },
+            {
+                id: "6",
+                name: "Queso Suizo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo-laminado/250gr/queso-suizo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "14",
         name: "Queso de Corte",
         meditionUnit: "500 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/de-corte/500gr/queso-de-corte-500gr-1.webp",
+            "/images/products/queso/de-corte/500gr/queso-de-corte-500gr-2.webp",
+            "/images/products/queso/de-corte/500gr/queso-de-corte-500gr-3.webp",
+            "/images/products/queso/de-corte/500gr/queso-de-corte-500gr-4.webp"
+        ],
         description: "Queso de Corte de 500gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso de Corte"
+            },
+            {
+                name: "Contenido",
+                value: "500 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Punto de sal equilibrado, ideal para realzar su sabor natural.
+            Molido y prensado, con textura suave y uniforme.
+            Poca presencia de suero, lo que le da una consistencia más firme.
+            Elaborado con leche entera pasteurizada.
+            Alto en grasas saturadas, lo que aporta cremosidad e intensidad al sabor.`,
+        uses: [
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para acompañar en desayunos o lonches."
+            },
+            {
+                title: "Ensaladas",
+                content: "Agrega suavidad y un toque salado equilibrado."
+            },
+            {
+                title: "Bocaditos",
+                content: "Ideal para tablas o aperitivos."
+            },
+            {
+                title: "Salsa Huancaína",
+                content: "Ingrediente clásico que aporta cremosidad."
+            },
+            {
+                title: "Entre otros aperitivos",
+                content: "Versátil y delicioso en múltiples preparaciones."
+            },
+        ],
+        relatedProducts: [
+            {
+                id: "13",
+                name: "Queso de Corte",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/de-corte/1kg/queso-de-corte-1kg-1.webp"
+            },
+            {
+                id: "12",
+                name: "Queso de Corte",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/de-corte/3.5kg/queso-de-corte-3.5kg-1.webp"
+            },
+            {
+                id: "15",
+                name: "Queso de Corte",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/de-corte/250gr/queso-de-corte-250gr-1.webp"
+            },
+            {
+                id: "1",
+                name: "Queso Suizo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-1.webp"
+            },
+            {
+                id: "6",
+                name: "Queso Suizo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo-laminado/250gr/queso-suizo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "15",
         name: "Queso de Corte",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/de-corte/250gr/queso-de-corte-250gr-1.webp",
+            "/images/products/queso/de-corte/250gr/queso-de-corte-250gr-2.webp",
+            "/images/products/queso/de-corte/250gr/queso-de-corte-250gr-3.webp",
+            "/images/products/queso/de-corte/250gr/queso-de-corte-250gr-4.webp"
+        ],
         description: "Queso de Corte de 250gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso de Corte"
+            },
+            {
+                name: "Contenido",
+                value: "250 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Punto de sal equilibrado, ideal para realzar su sabor natural.
+            Molido y prensado, con textura suave y uniforme.
+            Poca presencia de suero, lo que le da una consistencia más firme.
+            Elaborado con leche entera pasteurizada.
+            Alto en grasas saturadas, lo que aporta cremosidad e intensidad al sabor.`,
+        uses: [
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para acompañar en desayunos o lonches."
+            },
+            {
+                title: "Ensaladas",
+                content: "Agrega suavidad y un toque salado equilibrado."
+            },
+            {
+                title: "Bocaditos",
+                content: "Ideal para tablas o aperitivos."
+            },
+            {
+                title: "Salsa Huancaína",
+                content: "Ingrediente clásico que aporta cremosidad."
+            },
+            {
+                title: "Entre otros aperitivos",
+                content: "Versátil y delicioso en múltiples preparaciones."
+            },
+        ],
+        relatedProducts: [
+            {
+                id: "13",
+                name: "Queso de Corte",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/de-corte/1kg/queso-de-corte-1kg-1.webp"
+            },
+            {
+                id: "14",
+                name: "Queso de Corte",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/de-corte/500gr/queso-de-corte-500gr-1.webp"
+            },
+            {
+                id: "12",
+                name: "Queso de Corte",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/de-corte/3.5kg/queso-de-corte-3.5kg-1.webp"
+            },
+            {
+                id: "1",
+                name: "Queso Suizo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/suizo/3.5kg/queso-suizo-3.5kg-1.webp"
+            },
+            {
+                id: "6",
+                name: "Queso Suizo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo-laminado/250gr/queso-suizo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "16",
         name: "Queso Fresco",
         meditionUnit: "3.5 kg",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/fresco/3.5kg/queso-fresco-3.5kg-1.webp",
+            "/images/products/queso/fresco/3.5kg/queso-fresco-3.5kg-2.webp",
+            "/images/products/queso/fresco/3.5kg/queso-fresco-3.5kg-3.webp",
+        ],
         description: "Queso Fresco de 3.5kg",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Fresco"
+            },
+            {
+                name: "Contenido",
+                value: "3.5 kg"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Punto de sal equilibrado, ideal para realzar su sabor natural.
+            Molido y prensado, con textura suave y uniforme.
+            Poca presencia de suero, lo que le da una consistencia más firme.
+            Elaborado con leche entera pasteurizada.
+            Alto en grasas saturadas, lo que aporta cremosidad e intensidad al sabor.`,
+        uses: [
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para acompañar en desayunos o lonches."
+            },
+            {
+                title: "Bocaditos",
+                content: "Ideal para tablas o aperitivos."
+            },
+            {
+                title: "Salsa Huancaína",
+                content: "Ingrediente clásico que aporta cremosidad."
+            },
+            {
+                title: "Ensaladas",
+                content: "Versátil y delicioso en múltiples preparaciones."
+            },
+        ],
+        relatedProducts: [
+            {
+                id: "17",
+                name: "Queso Fresco",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/fresco/1kg/queso-fresco-1kg-1.webp"
+            },
+            {
+                id: "18",
+                name: "Queso Fresco",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/fresco/500gr/queso-fresco-500gr-1.webp"
+            },
+            {
+                id: "19",
+                name: "Queso Fresco",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/fresco/250gr/queso-fresco-250gr-1.webp"
+            },
+            {
+                id: "12",
+                name: "Queso de Corte",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/de-corte/3.5kg/queso-de-corte-3.5kg-1.webp"
+            },
+            {
+                id: "13",
+                name: "Queso de Corte",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/de-corte/1kg/queso-de-corte-1kg-1.webp"
+            }
+        ]
     },
     {
         id: "17",
         name: "Queso Fresco",
         meditionUnit: "1 kg",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/fresco/1kg/queso-fresco-1kg-1.webp",
+            "/images/products/queso/fresco/1kg/queso-fresco-1kg-2.webp",
+            "/images/products/queso/fresco/1kg/queso-fresco-1kg-3.webp",
+            "/images/products/queso/fresco/1kg/queso-fresco-1kg-4.webp"
+        ],
         description: "Queso Fresco de 1kg",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Fresco"
+            },
+            {
+                name: "Contenido",
+                value: "1 kg"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Punto de sal equilibrado, ideal para realzar su sabor natural.
+            Molido y prensado, con textura suave y uniforme.
+            Poca presencia de suero, lo que le da una consistencia más firme.
+            Elaborado con leche entera pasteurizada.
+            Alto en grasas saturadas, lo que aporta cremosidad e intensidad al sabor.`,
+        uses: [
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para acompañar en desayunos o lonches."
+            },
+            {
+                title: "Bocaditos",
+                content: "Ideal para tablas o aperitivos."
+            },
+            {
+                title: "Salsa Huancaína",
+                content: "Ingrediente clásico que aporta cremosidad."
+            },
+            {
+                title: "Ensaladas",
+                content: "Versátil y delicioso en múltiples preparaciones."
+            },
+        ],
+        relatedProducts: [
+            {
+                id: "16",
+                name: "Queso Fresco",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/fresco/3.5kg/queso-fresco-3.5kg-1.webp"
+            },
+            {
+                id: "18",
+                name: "Queso Fresco",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/fresco/500gr/queso-fresco-500gr-1.webp"
+            },
+            {
+                id: "19",
+                name: "Queso Fresco",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/fresco/250gr/queso-fresco-250gr-1.webp"
+            },
+            {
+                id: "12",
+                name: "Queso de Corte",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/de-corte/3.5kg/queso-de-corte-3.5kg-1.webp"
+            },
+            {
+                id: "13",
+                name: "Queso de Corte",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/de-corte/1kg/queso-de-corte-1kg-1.webp"
+            }
+        ]
     },
     {
         id: "18",
         name: "Queso Fresco",
         meditionUnit: "500 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/fresco/500gr/queso-fresco-500gr-1.webp",
+            "/images/products/queso/fresco/500gr/queso-fresco-500gr-2.webp",
+            "/images/products/queso/fresco/500gr/queso-fresco-500gr-3.webp",
+            "/images/products/queso/fresco/500gr/queso-fresco-500gr-4.webp"
+        ],
         description: "Queso Fresco de 500gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Fresco"
+            },
+            {
+                name: "Contenido",
+                value: "500 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Punto de sal equilibrado, ideal para realzar su sabor natural.
+            Molido y prensado, con textura suave y uniforme.
+            Poca presencia de suero, lo que le da una consistencia más firme.
+            Elaborado con leche entera pasteurizada.
+            Alto en grasas saturadas, lo que aporta cremosidad e intensidad al sabor.`,
+        uses: [
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para acompañar en desayunos o lonches."
+            },
+            {
+                title: "Bocaditos",
+                content: "Ideal para tablas o aperitivos."
+            },
+            {
+                title: "Salsa Huancaína",
+                content: "Ingrediente clásico que aporta cremosidad."
+            },
+            {
+                title: "Ensaladas",
+                content: "Versátil y delicioso en múltiples preparaciones."
+            },
+        ],
+        relatedProducts: [
+            {
+                id: "17",
+                name: "Queso Fresco",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/fresco/1kg/queso-fresco-1kg-1.webp"
+            },
+            {
+                id: "16",
+                name: "Queso Fresco",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/fresco/3.5kg/queso-fresco-3.5kg-1.webp"
+            },
+            {
+                id: "19",
+                name: "Queso Fresco",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/fresco/250gr/queso-fresco-250gr-1.webp"
+            },
+            {
+                id: "12",
+                name: "Queso de Corte",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/de-corte/3.5kg/queso-de-corte-3.5kg-1.webp"
+            },
+            {
+                id: "13",
+                name: "Queso de Corte",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/de-corte/1kg/queso-de-corte-1kg-1.webp"
+            }
+        ]
     },
     {
         id: "19",
         name: "Queso Fresco",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/fresco/250gr/queso-fresco-250gr-1.webp",
+        ],
         description: "Queso Fresco de 250gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Fresco"
+            },
+            {
+                name: "Contenido",
+                value: "250 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Punto de sal equilibrado, ideal para realzar su sabor natural.
+            Molido y prensado, con textura suave y uniforme.
+            Poca presencia de suero, lo que le da una consistencia más firme.
+            Elaborado con leche entera pasteurizada.
+            Alto en grasas saturadas, lo que aporta cremosidad e intensidad al sabor.`,
+        uses: [
+            {
+                title: "Acompañamiento",
+                content: "Perfecto para acompañar en desayunos o lonches."
+            },
+            {
+                title: "Bocaditos",
+                content: "Ideal para tablas o aperitivos."
+            },
+            {
+                title: "Salsa Huancaína",
+                content: "Ingrediente clásico que aporta cremosidad."
+            },
+            {
+                title: "Ensaladas",
+                content: "Versátil y delicioso en múltiples preparaciones."
+            },
+        ],
+        relatedProducts: [
+            {
+                id: "17",
+                name: "Queso Fresco",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/fresco/1kg/queso-fresco-1kg-1.webp"
+            },
+            {
+                id: "18",
+                name: "Queso Fresco",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/fresco/500gr/queso-fresco-500gr-1.webp"
+            },
+            {
+                id: "16",
+                name: "Queso Fresco",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/fresco/3.5kg/queso-fresco-3.5kg-1.webp"
+            },
+            {
+                id: "12",
+                name: "Queso de Corte",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/de-corte/3.5kg/queso-de-corte-3.5kg-1.webp"
+            },
+            {
+                id: "13",
+                name: "Queso de Corte",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/de-corte/1kg/queso-de-corte-1kg-1.webp"
+            }
+        ]
     },
     {
         id: "20",
         name: "Queso Dambo",
         meditionUnit: "3.5 kg",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/dambo/3.5kg/queso-dambo-3.5kg-1.webp",
+            "/images/products/queso/dambo/3.5kg/queso-dambo-3.5kg-2.webp",
+            "/images/products/queso/dambo/3.5kg/queso-dambo-3.5kg-3.webp",
+            "/images/products/queso/dambo/3.5kg/queso-dambo-3.5kg-4.webp"
+        ],
         description: "Queso Dambo de 3.5kg",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Dambo"
+            },
+            {
+                name: "Contenido",
+                value: "3.5 kg"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Textura semidura pero cremosa, fácil de cortar y fundir.
+            Sabor suave y ligeramente salado, con notas lácteas agradables.
+            Alto en grasas saturadas y sodio, lo que potencia su sabor y cremosidad.
+            Ideal para quienes disfrutan de un queso versátil, equilibrado y de sabor delicado.`,
+        uses: [
+            {
+                title: "Tablas de queso",
+                content: "Combina perfectamente con frutas, nueces y embutidos."
+            },
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Se derrite fácilmente y realza el sabor."
+            },
+            {
+                title: "Platos al horno",
+                content: "Ideal para gratinar o fundir."
+            },
+            {
+                title: "Ensaladas",
+                content: "Aporta textura y un toque salado equilibrado."
+            },
+            {
+                title: "Bocaditos y pastas",
+                content: "Delicioso en múltiples combinaciones."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "21",
+                name: "Queso Dambo",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/dambo/1kg/queso-dambo-1kg-1.webp"
+            },
+            {
+                id: "22",
+                name: "Queso Dambo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo/500gr/queso-dambo-500gr-1.webp"
+            },
+            {
+                id: "23",
+                name: "Queso Dambo",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo/250gr/queso-dambo-250gr-1.webp"
+            },
+            {
+                id: "24",
+                name: "Queso Dambo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-1.webp"
+            },
+            {
+                id: "25",
+                name: "Queso Dambo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/250gr/queso-dambo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "21",
         name: "Queso Dambo",
         meditionUnit: "1 kg",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/dambo/1kg/queso-dambo-1kg-1.webp",
+            "/images/products/queso/dambo/1kg/queso-dambo-1kg-2.webp",
+            "/images/products/queso/dambo/1kg/queso-dambo-1kg-3.webp",
+            "/images/products/queso/dambo/1kg/queso-dambo-1kg-4.webp"
+        ],
         description: "Queso Dambo de 1kg",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Dambo"
+            },
+            {
+                name: "Contenido",
+                value: "1 kg"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Textura semidura pero cremosa, fácil de cortar y fundir.
+            Sabor suave y ligeramente salado, con notas lácteas agradables.
+            Alto en grasas saturadas y sodio, lo que potencia su sabor y cremosidad.
+            Ideal para quienes disfrutan de un queso versátil, equilibrado y de sabor delicado.`,
+        uses: [
+            {
+                title: "Tablas de queso",
+                content: "Combina perfectamente con frutas, nueces y embutidos."
+            },
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Se derrite fácilmente y realza el sabor."
+            },
+            {
+                title: "Platos al horno",
+                content: "Ideal para gratinar o fundir."
+            },
+            {
+                title: "Ensaladas",
+                content: "Aporta textura y un toque salado equilibrado."
+            },
+            {
+                title: "Bocaditos y pastas",
+                content: "Delicioso en múltiples combinaciones."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "20",
+                name: "Queso Dambo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/dambo/3.5kg/queso-dambo-3.5kg-1.webp"
+            },
+            {
+                id: "22",
+                name: "Queso Dambo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo/500gr/queso-dambo-500gr-1.webp"
+            },
+            {
+                id: "23",
+                name: "Queso Dambo",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo/250gr/queso-dambo-250gr-1.webp"
+            },
+            {
+                id: "24",
+                name: "Queso Dambo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-1.webp"
+            },
+            {
+                id: "25",
+                name: "Queso Dambo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/250gr/queso-dambo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "22",
         name: "Queso Dambo",
         meditionUnit: "500 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/dambo/500gr/queso-dambo-500gr-1.webp",
+            "/images/products/queso/dambo/500gr/queso-dambo-500gr-2.webp",
+            "/images/products/queso/dambo/500gr/queso-dambo-500gr-3.webp",
+            "/images/products/queso/dambo/500gr/queso-dambo-500gr-4.webp"
+        ],
         description: "Queso Dambo de 500gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Dambo"
+            },
+            {
+                name: "Contenido",
+                value: "500 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Textura semidura pero cremosa, fácil de cortar y fundir.
+            Sabor suave y ligeramente salado, con notas lácteas agradables.
+            Alto en grasas saturadas y sodio, lo que potencia su sabor y cremosidad.
+            Ideal para quienes disfrutan de un queso versátil, equilibrado y de sabor delicado.`,
+        uses: [
+            {
+                title: "Tablas de queso",
+                content: "Combina perfectamente con frutas, nueces y embutidos."
+            },
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Se derrite fácilmente y realza el sabor."
+            },
+            {
+                title: "Platos al horno",
+                content: "Ideal para gratinar o fundir."
+            },
+            {
+                title: "Ensaladas",
+                content: "Aporta textura y un toque salado equilibrado."
+            },
+            {
+                title: "Bocaditos y pastas",
+                content: "Delicioso en múltiples combinaciones."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "21",
+                name: "Queso Dambo",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/dambo/1kg/queso-dambo-1kg-1.webp"
+            },
+            {
+                id: "20",
+                name: "Queso Dambo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/dambo/3.5kg/queso-dambo-3.5kg-1.webp"
+            },
+            {
+                id: "23",
+                name: "Queso Dambo",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo/250gr/queso-dambo-250gr-1.webp"
+            },
+            {
+                id: "24",
+                name: "Queso Dambo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-1.webp"
+            },
+            {
+                id: "25",
+                name: "Queso Dambo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/250gr/queso-dambo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "23",
         name: "Queso Dambo",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/dambo/250gr/queso-dambo-250gr-1.webp",
+            "/images/products/queso/dambo/250gr/queso-dambo-250gr-2.webp",
+            "/images/products/queso/dambo/250gr/queso-dambo-250gr-3.webp",
+            "/images/products/queso/dambo/250gr/queso-dambo-250gr-4.webp"
+        ],
         description: "Queso Dambo de 250gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Dambo"
+            },
+            {
+                name: "Contenido",
+                value: "250 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Textura semidura pero cremosa, fácil de cortar y fundir.
+            Sabor suave y ligeramente salado, con notas lácteas agradables.
+            Alto en grasas saturadas y sodio, lo que potencia su sabor y cremosidad.
+            Ideal para quienes disfrutan de un queso versátil, equilibrado y de sabor delicado.`,
+        uses: [
+            {
+                title: "Tablas de queso",
+                content: "Combina perfectamente con frutas, nueces y embutidos."
+            },
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Se derrite fácilmente y realza el sabor."
+            },
+            {
+                title: "Platos al horno",
+                content: "Ideal para gratinar o fundir."
+            },
+            {
+                title: "Ensaladas",
+                content: "Aporta textura y un toque salado equilibrado."
+            },
+            {
+                title: "Bocaditos y pastas",
+                content: "Delicioso en múltiples combinaciones."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "21",
+                name: "Queso Dambo",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/dambo/1kg/queso-dambo-1kg-1.webp"
+            },
+            {
+                id: "22",
+                name: "Queso Dambo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo/500gr/queso-dambo-500gr-1.webp"
+            },
+            {
+                id: "20",
+                name: "Queso Dambo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/dambo/3.5kg/queso-dambo-3.5kg-1.webp"
+            },
+            {
+                id: "24",
+                name: "Queso Dambo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-1.webp"
+            },
+            {
+                id: "25",
+                name: "Queso Dambo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/250gr/queso-dambo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "24",
         name: "Queso Dambo Laminado",
         meditionUnit: "500 gr",
-        imagesUrls: [""],
-        specifications: [],
-        description: "Queso Dambo Laminado de 500gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        imagesUrls: [
+            "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-1.webp",
+            "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-2.webp",
+            "/images/products/queso/dambo-laminado/queso-dambo-laminado.webp",
+        ],
+        description: "Queso Dambo Laminado de 500gr. Peso de cada lamina aprox. 20 gr",
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Dambo"
+            },
+            {
+                name: "Contenido",
+                value: "500 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Textura semidura pero cremosa, fácil de cortar y fundir.
+            Sabor suave y ligeramente salado, con notas lácteas agradables.
+            Alto en grasas saturadas y sodio, lo que potencia su sabor y cremosidad.
+            Ideal para quienes disfrutan de un queso versátil, equilibrado y de sabor delicado.`,
+        uses: [
+            {
+                title: "Tablas de queso",
+                content: "Combina perfectamente con frutas, nueces y embutidos."
+            },
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Se derrite fácilmente y realza el sabor."
+            },
+            {
+                title: "Platos al horno",
+                content: "Ideal para gratinar o fundir."
+            },
+            {
+                title: "Ensaladas",
+                content: "Aporta textura y un toque salado equilibrado."
+            },
+            {
+                title: "Bocaditos y pastas",
+                content: "Delicioso en múltiples combinaciones."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "21",
+                name: "Queso Dambo",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/dambo/1kg/queso-dambo-1kg-1.webp"
+            },
+            {
+                id: "22",
+                name: "Queso Dambo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo/500gr/queso-dambo-500gr-1.webp"
+            },
+            {
+                id: "23",
+                name: "Queso Dambo",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo/250gr/queso-dambo-250gr-1.webp"
+            },
+            {
+                id: "20",
+                name: "Queso Dambo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/dambo/3.5kg/queso-dambo-3.5kg-1.webp"
+            },
+            {
+                id: "25",
+                name: "Queso Dambo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/250gr/queso-dambo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "25",
         name: "Queso Dambo Laminado",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
-        description: "Queso Dambo Laminado de 250gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        imagesUrls: [
+            "/images/products/queso/dambo-laminado/250gr/queso-dambo-laminado-250gr-1.webp",
+            "/images/products/queso/dambo-laminado/250gr/queso-dambo-laminado-250gr-2.webp",
+            "/images/products/queso/dambo-laminado/queso-dambo-laminado.webp",
+        ],
+        description: "Queso Dambo Laminado de 250gr. Peso de cada lamina aprox. 20 gr",
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Dambo"
+            },
+            {
+                name: "Contenido",
+                value: "250 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Textura semidura pero cremosa, fácil de cortar y fundir.
+            Sabor suave y ligeramente salado, con notas lácteas agradables.
+            Alto en grasas saturadas y sodio, lo que potencia su sabor y cremosidad.
+            Ideal para quienes disfrutan de un queso versátil, equilibrado y de sabor delicado.`,
+        uses: [
+            {
+                title: "Tablas de queso",
+                content: "Combina perfectamente con frutas, nueces y embutidos."
+            },
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Se derrite fácilmente y realza el sabor."
+            },
+            {
+                title: "Platos al horno",
+                content: "Ideal para gratinar o fundir."
+            },
+            {
+                title: "Ensaladas",
+                content: "Aporta textura y un toque salado equilibrado."
+            },
+            {
+                title: "Bocaditos y pastas",
+                content: "Delicioso en múltiples combinaciones."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "21",
+                name: "Queso Dambo",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/dambo/1kg/queso-dambo-1kg-1.webp"
+            },
+            {
+                id: "22",
+                name: "Queso Dambo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo/500gr/queso-dambo-500gr-1.webp"
+            },
+            {
+                id: "23",
+                name: "Queso Dambo",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo/250gr/queso-dambo-250gr-1.webp"
+            },
+            {
+                id: "24",
+                name: "Queso Dambo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-1.webp"
+            },
+            {
+                id: "20",
+                name: "Queso Dambo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/dambo/3.5kg/queso-dambo-3.5kg-1.webp"
+            }
+        ]
     },
     {
         id: "26",
         name: "Queso Mantecoso",
         meditionUnit: "1 kg",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/mantecoso/1kg/queso-mantecoso-1kg-1.webp",
+            "/images/products/queso/mantecoso/1kg/queso-mantecoso-1kg-2.webp",
+            "/images/products/queso/mantecoso/1kg/queso-mantecoso-1kg-3.webp",
+            "/images/products/queso/mantecoso/1kg/queso-mantecoso-1kg-4.webp"
+        ],
         description: "Queso Mantecoso de 1kg",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Mantecoso"
+            },
+            {
+                name: "Contenido",
+                value: "1 kg"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Sabor intenso y lácteo, en el que se aprecia claramente el gusto natural de la leche.
+            Sin presencia de suero, con una textura suave y ligeramente untuosa.
+            Alto en grasas saturadas, lo que le da su característico sabor mantecoso y su capacidad de fundirse fácilmente.
+            Ideal para quienes buscan un queso con personalidad y textura cremosa.`,
+        uses: [
+            {
+                title: "Tablas de queso",
+                content: "Combina perfectamente con frutas, nueces y embutidos."
+            },
+            {
+                title: "Tequeños",
+                content: "Su textura fundente lo hace ideal para rellenos."
+            },
+            {
+                title: "Entre otros aperitivos",
+                content: "Perfecto para gratinar o disfrutar en preparaciones calientes."
+            },
+        ],
+        relatedProducts: [
+            {
+                id: "27",
+                name: "Queso Mantecoso",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/mantecoso/500gr/queso-mantecoso-500gr-1.webp"
+            },
+            {
+                id: "28",
+                name: "Queso Mantecoso",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/mantecoso/250gr/queso-mantecoso-250gr-1.webp"
+            },
+            {
+                id: "20",
+                name: "Queso Dambo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/dambo/3.5kg/queso-dambo-3.5kg-1.webp"
+            },
+            {
+                id: "25",
+                name: "Queso Dambo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/250gr/queso-dambo-laminado-250gr-1.webp"
+            },
+            {
+                id: "24",
+                name: "Queso Dambo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-1.webp"
+            }
+        ]
     },
     {
         id: "27",
         name: "Queso Mantecoso",
         meditionUnit: "500 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/mantecoso/500gr/queso-mantecoso-500gr-1.webp",
+            "/images/products/queso/mantecoso/500gr/queso-mantecoso-500gr-2.webp",
+            "/images/products/queso/mantecoso/500gr/queso-mantecoso-500gr-3.webp",
+            "/images/products/queso/mantecoso/500gr/queso-mantecoso-500gr-4.webp"
+        ],
         description: "Queso Mantecoso de 500gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Mantecoso"
+            },
+            {
+                name: "Contenido",
+                value: "500 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Sabor intenso y lácteo, en el que se aprecia claramente el gusto natural de la leche.
+            Sin presencia de suero, con una textura suave y ligeramente untuosa.
+            Alto en grasas saturadas, lo que le da su característico sabor mantecoso y su capacidad de fundirse fácilmente.
+            Ideal para quienes buscan un queso con personalidad y textura cremosa.`,
+        uses: [
+            {
+                title: "Tablas de queso",
+                content: "Combina perfectamente con frutas, nueces y embutidos."
+            },
+            {
+                title: "Tequeños",
+                content: "Su textura fundente lo hace ideal para rellenos."
+            },
+            {
+                title: "Entre otros aperitivos",
+                content: "Perfecto para gratinar o disfrutar en preparaciones calientes."
+            },
+        ],
+        relatedProducts: [
+            {
+                id: "26",
+                name: "Queso Mantecoso",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/mantecoso/1kg/queso-mantecoso-1kg-1.webp"
+            },
+            {
+                id: "28",
+                name: "Queso Mantecoso",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/mantecoso/250gr/queso-mantecoso-250gr-1.webp"
+            },
+            {
+                id: "20",
+                name: "Queso Dambo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/dambo/3.5kg/queso-dambo-3.5kg-1.webp"
+            },
+            {
+                id: "25",
+                name: "Queso Dambo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/250gr/queso-dambo-laminado-250gr-1.webp"
+            },
+            {
+                id: "24",
+                name: "Queso Dambo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-1.webp"
+            }
+        ]
     },
     {
         id: "28",
         name: "Queso Mantecoso",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/mantecoso/250gr/queso-mantecoso-250gr-1.webp",
+            "/images/products/queso/mantecoso/250gr/queso-mantecoso-250gr-2.webp",
+            "/images/products/queso/mantecoso/250gr/queso-mantecoso-250gr-3.webp",
+            "/images/products/queso/mantecoso/250gr/queso-mantecoso-250gr-4.webp"
+        ],
         description: "Queso Mantecoso de 250gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Mantecoso"
+            },
+            {
+                name: "Contenido",
+                value: "250 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Sabor intenso y lácteo, en el que se aprecia claramente el gusto natural de la leche.
+            Sin presencia de suero, con una textura suave y ligeramente untuosa.
+            Alto en grasas saturadas, lo que le da su característico sabor mantecoso y su capacidad de fundirse fácilmente.
+            Ideal para quienes buscan un queso con personalidad y textura cremosa.`,
+        uses: [
+            {
+                title: "Tablas de queso",
+                content: "Combina perfectamente con frutas, nueces y embutidos."
+            },
+            {
+                title: "Tequeños",
+                content: "Su textura fundente lo hace ideal para rellenos."
+            },
+            {
+                title: "Entre otros aperitivos",
+                content: "Perfecto para gratinar o disfrutar en preparaciones calientes."
+            },
+        ],
+        relatedProducts: [
+            {
+                id: "27",
+                name: "Queso Mantecoso",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/mantecoso/500gr/queso-mantecoso-500gr-1.webp"
+            },
+            {
+                id: "26",
+                name: "Queso Mantecoso",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/mantecoso/1kg/queso-mantecoso-1kg-1.webp"
+            },
+            {
+                id: "20",
+                name: "Queso Dambo",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/dambo/3.5kg/queso-dambo-3.5kg-1.webp"
+            },
+            {
+                id: "25",
+                name: "Queso Dambo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/250gr/queso-dambo-laminado-250gr-1.webp"
+            },
+            {
+                id: "24",
+                name: "Queso Dambo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-1.webp"
+            }
+        ]
     },
     {
         id: "29",
         name: "Queso Edam",
         meditionUnit: "3.5 kg",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/edam/3.5kg/queso-edam-3.5kg-1.webp",
+            "/images/products/queso/edam/3.5kg/queso-edam-3.5kg-2.webp",
+            "/images/products/queso/edam/3.5kg/queso-edam-3.5kg-3.webp",
+            "/images/products/queso/edam/3.5kg/queso-edam-3.5kg-4.webp"
+        ],
         description: "Queso Edam de 3.5kg",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Edam"
+            },
+            {
+                name: "Contenido",
+                value: "3.5 kg"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Textura semidura pero cremosa, fácil de cortar y fundir.
+            Sabor suave y ligeramente salado, con notas lácteas agradables.
+            Alto en grasas saturadas y sodio, lo que potencia su sabor y cremosidad.
+            Ideal para quienes disfrutan de un queso versátil, equilibrado y de sabor delicado.`,
+        uses: [
+            {
+                title: "Tablas de queso",
+                content: "Combina perfectamente con frutas, nueces y embutidos."
+            },
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Se derrite fácilmente y realza el sabor."
+            },
+            {
+                title: "Platos al horno",
+                content: "Ideal para gratinar o fundir."
+            },
+            {
+                title: "Ensaladas",
+                content: "Aporta textura y un toque salado equilibrado."
+            },
+            {
+                title: "Bocaditos y aperitivos",
+                content: "Delicioso en múltiples combinaciones."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "30",
+                name: "Queso Edam Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/edam/500gr/queso-edam-laminado-500gr-1.webp"
+            },
+            {
+                id: "31",
+                name: "Queso Edam Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/edam/250gr/queso-edam-laminado-250gr-1.webp"
+            },
+            {
+                id: "23",
+                name: "Queso Dambo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo/500gr/queso-dambo-500gr-1.webp"
+            },
+            {
+                id: "24",
+                name: "Queso Dambo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-1.webp"
+            },
+            {
+                id: "25",
+                name: "Queso Dambo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/250gr/queso-dambo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "30",
         name: "Queso Edam Laminado",
         meditionUnit: "500 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/edam/500gr/queso-edam-laminado-500gr-1.webp",
+            "/images/products/queso/edam/500gr/queso-edam-laminado-500gr-2.webp",
+            "/images/products/queso/edam/queso-edam-laminado.webp",
+        ],
         description: "Queso Edam Laminado de 500gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Edam"
+            },
+            {
+                name: "Contenido",
+                value: "500 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Textura semidura pero cremosa, fácil de cortar y fundir.
+            Sabor suave y ligeramente salado, con notas lácteas agradables.
+            Alto en grasas saturadas y sodio, lo que potencia su sabor y cremosidad.
+            Ideal para quienes disfrutan de un queso versátil, equilibrado y de sabor delicado.`,
+        uses: [
+            {
+                title: "Tablas de queso",
+                content: "Combina perfectamente con frutas, nueces y embutidos."
+            },
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Se derrite fácilmente y realza el sabor."
+            },
+            {
+                title: "Platos al horno",
+                content: "Ideal para gratinar o fundir."
+            },
+            {
+                title: "Ensaladas",
+                content: "Aporta textura y un toque salado equilibrado."
+            },
+            {
+                title: "Bocaditos y aperitivos",
+                content: "Delicioso en múltiples combinaciones."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "29",
+                name: "Queso Edam",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/edam/3.5kg/queso-edam-3.5kg-1.webp"
+            },
+            {
+                id: "31",
+                name: "Queso Edam Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/edam/250gr/queso-edam-laminado-250gr-1.webp"
+            },
+            {
+                id: "23",
+                name: "Queso Dambo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo/500gr/queso-dambo-500gr-1.webp"
+            },
+            {
+                id: "24",
+                name: "Queso Dambo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-1.webp"
+            },
+            {
+                id: "25",
+                name: "Queso Dambo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/250gr/queso-dambo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "31",
         name: "Queso Edam Laminado",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/edam/250gr/queso-edam-laminado-250gr-1.webp",
+            "/images/products/queso/edam/250gr/queso-edam-laminado-250gr-2.webp",
+            "/images/products/queso/edam/queso-edam-laminado.webp",
+        ],
         description: "Queso Edam Laminado de 250gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Edam"
+            },
+            {
+                name: "Contenido",
+                value: "250 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Textura semidura pero cremosa, fácil de cortar y fundir.
+            Sabor suave y ligeramente salado, con notas lácteas agradables.
+            Alto en grasas saturadas y sodio, lo que potencia su sabor y cremosidad.
+            Ideal para quienes disfrutan de un queso versátil, equilibrado y de sabor delicado.`,
+        uses: [
+            {
+                title: "Tablas de queso",
+                content: "Combina perfectamente con frutas, nueces y embutidos."
+            },
+            {
+                title: "Sándwiches y hamburguesas",
+                content: "Se derrite fácilmente y realza el sabor."
+            },
+            {
+                title: "Platos al horno",
+                content: "Ideal para gratinar o fundir."
+            },
+            {
+                title: "Ensaladas",
+                content: "Aporta textura y un toque salado equilibrado."
+            },
+            {
+                title: "Bocaditos y aperitivos",
+                content: "Delicioso en múltiples combinaciones."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "30",
+                name: "Queso Edam Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/edam/500gr/queso-edam-laminado-500gr-1.webp"
+            },
+            {
+                id: "29",
+                name: "Queso Edam",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/edam/3.5kg/queso-edam-3.5kg-1.webp"
+            },
+            {
+                id: "23",
+                name: "Queso Dambo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo/500gr/queso-dambo-500gr-1.webp"
+            },
+            {
+                id: "24",
+                name: "Queso Dambo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-1.webp"
+            },
+            {
+                id: "25",
+                name: "Queso Dambo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/250gr/queso-dambo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "32",
         name: "Queso Parmesano Para Rallar",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/parmesano/para-rallar/250gr/queso-parmesano-para-rallar-250gr-1.webp",
+            "/images/products/queso/parmesano/para-rallar/250gr/queso-parmesano-para-rallar-250gr-2.webp",
+            "/images/products/queso/parmesano/para-rallar/250gr/queso-parmesano-para-rallar-250gr-3.webp",
+            "/images/products/queso/parmesano/para-rallar/250gr/queso-parmesano-para-rallar-250gr-4.webp"
+        ],
         description: "Queso Parmesano Para Rallar de 250gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Parmesano"
+            },
+            {
+                name: "Contenido",
+                value: "250 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Textura dura y quebradiza, con un sabor intenso y lácteo que resalta el auténtico gusto de la leche.
+            Elaborado con leche entera de vaca y sometido a un proceso prolongado de maduración, que potencia su aroma y carácter. 
+            Ideal para quienes disfrutan de quesos con personalidad y un toque gourmet.`,
+        uses: [
+            {
+                title: "Tablas de queso",
+                content: "Combina perfectamente con frutas, nueces y embutidos."
+            },
+            {
+                title: "Lasañas y pastas",
+                content: "Esencial para gratinar o dar sabor."
+            },
+            {
+                title: "Pizzas",
+                content: "Aporta un toque intenso y aromático."
+            },
+            {
+                title: "Salsas",
+                content: "Ingrediente clave en la salsa Alfredo y otras preparaciones cremosas."
+            },
+            {
+                title: "Ensaladas",
+                content: "Se espolvorea sobre verduras para realzar el sabor."
+            },
+            {
+                title: "Sopas y cremas",
+                content: "Ideal para dar cuerpo y textura."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "33",
+                name: "Queso Parmesano Rallado",
+                presentationName: "200 gr",
+                imageUrl: "/images/products/queso/parmesano/rallado/200gr/queso-parmesano-rallado-200gr-1.webp"
+            },
+            {
+                id: "30",
+                name: "Queso Edam Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/edam/500gr/queso-edam-laminado-500gr-1.webp"
+            },
+            {
+                id: "22",
+                name: "Queso Dambo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo/500gr/queso-dambo-500gr-1.webp"
+            },
+            {
+                id: "23",
+                name: "Queso Dambo",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo/250gr/queso-dambo-250gr-1.webp"
+            },
+            {
+                id: "25",
+                name: "Queso Dambo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/250gr/queso-dambo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "33",
         name: "Queso Parmesano Rallado",
         meditionUnit: "200 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/parmesano/rallado/200gr/queso-parmesano-rallado-200gr-1.webp",
+            "/images/products/queso/parmesano/rallado/200gr/queso-parmesano-rallado-200gr-2.webp",
+            "/images/products/queso/parmesano/rallado/200gr/queso-parmesano-rallado-200gr-3.webp",
+            "/images/products/queso/parmesano/rallado/200gr/queso-parmesano-rallado-200gr-4.webp"
+        ],
         description: "Queso Parmesano Rallado de 200gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Parmesano"
+            },
+            {
+                name: "Contenido",
+                value: "200 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Textura dura y quebradiza, con un sabor intenso y lácteo que resalta el auténtico gusto de la leche.
+            Elaborado con leche entera de vaca y sometido a un proceso prolongado de maduración, que potencia su aroma y carácter. 
+            Ideal para quienes disfrutan de quesos con personalidad y un toque gourmet.`,
+        uses: [
+            {
+                title: "Tablas de queso",
+                content: "Combina perfectamente con frutas, nueces y embutidos."
+            },
+            {
+                title: "Lasañas y pastas",
+                content: "Esencial para gratinar o dar sabor."
+            },
+            {
+                title: "Pizzas",
+                content: "Aporta un toque intenso y aromático."
+            },
+            {
+                title: "Salsas",
+                content: "Ingrediente clave en la salsa Alfredo y otras preparaciones cremosas."
+            },
+            {
+                title: "Ensaladas",
+                content: "Se espolvorea sobre verduras para realzar el sabor."
+            },
+            {
+                title: "Sopas y cremas",
+                content: "Ideal para dar cuerpo y textura."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "32",
+                name: "Queso Parmesano Para Rallar",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/parmesano/para-rallar/250gr/queso-parmesano-para-rallar-250gr-1.webp"
+            },
+            {
+                id: "30",
+                name: "Queso Edam Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/edam/500gr/queso-edam-laminado-500gr-1.webp"
+            },
+            {
+                id: "22",
+                name: "Queso Dambo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo/500gr/queso-dambo-500gr-1.webp"
+            },
+            {
+                id: "23",
+                name: "Queso Dambo",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo/250gr/queso-dambo-250gr-1.webp"
+            },
+            {
+                id: "25",
+                name: "Queso Dambo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/250gr/queso-dambo-laminado-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "34",
         name: "Queso Mozzarella con Sal 2 kg",
         meditionUnit: "2 kg",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/mozzarella/2kg/queso-mozzarella-2kg-1.webp",
+            "/images/products/queso/mozzarella/2kg/queso-mozzarella-2kg-2.webp",
+            "/images/products/queso/mozzarella/2kg/queso-mozzarella-2kg-3.webp",
+            "/images/products/queso/mozzarella/2kg/queso-mozzarella-2kg-4.webp"
+        ],
         description: "Queso Mozzarella con Sal de 2 kg",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Mozzarella"
+            },
+            {
+                name: "Contenido",
+                value: "2 kg"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Textura suave, elástica y blanda, ideal para fundir.
+            Sabor delicado y ligeramente lácteo, que se combina fácilmente con otros ingredientes.
+            Alto en grasas saturadas, lo que le da cremosidad y una excelente capacidad de derretirse.
+            Reconocido por su versatilidad y su papel esencial en la cocina italiana.`,
+        uses: [
+            {
+                title: "Pizzas",
+                content: "El queso clásico por excelencia, se derrite de manera uniforme y aporta un sabor suave y cremoso."
+            },
+            {
+                title: "Pastas",
+                content: "Ideal para gratinar platos al horno o preparar lasañas."
+            },
+            {
+                title: "Ensaladas",
+                content: "Combina muy bien con tomate fresco, albahaca y aceite de oliva."
+            },
+            {
+                title: "Aperitivos",
+                content: "Perfecto para bocaditos, brochetas y tablas de quesos."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "35",
+                name: "Queso Mozzarella Paquete",
+                presentationName: "5 kg",
+                imageUrl: "/images/products/queso/mozzarella/5kg/queso-mozzarella-paquete-5kg-1.webp"
+            },
+            {
+                id: "36",
+                name: "Queso Mozzarella sin Sal",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/mozzarella/250gr/queso-mozzarella-250gr-1.webp"
+            },
+            {
+                id: "32",
+                name: "Queso Parmesano Para Rallar",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/parmesano/para-rallar/250gr/queso-parmesano-para-rallar-250gr-1.webp"
+            },
+            {
+                id: "30",
+                name: "Queso Edam Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/edam/500gr/queso-edam-laminado-500gr-1.webp"
+            },
+            {
+                id: "24",
+                name: "Queso Dambo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-1.webp"
+            }
+        ]
     },
     {
         id: "35",
         name: "Queso Mozzarella Paquete 5 kg",
         meditionUnit: "5 kg",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/mozzarella/5kg/queso-mozzarella-paquete-5kg-1.webp",
+        ],
         description: "Queso Mozzarella Paquete de 5 kg",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Mozzarella"
+            },
+            {
+                name: "Contenido",
+                value: "5 kg"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Textura suave, elástica y blanda, ideal para fundir.
+            Sabor delicado y ligeramente lácteo, que se combina fácilmente con otros ingredientes.
+            Alto en grasas saturadas, lo que le da cremosidad y una excelente capacidad de derretirse.
+            Reconocido por su versatilidad y su papel esencial en la cocina italiana.`,
+        uses: [
+            {
+                title: "Pizzas",
+                content: "El queso clásico por excelencia, se derrite de manera uniforme y aporta un sabor suave y cremoso."
+            },
+            {
+                title: "Pastas",
+                content: "Ideal para gratinar platos al horno o preparar lasañas."
+            },
+            {
+                title: "Ensaladas",
+                content: "Combina muy bien con tomate fresco, albahaca y aceite de oliva."
+            },
+            {
+                title: "Aperitivos",
+                content: "Perfecto para bocaditos, brochetas y tablas de quesos."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "34",
+                name: "Queso Mozzarella con Sal",
+                presentationName: "2 kg",
+                imageUrl: "/images/products/queso/mozzarella/2kg/queso-mozzarella-2kg-1.webp"
+            },
+            {
+                id: "36",
+                name: "Queso Mozzarella sin Sal",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/mozzarella/250gr/queso-mozzarella-250gr-1.webp"
+            },
+            {
+                id: "32",
+                name: "Queso Parmesano Para Rallar",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/parmesano/para-rallar/250gr/queso-parmesano-para-rallar-250gr-1.webp"
+            },
+            {
+                id: "30",
+                name: "Queso Edam Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/edam/500gr/queso-edam-laminado-500gr-1.webp"
+            },
+            {
+                id: "24",
+                name: "Queso Dambo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-1.webp"
+            }
+        ]
     },
     {
         id: "36",
         name: "Queso Mozzarella sin Sal 250 gr",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/mozzarella/250gr/queso-mozzarella-250gr-1.webp",
+            "/images/products/queso/mozzarella/250gr/queso-mozzarella-250gr-2.webp",
+            "/images/products/queso/mozzarella/250gr/queso-mozzarella-250gr-3.webp",
+            "/images/products/queso/mozzarella/250gr/queso-mozzarella-250gr-4.webp"
+        ],
         description: "Queso Mozzarella sin Sal de 250 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Mozzarella"
+            },
+            {
+                name: "Contenido",
+                value: "250 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Textura suave, elástica y blanda, ideal para fundir.
+            Sabor delicado y ligeramente lácteo, que se combina fácilmente con otros ingredientes.
+            Alto en grasas saturadas, lo que le da cremosidad y una excelente capacidad de derretirse.
+            Reconocido por su versatilidad y su papel esencial en la cocina italiana.`,
+        uses: [
+            {
+                title: "Pizzas",
+                content: "El queso clásico por excelencia, se derrite de manera uniforme y aporta un sabor suave y cremoso."
+            },
+            {
+                title: "Pastas",
+                content: "Ideal para gratinar platos al horno o preparar lasañas."
+            },
+            {
+                title: "Ensaladas",
+                content: "Combina muy bien con tomate fresco, albahaca y aceite de oliva."
+            },
+            {
+                title: "Aperitivos",
+                content: "Perfecto para bocaditos, brochetas y tablas de quesos."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "35",
+                name: "Queso Mozzarella Paquete",
+                presentationName: "5 kg",
+                imageUrl: "/images/products/queso/mozzarella/5kg/queso-mozzarella-paquete-5kg-1.webp"
+            },
+            {
+                id: "34",
+                name: "Queso Mozzarella con Sal",
+                presentationName: "2 kg",
+                imageUrl: "/images/products/queso/mozzarella/2kg/queso-mozzarella-2kg-1.webp"
+            },
+            {
+                id: "32",
+                name: "Queso Parmesano Para Rallar",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/parmesano/para-rallar/250gr/queso-parmesano-para-rallar-250gr-1.webp"
+            },
+            {
+                id: "30",
+                name: "Queso Edam Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/edam/500gr/queso-edam-laminado-500gr-1.webp"
+            },
+            {
+                id: "24",
+                name: "Queso Dambo Laminado",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/dambo-laminado/500gr/queso-dambo-laminado-500gr-1.webp"
+            }
+        ]
     },
     {
         id: "37",
         name: "Quesillo 800 gr",
         meditionUnit: "800 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/otros/quesillo/800gr/quesillo-800gr-1.webp",
+            "/images/products/queso/otros/quesillo/800gr/quesillo-800gr-2.webp",
+            "/images/products/queso/otros/quesillo/800gr/quesillo-800gr-3.webp",
+            "/images/products/queso/otros/quesillo/800gr/quesillo-800gr-4.webp"
+        ],
         description: "Quesillo de 800 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Quesillo"
+            },
+            {
+                name: "Contenido",
+                value: "800 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Sin sal, ideal para quienes prefieren sabores suaves y naturales.
+            Textura blanda y cremosa, con un sabor delicado y lácteo.
+            Color blanco puro, característico de su elaboración artesanal.
+            Presencia natural de suero, que mantiene su frescura y humedad.
+        `,
+        uses: [
+            {
+                title: "Pan, papa o choclo",
+                content: "Acompañamientos clásicos de la mesa peruana."
+            },
+            {
+                title: "Miel de caña",
+                content: "Crea un contraste delicioso entre lo dulce y lo suave."
+            },
+            {
+                title: "Ensaladas",
+                content: "Aporta textura cremosa y sabor ligero."
+            },
+            {
+                title: "Bocaditos y aperitivos",
+                content: "Perfecto para combinar con frutas o panes."
+            },
+            {
+                title: "Entre otros platos",
+                content: "Versátil y fresco, ideal para cualquier ocasión."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "16",
+                name: "Queso Fresco",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/fresco/3.5kg/queso-fresco-3.5kg-1.webp"
+            },
+            {
+                id: "17",
+                name: "Queso Fresco",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/fresco/1kg/queso-fresco-1kg-1.webp"
+            },
+            {
+                id: "19",
+                name: "Queso Fresco",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/fresco/250gr/queso-fresco-250gr-1.webp"
+            },
+            {
+                id: "14",
+                name: "Queso de Corte",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/de-corte/500gr/queso-de-corte-500gr-1.webp"
+            },
+            {
+                id: "15",
+                name: "Queso de Corte",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/de-corte/250gr/queso-de-corte-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "38",
         name: "Queso Paria 800 gr",
         meditionUnit: "800 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/otros/paria/800gr/queso-paria-800gr-1.webp",
+            "/images/products/queso/otros/paria/800gr/queso-paria-800gr-2.webp",
+            "/images/products/queso/otros/paria/800gr/queso-paria-800gr-3.webp",
+            "/images/products/queso/otros/paria/800gr/queso-paria-800gr-4.webp"
+        ],
         description: "Queso Paria de 800 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Paria"
+            },
+            {
+                name: "Contenido",
+                value: "800 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Textura suave, elástica y blanda, fácil de cortar y fundir.
+            Sabor delicado y ligeramente lácteo, que combina muy bien con otros ingredientes.
+            Alto en grasas saturadas, lo que le otorga una cremosidad y sabor únicos.
+            Ideal para quienes buscan un queso versátil, con el equilibrio perfecto entre suavidad y carácter.
+        `,
+        uses: [
+            {
+                title: "Pizzas",
+                content: "El clásico queso que se derrite de forma uniforme, aportando un sabor suave y agradable."
+            },
+            {
+                title: "Pastas",
+                content: "Ideal para gratinar platos al horno."
+            },
+            {
+                title: "Ensaladas",
+                content: "Combina muy bien con tomate fresco, albahaca y aceite de oliva."
+            },
+            {
+                title: "Aperitivos",
+                content: "Perfecto para bocaditos, snacks ligeros y tablas de quesos."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "16",
+                name: "Queso Fresco",
+                presentationName: "3.5 kg",
+                imageUrl: "/images/products/queso/fresco/3.5kg/queso-fresco-3.5kg-1.webp"
+            },
+            {
+                id: "17",
+                name: "Queso Fresco",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/fresco/1kg/queso-fresco-1kg-1.webp"
+            },
+            {
+                id: "19",
+                name: "Queso Fresco",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/fresco/250gr/queso-fresco-250gr-1.webp"
+            },
+            {
+                id: "14",
+                name: "Queso de Corte",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/de-corte/500gr/queso-de-corte-500gr-1.webp"
+            },
+            {
+                id: "15",
+                name: "Queso de Corte",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/de-corte/250gr/queso-de-corte-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "39",
         name: "Queso Ricotta 250 gr",
         meditionUnit: "250 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/otros/ricotta/250gr/queso-ricotta-250gr-1.webp",
+            "/images/products/queso/otros/ricotta/queso-ricotta-2.webp",
+            "/images/products/queso/otros/ricotta/queso-ricotta-3.webp",
+            "/images/products/queso/otros/ricotta/queso-ricotta-4.webp"
+        ],
         description: "Queso Ricotta de 250 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Ricotta"
+            },
+            {
+                name: "Contenido",
+                value: "250 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Sin sal, con un sabor suave y lácteo ideal para preparaciones dulces o saladas.
+            Textura ligera, suave y cremosa, fácil de untar o mezclar.
+            Bajo en grasa, pero con la cremosidad justa para realzar los platos.
+            Presencia natural de suero, que mantiene su frescura y humedad.
+        `,
+        uses: [
+            {
+                title: "Lasañas y pastas",
+                content: "Aporta cremosidad y un sabor delicado."
+            },
+            {
+                title: "Dulces y postres",
+                content: "Ideal para cheesecakes, rellenos o tartas."
+            },
+            {
+                title: "Ensaladas",
+                content: "Combina muy bien con vegetales frescos."
+            },
+            {
+                title: "Bocaditos",
+                content: "Excelente para untar o rellenar canapés."
+            },
+            {
+                title: "Entre otros aperitivos",
+                content: "Versátil y ligero, perfecto para recetas frías o calientes."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "40",
+                name: "Queso Ricotta",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/otros/ricotta/500gr/queso-ricotta-500gr-1.webp"
+            },
+            {
+                id: "3",
+                name: "Queso Suizo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/suizo/500gr/queso-suizo-500gr-1.webp"
+            },
+            {
+                id: "6",
+                name: "Queso Suizo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo-laminado/250gr/queso-suizo-laminado-250gr-1.webp"
+            },
+            {
+                id: "13",
+                name: "Queso de Corte",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/de-corte/1kg/queso-de-corte-1kg-1.webp"
+            },
+            {
+                id: "15",
+                name: "Queso de Corte",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/de-corte/250gr/queso-de-corte-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "40",
         name: "Queso Ricotta 500 gr",
         meditionUnit: "500 gr",
-        imagesUrls: [""],
-        specifications: [],
+        imagesUrls: [
+            "/images/products/queso/otros/ricotta/500gr/queso-ricotta-500gr-1.webp",
+            "/images/products/queso/otros/ricotta/queso-ricotta-2.webp",
+            "/images/products/queso/otros/ricotta/queso-ricotta-3.webp",
+            "/images/products/queso/otros/ricotta/queso-ricotta-4.webp"
+        ],
         description: "Queso Ricotta de 500 gr",
-        featuresDetails: "",
-        uses: [],
-        relatedProducts: []
+        specifications: [
+            {
+                name: "Envasado",
+                value: "Al vacío"
+            },
+            {
+                name: "Tipo de Producto",
+                value: "Queso Ricotta"
+            },
+            {
+                name: "Contenido",
+                value: "500 gr"
+            },
+            {
+                name: "Formato",
+                value: "Bolsa de Polietileno"
+            },
+            {
+                name: "Conservación",
+                value: "De 2°C a 6°C"
+            },
+            {
+                name: "Vida Útil",
+                value: "30 días"
+            },
+            {
+                name: "Advertencias",
+                value: "Alto en grasas saturadas"
+            }
+        ],
+        featuresDetails: `Sin sal, con un sabor suave y lácteo ideal para preparaciones dulces o saladas.
+            Textura ligera, suave y cremosa, fácil de untar o mezclar.
+            Bajo en grasa, pero con la cremosidad justa para realzar los platos.
+            Presencia natural de suero, que mantiene su frescura y humedad.
+        `,
+        uses: [
+            {
+                title: "Lasañas y pastas",
+                content: "Aporta cremosidad y un sabor delicado."
+            },
+            {
+                title: "Dulces y postres",
+                content: "Ideal para cheesecakes, rellenos o tartas."
+            },
+            {
+                title: "Ensaladas",
+                content: "Combina muy bien con vegetales frescos."
+            },
+            {
+                title: "Bocaditos",
+                content: "Excelente para untar o rellenar canapés."
+            },
+            {
+                title: "Entre otros aperitivos",
+                content: "Versátil y ligero, perfecto para recetas frías o calientes."
+            }
+        ],
+        relatedProducts: [
+            {
+                id: "39",
+                name: "Queso Ricotta",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/otros/ricotta/250gr/queso-ricotta-250gr-1.webp"
+            },
+            {
+                id: "3",
+                name: "Queso Suizo",
+                presentationName: "500 gr",
+                imageUrl: "/images/products/queso/suizo/500gr/queso-suizo-500gr-1.webp"
+            },
+            {
+                id: "6",
+                name: "Queso Suizo Laminado",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/suizo-laminado/250gr/queso-suizo-laminado-250gr-1.webp"
+            },
+            {
+                id: "13",
+                name: "Queso de Corte",
+                presentationName: "1 kg",
+                imageUrl: "/images/products/queso/de-corte/1kg/queso-de-corte-1kg-1.webp"
+            },
+            {
+                id: "15",
+                name: "Queso de Corte",
+                presentationName: "250 gr",
+                imageUrl: "/images/products/queso/de-corte/250gr/queso-de-corte-250gr-1.webp"
+            }
+        ]
     },
     {
         id: "41",
