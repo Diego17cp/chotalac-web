@@ -1,12 +1,12 @@
 ---
 import { Footer, Header } from "@/components/layout";
 import BaseLayout from "./BaseLayout.astro";
-const { title = "Chotalac" } = Astro.props;
+const { title = "Chotalac", className = "" } = Astro.props;
 ---
 
 <BaseLayout title={title}>
 	<Header />
-	<main class="grow">
+	<main class={`grow ${className}`}>
 		<slot />
 	</main>
 	<Footer />
