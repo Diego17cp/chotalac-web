@@ -6,7 +6,7 @@ import ProcessCard from "./ProcessCard.astro";
 <section class="py-12 md:py-16 lg:py-20">
     <div class="container mx-auto px-4">
         <h2
-            class="text-3xl md:text-4xl lg:text-6xl font-titles-2 text-shadow-lg font-bold text-center mb-8 md:mb-12 text-gray-800"
+            class="processes-title text-3xl md:text-4xl lg:text-6xl font-titles-2 text-shadow-lg font-bold text-center mb-8 md:mb-12 text-gray-800"
         >
             Nuestros Procesos
         </h2>
@@ -22,3 +22,28 @@ import ProcessCard from "./ProcessCard.astro";
         </div>
     </div>
 </section>
+<script>
+    import { scroll, animate } from "motion";
+
+    function initProcessesAnimation() {
+        const title = document.querySelector('.processes-title');
+        if (title) {
+            scroll(
+                animate(
+                    title as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        y: [100, 0, 0, -100]
+                    }
+                ),
+                {
+                    target: title as Element,
+                    offset: ["start end", "start center", "end center", "end start"]
+                }
+            );
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", initProcessesAnimation);
+    document.addEventListener("astro:page-load", initProcessesAnimation);
+</script>

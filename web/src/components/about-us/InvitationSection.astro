@@ -1,13 +1,13 @@
 <section class="py-12 md:py-16 lg:py-20">
     <div class="container mx-auto px-4">
         <div class="max-w-4xl mx-auto text-center space-y-8">
-            <p class="text-gray-700 text-lg md:text-2xl lg:text-3xl leading-relaxed">
+            <p class="text text-gray-700 text-lg md:text-2xl lg:text-3xl leading-relaxed">
                 Te invitamos a ver cómo
                 <span class="font-bold text-primary">transformamos la leche fresca en sabor, confianza y bienestar</span> 
                 para todas las familias peruanas. 
             </p>
             <div class="pt-4">
-                <div class="relative rounded-lg overflow-hidden shadow-xl aspect-video bg-black">
+                <div class="video relative rounded-lg overflow-hidden shadow-xl aspect-video bg-black">
                     <video
                         controls
                         class="w-full h-full"
@@ -21,3 +21,43 @@
         </div>
     </div>
 </section>
+<script>
+    import { scroll, animate } from "motion";
+
+    function initInvitationAnimation() {
+        const text = document.querySelector('.text');
+        const video = document.querySelector('.video');
+        if (text) {
+            scroll(
+                animate(
+                    text as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        y: [100, 0, 0, -100]
+                    }
+                ),
+                {
+                    target: text as Element,
+                    offset: ["start end", "start center", "end center", "end start"]
+                }
+            );
+        }
+        if (video) {
+            scroll(
+                animate(
+                    video as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        y: [100, 0, 0, -100]
+                    }
+                ),
+                {
+                    target: video as Element,
+                    offset: ["start end", "start center", "end center", "end start"]
+                }
+            );
+        }
+    }
+    document.addEventListener("DOMContentLoaded", initInvitationAnimation);
+    document.addEventListener("astro:page-load", initInvitationAnimation);
+</script>

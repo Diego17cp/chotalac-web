@@ -10,15 +10,15 @@ const { title, description, imagePath, index } = Astro.props;
 const isEven = index % 2 === 0;
 ---
 
-<div class={`grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center ${isEven ? '' : 'lg:flex-row-reverse'}`}>
-    <div class={`${isEven ? 'order-2' : 'order-2 lg:order-1'}`}>
+<div class={`process-card grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center ${isEven ? '' : 'lg:flex-row-reverse'}`} data-index={index}>
+    <div class={`process-image ${isEven ? 'order-2' : 'order-2 lg:order-1'}`}>
         <img
             src={imagePath}
             alt={title}
             class="w-full h-64 md:h-80 lg:h-96 rounded-lg shadow-lg object-cover"
         />
     </div>
-    <div class={`${isEven ? 'order-1' : 'order-1 lg:order-2'}`}>
+    <div class={`process-text ${isEven ? 'order-1' : 'order-1 lg:order-2'}`}>
         <div class="flex items-start gap-4 mb-4">
             <div class="shrink-0 w-12 h-12 md:w-16 md:h-16 bg-primary rounded-full flex items-center justify-center">
                 <span class="text-white text-xl md:text-2xl font-bold">{index + 1}</span>
@@ -32,3 +32,88 @@ const isEven = index % 2 === 0;
         </p>
     </div>
 </div>
+
+<script>
+    import { scroll, animate } from "motion";
+
+    function initProcessCardAnimation() {
+        const cards = document.querySelectorAll('.process-card');
+        
+        cards.forEach((card) => {
+            const index = parseInt((card as HTMLElement).dataset.index || '0');
+            const isEven = index % 2 === 0;
+            
+            const image = card.querySelector('.process-image');
+            const text = card.querySelector('.process-text');
+            if (isEven) {
+                // Cards pares: Texto desde izquierda, Imagen desde derecha
+                if (text) {
+                    scroll(
+                        animate(
+                            text as Element,
+                            {
+                                opacity: [0, 1, 1, 0],
+                                x: [-150, 0, 0, 150]
+                            }
+                        ),
+                        {
+                            target: text as Element,
+                            offset: ["start end", "start 0.6", "end 0.4", "end start"]
+                        }
+                    );
+                }
+                if (image) {
+                    scroll(
+                        animate(
+                            image as Element,
+                            {
+                                opacity: [0, 1, 1, 0],
+                                x: [150, 0, 0, -150],
+                                scale: [0.8, 1, 1, 0.8]
+                            }
+                        ),
+                        {
+                            target: image as Element,
+                            offset: ["start 0.9", "start 0.5", "end 0.5", "end start"]
+                        }
+                    );
+                }
+            } else {
+                // Cards impares: Imagen desde izquierda, Texto desde derecha (invertido)
+                if (image) {
+                    scroll(
+                        animate(
+                            image as Element,
+                            {
+                                opacity: [0, 1, 1, 0],
+                                x: [-150, 0, 0, 150],
+                                scale: [0.8, 1, 1, 0.8]
+                            }
+                        ),
+                        {
+                            target: image as Element,
+                            offset: ["start end", "start 0.6", "end 0.4", "end start"]
+                        }
+                    );
+                }
+                if (text) {
+                    scroll(
+                        animate(
+                            text as Element,
+                            {
+                                opacity: [0, 1, 1, 0],
+                                x: [150, 0, 0, -150]
+                            }
+                        ),
+                        {
+                            target: text as Element,
+                            offset: ["start 0.9", "start 0.5", "end 0.5", "end start"]
+                        }
+                    );
+                }
+            }
+        });
+    }
+    document.addEventListener('DOMContentLoaded', initProcessCardAnimation);
+    document.addEventListener('astro:page-load', initProcessCardAnimation);
+</script>

@@ -1,62 +1,159 @@
 <section class="py-12 md:py-16 lg:py-20">
-	<div class="container mx-auto px-4">
-		<h2
-			class="text-3xl md:text-4xl lg:text-6xl font-titles-2 text-shadow-lg font-bold text-center mb-12 md:mb-16 text-gray-800"
-		>
-			Nuestra Historia
-		</h2>
-		<div
-			class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16"
-		>
-			<div class="order-1">
-				<h3 class="text-2xl md:text-3xl font-bold text-primary mb-4">
-					Los Inicios
-				</h3>
-				<p
-					class="text-gray-700 text-lg md:text-2xl leading-relaxed mb-4"
-				>
-					Nuestra historia comenzó en 1995, con el propósito de
-					impulsar el desarrollo de las comunidades productoras de
-					leche en la sierra de Cajamarca. De ese sueño nació
-					Chotalac, una empresa que une tradición y calidad para
-					transformar la leche fresca en productos llenos de sabor y
-					nutrición.
-				</p>
-			</div>
-			<div class="order-2">
-				<img
-					src="/images/about-us/our-history-1.webp"
-					alt="Los inicios de Chotalac"
-					class="w-full h-64 md:h-80 lg:h-96 rounded-lg shadow-lg object-cover object-top"
-				/>
-			</div>
-		</div>
-		<div
-			class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center"
-		>
-			<div class="order-2 lg:order-1">
-				<img
-					src="/images/about-us/our-history-2.webp"
-					alt="Crecimiento de Chotalac"
-					class="w-full h-auto rounded-lg shadow-lg object-cover"
-				/>
-			</div>
-			<div class="order-1 lg:order-2">
-				<h3
-					class="text-2xl md:text-3xl text-left md:text-right font-bold text-primary mb-4"
-				>
-					Crecimiento y Expansión
-				</h3>
-				<p
-					class="text-gray-700 text-lg md:text-2xl text-left md:text-right leading-relaxed mb-4"
-				>
-					Con el tiempo, crecimos y llevamos nuestros productos
-					ciudades del país, manteniendo siempre el mismo compromiso:
-					ofrecer productos naturales, frescos y elaborados con
-					pasión, para acompañar y nutrir a las familias peruanas cada
-					día.
-				</p>
-			</div>
-		</div>
-	</div>
+    <div class="container mx-auto px-4">
+        <h2
+            class="history-title text-3xl md:text-4xl lg:text-6xl font-titles-2 text-shadow-lg font-bold text-center mb-12 md:mb-16 text-gray-800"
+        >
+            Nuestra Historia
+        </h2>
+        <div
+            class="history-section-1 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16"
+        >
+            <div class="history-text-1 order-1">
+                <h3 class="text-2xl md:text-3xl font-bold text-primary mb-4">
+                    Los Inicios
+                </h3>
+                <p
+                    class="text-gray-700 text-lg md:text-2xl leading-relaxed mb-4"
+                >
+                    Nuestra historia comenzó en 1995, con el propósito de
+                    impulsar el desarrollo de las comunidades productoras de
+                    leche en la sierra de Cajamarca. De ese sueño nació
+                    Chotalac, una empresa que une tradición y calidad para
+                    transformar la leche fresca en productos llenos de sabor y
+                    nutrición.
+                </p>
+            </div>
+            <div class="history-image-1 order-2">
+                <img
+                    src="/images/about-us/our-history-1.webp"
+                    alt="Los inicios de Chotalac"
+                    class="w-full h-64 md:h-80 lg:h-96 rounded-lg shadow-lg object-cover object-top"
+                />
+            </div>
+        </div>
+        <div
+            class="history-section-2 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center"
+        >
+            <div class="history-image-2 order-2 lg:order-1">
+                <img
+                    src="/images/about-us/our-history-2.webp"
+                    alt="Crecimiento de Chotalac"
+                    class="w-full h-auto rounded-lg shadow-lg object-cover"
+                />
+            </div>
+            <div class="history-text-2 order-1 lg:order-2">
+                <h3
+                    class="text-2xl md:text-3xl text-left md:text-right font-bold text-primary mb-4"
+                >
+                    Crecimiento y Expansión
+                </h3>
+                <p
+                    class="text-gray-700 text-lg md:text-2xl text-left md:text-right leading-relaxed mb-4"
+                >
+                    Con el tiempo, crecimos y llevamos nuestros productos
+                    ciudades del país, manteniendo siempre el mismo compromiso:
+                    ofrecer productos naturales, frescos y elaborados con
+                    pasión, para acompañar y nutrir a las familias peruanas cada
+                    día.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
+
+<script>
+    import { scroll, animate } from "motion";
+
+    function initHistoryAnimation() {
+        const title = document.querySelector('.history-title');
+        
+        const text1 = document.querySelector('.history-text-1');
+        const image1 = document.querySelector('.history-image-1');
+        
+        const text2 = document.querySelector('.history-text-2');
+        const image2 = document.querySelector('.history-image-2');
+
+        if (title) {
+            scroll(
+                animate(
+                    title as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        y: [100, 0, 0, -100]
+                    }
+                ),
+                {
+                    target: title as Element,
+                    offset: ["start end", "start center", "end center", "end start"]
+                }
+            );
+        }
+        if (text1) {
+            scroll(
+                animate(
+                    text1 as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        x: [-150, 0, 0, 150]
+                    }
+                ),
+                {
+                    target: text1 as Element,
+                    offset: ["start end", "start 0.6", "end 0.4", "end start"]
+                }
+            );
+        }
+
+        if (image1) {
+            scroll(
+                animate(
+                    image1 as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        x: [150, 0, 0, -150],
+                        scale: [0.8, 1, 1, 0.8]
+                    }
+                ),
+                {
+                    target: image1 as Element,
+                    offset: ["start 0.9", "start 0.5", "end 0.5", "end start"]
+                }
+            );
+        }
+        if (image2) {
+            scroll(
+                animate(
+                    image2 as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        x: [-150, 0, 0, 150],
+                        scale: [0.8, 1, 1, 0.8]
+                    }
+                ),
+                {
+                    target: image2 as Element,
+                    offset: ["start end", "start 0.6", "end 0.4", "end start"]
+                }
+            );
+        }
+
+        if (text2) {
+            scroll(
+                animate(
+                    text2 as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        x: [150, 0, 0, -150]
+                    }
+                ),
+                {
+                    target: text2 as Element,
+                    offset: ["start 0.9", "start 0.5", "end 0.5", "end start"]
+                }
+            );
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', initHistoryAnimation);
+    document.addEventListener('astro:page-load', initHistoryAnimation);
+</script>
