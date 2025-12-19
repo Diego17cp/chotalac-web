@@ -7,17 +7,17 @@ import { Icon } from "astro-icon/components";
     <section class="min-h-screen flex items-center justify-center py-12 md:py-16 lg:py-20">
         <div class="container mx-auto px-4">
             <div class="max-w-2xl mx-auto">
-                <div class="text-center mb-8">
-                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-titles-2 font-bold text-gray-800 mb-2">
+                <div class="register-header text-center mb-8">
+                    <h1 class="register-title text-3xl md:text-4xl lg:text-5xl font-titles-2 font-bold text-gray-800 mb-2">
                         Crear Cuenta
                     </h1>
-                    <p class="text-gray-600">
+                    <p class="register-subtitle text-gray-600">
                         Únete a la familia Chotalac
                     </p>
                 </div>
-                <div class="bg-white rounded-2xl shadow-xl p-8">
+                <div class="register-form-container bg-white rounded-2xl shadow-xl p-8">
                     <form class="space-y-6">
-                        <div>
+                        <div class="form-field" data-index="0">
                             <label for="username" class="block text-sm font-semibold text-gray-700 mb-2">
                                 Usuario
                             </label>
@@ -35,7 +35,7 @@ import { Icon } from "astro-icon/components";
                                 />
                             </div>
                         </div>
-                        <div>
+                        <div class="form-field" data-index="1">
                             <label for="birthyear" class="block text-sm font-semibold text-gray-700 mb-2">
                                 Año de Nacimiento
                             </label>
@@ -56,7 +56,7 @@ import { Icon } from "astro-icon/components";
                                 />
                             </div>
                         </div>
-                        <div>
+                        <div class="form-field" data-index="2">
                             <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
                                 Correo Electrónico
                             </label>
@@ -74,7 +74,7 @@ import { Icon } from "astro-icon/components";
                                 />
                             </div>
                         </div>
-                        <div>
+                        <div class="form-field" data-index="3">
                             <label for="password" class="block text-sm font-semibold text-gray-700 mb-2">
                                 Contraseña
                             </label>
@@ -95,11 +95,11 @@ import { Icon } from "astro-icon/components";
                         </div>
                         <button
                             type="submit"
-                            class="w-full bg-primary hover:bg-primary/90 cursor-pointer text-white font-bold py-3 px-4 rounded-lg transition-colors shadow-lg hover:shadow-xl"
+                            class="submit-button w-full bg-primary hover:bg-primary/90 cursor-pointer text-white font-bold py-3 px-4 rounded-lg transition-colors shadow-lg hover:shadow-xl"
                         >
                             Crear Cuenta
                         </button>
-                        <div class="text-center pt-4">
+                        <div class="form-footer text-center pt-4">
                             <p class="text-gray-600">
                                 ¿Ya tienes una cuenta?{" "}
                                 <a
@@ -112,13 +112,145 @@ import { Icon } from "astro-icon/components";
                         </div>
                     </form>
                 </div>
-                <!-- <p class="text-center text-sm text-gray-500 mt-6">
-                    Al crear una cuenta, aceptas nuestros{" "}
-                    <a href="/terminos" class="text-primary hover:underline">Términos y Condiciones</a>
-                    {" "}y{" "}
-                    <a href="/privacidad" class="text-primary hover:underline">Política de Privacidad</a>
-                </p> -->
             </div>
         </div>
     </section>
 </Layout>
+
+<script>
+    import { animate, inView, stagger } from "motion";
+
+    function initRegisterAnimation() {
+        const title = document.querySelector('.register-title');
+        const subtitle = document.querySelector('.register-subtitle');
+        const formContainer = document.querySelector('.register-form-container');
+        const formFields = document.querySelectorAll('.form-field');
+        const submitButton = document.querySelector('.submit-button');
+        const footer = document.querySelector('.form-footer');
+        if (title) {
+            inView(
+                title as Element,
+                () => {
+                    animate(
+                        title as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [-30, 0],
+                            scale: [0.9, 1]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
+            );
+        }
+        if (subtitle) {
+            inView(
+                subtitle as Element,
+                () => {
+                    animate(
+                        subtitle as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [-20, 0]
+                        },
+                        {
+                            duration: 0.6,
+                            delay: 0.2,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
+            );
+        }
+        if (formContainer) {
+            inView(
+                formContainer as Element,
+                () => {
+                    animate(
+                        formContainer as Element,
+                        {
+                            opacity: [0, 1],
+                            scale: [0.95, 1],
+                            y: [30, 0]
+                        },
+                        {
+                            duration: 0.7,
+                            delay: 0.3,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.2 }
+            );
+        }
+        if (formFields.length > 0) {
+            inView(
+                formFields[0],
+                () => {
+                    animate(
+                        formFields,
+                        {
+                            opacity: [0, 1],
+                            x: [-30, 0]
+                        },
+                        {
+                            duration: 0.5,
+                            delay: stagger(0.1, { start: 0.5 }),
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.2 }
+            );
+        }
+        if (submitButton) {
+            inView(
+                submitButton as Element,
+                () => {
+                    animate(
+                        submitButton as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [20, 0],
+                            scale: [0.9, 1]
+                        },
+                        {
+                            duration: 0.6,
+                            delay: 0.9,
+                            easing: [0.22, 1, 0.36, 1]
+                        }
+                    );
+                },
+                { amount: 0.2 }
+            );
+        }
+        if (footer) {
+            inView(
+                footer as Element,
+                () => {
+                    animate(
+                        footer as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [15, 0]
+                        },
+                        {
+                            duration: 0.5,
+                            delay: 1.1,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.2 }
+            );
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', initRegisterAnimation);
+    document.addEventListener('astro:page-load', initRegisterAnimation);
+</script>
