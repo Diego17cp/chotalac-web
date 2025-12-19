@@ -7,19 +7,89 @@ interface Props {
 const { title = "Productos", imageUrl = "/images/categories/banner.webp" } = Astro.props;
 ---
 
-<section class="relative w-full h-[400px] md:h-[500px] lg:h-[600px]">
+<section class="banner-section relative w-full h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden">
 	<div
-		class="absolute inset-0 bg-cover bg-center"
+		class="banner-image absolute inset-0 bg-cover bg-center"
 		style={`background-image: url('${imageUrl}');`}
 	>
-		<div class="absolute inset-0 bg-black/30"></div>
+		<div class="banner-overlay absolute inset-0 bg-black/30"></div>
 	</div>
 
 	<div class="relative h-full flex items-center justify-center">
 		<h1
-			class="text-5xl lg:text-7xl xl:text-9xl font-titles text-shadow-lg font-bold text-white text-center px-4"
+			class="banner-title text-5xl lg:text-7xl xl:text-9xl font-titles text-shadow-lg font-bold text-white text-center px-4"
 		>
 			{title}
 		</h1>
 	</div>
 </section>
+
+<script>
+	import { animate, inView } from "motion";
+
+	function initBannerAnimation() {
+		const bannerImage = document.querySelector('.banner-image');
+		const bannerOverlay = document.querySelector('.banner-overlay');
+		const bannerTitle = document.querySelector('.banner-title');
+		if (bannerImage) {
+			inView(
+				bannerImage as Element,
+				() => {
+					animate(
+						bannerImage as Element,
+						{
+							scale: [1.2, 1]
+						},
+						{
+							duration: 1.5,
+							easing: "ease-out"
+						}
+					);
+				},
+				{ amount: 0.3 }
+			);
+		}
+		if (bannerOverlay) {
+			inView(
+				bannerOverlay as Element,
+				() => {
+					animate(
+						bannerOverlay as Element,
+						{
+							opacity: [0, 0.3]
+						},
+						{
+							duration: 1,
+							easing: "ease-out"
+						}
+					);
+				},
+				{ amount: 0.3 }
+			);
+		}
+		if (bannerTitle) {
+			inView(
+				bannerTitle as Element,
+				() => {
+					animate(
+						bannerTitle as Element,
+						{
+							opacity: [0, 1],
+							y: [80, 0],
+							scale: [0.8, 1]
+						},
+						{
+							duration: 1,
+							delay: 0.3,
+							easing: [0.22, 1, 0.36, 1]
+						}
+					);
+				},
+				{ amount: 0.3 }
+			);
+		}
+	}
+
+	document.addEventListener('DOMContentLoaded', initBannerAnimation);
+	document.addEventListener('astro:page-load', initBannerAnimation);
+</script>
