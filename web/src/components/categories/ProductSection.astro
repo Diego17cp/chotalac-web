@@ -1,31 +1,121 @@
 ---
-import type { ProductPresentation } from "@/types";
 import PresentationCard from "./PresentationCard.astro";
 
 interface Props {
     name: string;
-    presentations: ProductPresentation[];
+    presentations: {
+        id: string;
+        name: string;
+        imageUrl: string;
+    }[];
     cardBg: string;
 }
 
 const { name, presentations, cardBg } = Astro.props;
 ---
 
-<div class="space-y-8">
-    <h2 class="text-2xl md:text-3xl lg:text-4xl font-titles-2 font-bold text-center text-gray-800">
+<div class="product-section space-y-8">
+    <h2 class="product-section-title text-2xl md:text-3xl lg:text-4xl font-titles-2 font-bold text-center text-gray-800">
         {name}
     </h2>
     
-    <div class="flex flex-wrap justify-center gap-6">
-        {presentations.map((presentation) => (
-            <div class="w-[calc(50%-0.75rem)] sm:w-[calc(33.333%-1rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(20%-1.2rem)]">
-                <PresentationCard
-                    id={presentation.id}
-                    name={presentation.name}
-                    imageUrl={presentation.imageUrl}
-                    cardBg={cardBg}
-                />
-            </div>
+    <div class="product-cards-container flex flex-wrap justify-center gap-6">
+        {presentations.map((presentation, index) => (
+            <PresentationCard
+                id={presentation.id}
+                name={presentation.name}
+                imageUrl={presentation.imageUrl}
+                cardBg={cardBg}
+                index={index}
+            />
         ))}
     </div>
 </div>
+
+<script>
+    import { scroll, animate } from "motion";
+
+    let animationsInitialized = false;
+
+    function initProductSectionAnimation() {
+        if (animationsInitialized) return;
+        animationsInitialized = true;
+
+        const sections = document.querySelectorAll('.product-section');
+        const allCards = document.querySelectorAll('.presentation-card');
+
+        sections.forEach((section) => {
+            const title = section.querySelector('.product-section-title');
+            scroll(
+                animate(
+                    section as Element,
+                    {
+                        opacity: [0, 1, 1, 0]
+                    }
+                ),
+                {
+                    target: section as Element,
+                    offset: ["start end", "start 0.8", "end 0.2", "end start"]
+                }
+            );
+            if (title) {
+                scroll(
+                    animate(
+                        title as Element,
+                        {
+                            opacity: [0, 1, 1, 0],
+                            y: [80, 0, 0, -80],
+                            scale: [0.9, 1, 1, 0.9]
+                        }
+                    ),
+                    {
+                        target: title as Element,
+                        offset: ["start end", "start 0.6", "end 0.4", "end start"]
+                    }
+                );
+            }
+        });
+        allCards.forEach((card) => {
+            const index = parseInt((card as HTMLElement).dataset.index || '0');
+            const delay = index * 0.05;
+            scroll(
+                animate(
+                    card as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        y: [60, 0, 0, -60],
+                        scale: [0.8, 1, 1, 0.8]
+                    },
+                    {
+                        delay: delay
+                    }
+                ),
+                {
+                    target: card as Element,
+                    offset: ["start end", "start 0.5", "end 0.5", "end start"]
+                }
+            );
+        });
+    }
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(() => {
+            initProductSectionAnimation();
+        });
+    } else {
+        setTimeout(() => {
+            initProductSectionAnimation();
+        }, 100);
+    }
+    document.addEventListener('astro:page-load', () => {
+        animationsInitialized = false;
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(() => {
+                initProductSectionAnimation();
+            });
+        } else {
+            setTimeout(() => {
+                initProductSectionAnimation();
+            }, 100);
+        }
+    });
+</script>
