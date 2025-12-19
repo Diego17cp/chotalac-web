@@ -7,8 +7,8 @@ interface Props {
 const { images, name } = Astro.props;
 ---
 
-<div class="space-y-4">
-    <div class="bg-white rounded-lg p-8 shadow-lg">
+<div class="gallery-container space-y-4">
+    <div class="main-image-wrapper bg-white rounded-lg p-8 shadow-lg">
         <img
             id="main-image"
             src={images[0]}
@@ -17,16 +17,18 @@ const { images, name } = Astro.props;
         />
     </div>
     {images.length > 1 && (
-        <div class="grid grid-cols-4 gap-4">
+        <div class="thumbnails-container grid grid-cols-4 gap-4">
             {images.map((image, index) => (
                 <button
                     class="thumbnail bg-white rounded-lg p-4 hover:shadow-lg transition-all duration-300 ease-in-out cursor-pointer border-2 border-transparent hover:border-primary"
                     data-image={image}
+                    data-index={index}
                 >
                     <img
                         src={image}
                         alt={`${name} - Vista ${index + 1}`}
                         class="w-full h-20 object-contain"
+                        loading="lazy"
                     />
                 </button>
             ))}
@@ -35,19 +37,92 @@ const { images, name } = Astro.props;
 </div>
 
 <script>
+    import { animate, inView, stagger } from "motion";
+
     function initGallery() {
         const mainImage = document.getElementById('main-image') as HTMLImageElement;
+        const mainImageWrapper = document.querySelector('.main-image-wrapper');
         const thumbnails = document.querySelectorAll('.thumbnail');
-
+        if (mainImageWrapper) {
+            inView(
+                mainImageWrapper as Element,
+                () => {
+                    animate(
+                        mainImageWrapper as Element,
+                        {
+                            opacity: [0, 1],
+                            scale: [0.9, 1],
+                            y: [30, 0]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                    if (mainImage) {
+                        animate(
+                            mainImage,
+                            {
+                                opacity: [0, 1],
+                                scale: [1.1, 1]
+                            },
+                            {
+                                duration: 1,
+                                delay: 0.2,
+                                easing: "ease-out"
+                            }
+                        );
+                    }
+                },
+                { amount: 0.3 }
+            );
+        }
+        if (thumbnails.length > 0) {
+            inView(
+                thumbnails[0],
+                () => {
+                    animate(
+                        thumbnails,
+                        {
+                            opacity: [0, 1],
+                            y: [30, 0],
+                            scale: [0.8, 1]
+                        },
+                        {
+                            duration: 0.5,
+                            delay: stagger(0.1, { start: 0.4 }),
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.2 }
+            );
+        }
         thumbnails.forEach(thumbnail => {
             thumbnail.addEventListener('click', () => {
                 const imageSrc = thumbnail.getAttribute('data-image');
                 if (imageSrc && mainImage) {
-                    mainImage.src = imageSrc;
+                    animate(
+                        mainImage,
+                        {
+                            opacity: [1, 0.3, 1],
+                            scale: [1, 0.95, 1]
+                        },
+                        {
+                            duration: 0.4,
+                            easing: "ease-in-out"
+                        }
+                    );
+                    setTimeout(() => {
+                        mainImage.src = imageSrc;
+                    }, 150);
                 }
+                thumbnails.forEach(t => t.classList.remove('border-primary'));
+                thumbnail.classList.add('border-primary');
             });
         });
     }
+
     document.addEventListener('DOMContentLoaded', initGallery);
     document.addEventListener('astro:page-load', initGallery);
 </script>

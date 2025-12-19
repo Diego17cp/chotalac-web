@@ -9,19 +9,19 @@ interface Props {
 const { name, presentationName, meditionUnit, productId } = Astro.props;
 ---
 
-<div class="flex flex-col justify-center space-y-6">
-    <div class="space-y-4">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-titles-2 font-bold text-gray-800">
+<div class="product-info-container flex flex-col justify-center space-y-6">
+    <div class="product-details space-y-4">
+        <h1 class="product-title text-3xl md:text-4xl lg:text-5xl font-titles-2 font-bold text-gray-800">
             {name}
         </h1>
         
         {presentationName && (
-            <p class="text-xl md:text-2xl text-primary font-semibold">
+            <p class="product-presentation text-xl md:text-2xl text-primary font-semibold">
                 {presentationName}
             </p>
         )}
         
-        <p class="text-lg md:text-xl text-gray-600">
+        <p class="product-medition text-lg md:text-xl text-gray-600">
             <span class="font-semibold">Presentación:</span> {meditionUnit}
         </p>
     </div>
@@ -31,9 +31,104 @@ const { name, presentationName, meditionUnit, productId } = Astro.props;
             href={`https://wa.me/51910017026?text=Hola, estoy interesado en el producto: ${name}${presentationName ? ' - ' + presentationName : ''}`}
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-block bg-primary hover:bg-primary/90 text-white font-bold text-lg px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl w-full text-center"
+            class="product-cta inline-block bg-primary hover:bg-primary/90 text-white font-bold text-lg px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl w-full text-center"
         >
             Comprar por WhatsApp
         </a>
     </div>
 </div>
+
+<script>
+    import { animate, inView } from "motion";
+
+    function initProductInfo() {
+        const title = document.querySelector('.product-title');
+        const presentation = document.querySelector('.product-presentation');
+        const medition = document.querySelector('.product-medition');
+        const cta = document.querySelector('.product-cta');
+        if (title) {
+            inView(
+                title as Element,
+                () => {
+                    animate(
+                        title as Element,
+                        {
+                            opacity: [0, 1],
+                            x: [-50, 0],
+                            scale: [0.95, 1]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
+            );
+        }
+        if (presentation) {
+            inView(
+                presentation as Element,
+                () => {
+                    animate(
+                        presentation as Element,
+                        {
+                            opacity: [0, 1],
+                            x: [-30, 0]
+                        },
+                        {
+                            duration: 0.6,
+                            delay: 0.2,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
+            );
+        }
+        if (medition) {
+            inView(
+                medition as Element,
+                () => {
+                    animate(
+                        medition as Element,
+                        {
+                            opacity: [0, 1],
+                            x: [-30, 0]
+                        },
+                        {
+                            duration: 0.6,
+                            delay: 0.3,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
+            );
+        }
+        if (cta) {
+            inView(
+                cta as Element,
+                () => {
+                    animate(
+                        cta as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [30, 0],
+                            scale: [0.9, 1]
+                        },
+                        {
+                            duration: 0.7,
+                            delay: 0.5,
+                            easing: [0.22, 1, 0.36, 1]
+                        }
+                    );
+                },
+                { amount: 0.3 }
+            );
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', initProductInfo);
+    document.addEventListener('astro:page-load', initProductInfo);
+</script>

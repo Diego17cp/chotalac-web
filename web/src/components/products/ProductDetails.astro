@@ -9,17 +9,17 @@ interface Props {
 const { specifications, description, featuresDetails, uses } = Astro.props;
 ---
 
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-16 md:mb-20">
-    <div class="space-y-6">
-        <h2 class="text-2xl md:text-3xl font-titles-2 font-bold text-gray-800">
+<div class="product-details-grid grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 mb-16 md:mb-20">
+    <div class="specifications-section space-y-6">
+        <h2 class="specifications-title text-2xl md:text-3xl font-titles-2 font-bold text-gray-800">
             Especificaciones
         </h2>
         {specifications.length > 0 ? (
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div class="specifications-table bg-white rounded-lg shadow-lg overflow-hidden">
                 <table class="w-full">
                     <tbody>
                         {specifications.map((spec, index) => (
-                            <tr class={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                            <tr class={`specification-row ${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`} data-index={index}>
                                 <td class="px-6 py-4 font-semibold text-gray-700 border-r border-gray-200">
                                     {spec.name}
                                 </td>
@@ -35,33 +35,33 @@ const { specifications, description, featuresDetails, uses } = Astro.props;
             <p class="text-gray-600">No hay especificaciones disponibles.</p>
         )}
     </div>
-    <div class="space-y-8">
-        <div class="space-y-4">
-            <h3 class="text-xl md:text-2xl font-titles-2 font-bold text-gray-800">
+    <div class="details-section space-y-8">
+        <div class="description-block space-y-4">
+            <h3 class="description-title text-xl md:text-2xl font-titles-2 font-bold text-gray-800">
                 Descripción
             </h3>
-            <p class="text-gray-700 leading-relaxed">
+            <p class="description-text text-gray-700 leading-relaxed">
                 {description}
             </p>
         </div>
         {featuresDetails && (
-            <div class="space-y-4">
-                <h3 class="text-xl md:text-2xl font-titles-2 font-bold text-gray-800">
+            <div class="features-block space-y-4">
+                <h3 class="features-title text-xl md:text-2xl font-titles-2 font-bold text-gray-800">
                     Características
                 </h3>
-                <p class="text-gray-700 leading-relaxed">
+                <p class="features-text text-gray-700 leading-relaxed">
                     {featuresDetails}
                 </p>
             </div>
         )}
         {uses.length > 0 && (
-            <div class="space-y-4">
-                <h3 class="text-xl md:text-2xl font-titles-2 font-bold text-gray-800">
+            <div class="uses-block space-y-4">
+                <h3 class="uses-title text-xl md:text-2xl font-titles-2 font-bold text-gray-800">
                     Usos
                 </h3>
-                <div class="space-y-3">
-                    {uses.map((use) => (
-                        <p class="text-gray-700 leading-relaxed">
+                <div class="uses-list space-y-3">
+                    {uses.map((use, index) => (
+                        <p class="use-item text-gray-700 leading-relaxed" data-index={index}>
                             <span class="font-bold">{use.title}:</span> {use.content}
                         </p>
                     ))}
@@ -70,3 +70,189 @@ const { specifications, description, featuresDetails, uses } = Astro.props;
         )}
     </div>
 </div>
+
+<script>
+    import { scroll, animate, stagger } from "motion";
+
+    function initProductDetailsAnimation() {
+        const specificationsTitle = document.querySelector('.specifications-title');
+        const specificationsTable = document.querySelector('.specifications-table');
+        const specificationRows = document.querySelectorAll('.specification-row');
+        
+        const descriptionTitle = document.querySelector('.description-title');
+        const descriptionText = document.querySelector('.description-text');
+        const featuresTitle = document.querySelector('.features-title');
+        const featuresText = document.querySelector('.features-text');
+        const usesTitle = document.querySelector('.uses-title');
+        const useItems = document.querySelectorAll('.use-item');
+
+        if (specificationsTitle) {
+            scroll(
+                animate(
+                    specificationsTitle as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        x: [-80, 0, 0, 80],
+                        scale: [0.9, 1, 1, 0.9]
+                    }
+                ),
+                {
+                    target: specificationsTitle as Element,
+                    offset: ["start end", "start 0.6", "end 0.4", "end start"]
+                }
+            );
+        }
+        if (specificationsTable) {
+            scroll(
+                animate(
+                    specificationsTable as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        y: [50, 0, 0, -50],
+                        scale: [0.95, 1, 1, 0.95]
+                    }
+                ),
+                {
+                    target: specificationsTable as Element,
+                    offset: ["start end", "start 0.5", "end 0.5", "end start"]
+                }
+            );
+        }
+        if (specificationRows.length > 0) {
+            scroll(
+                animate(
+                    specificationRows,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        x: [-30, 0, 0, 30]
+                    },
+                    {
+                        delay: stagger(0.05)
+                    }
+                ),
+                {
+                    target: specificationsTable as Element,
+                    offset: ["start end", "start 0.4", "end 0.6", "end start"]
+                }
+            );
+        }
+        if (descriptionTitle) {
+            scroll(
+                animate(
+                    descriptionTitle as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        x: [80, 0, 0, -80],
+                        scale: [0.9, 1, 1, 0.9]
+                    }
+                ),
+                {
+                    target: descriptionTitle as Element,
+                    offset: ["start end", "start 0.6", "end 0.4", "end start"]
+                }
+            );
+        }
+        if (descriptionText) {
+            scroll(
+                animate(
+                    descriptionText as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        y: [30, 0, 0, -30]
+                    }
+                ),
+                {
+                    target: descriptionText as Element,
+                    offset: ["start end", "start 0.5", "end 0.5", "end start"]
+                }
+            );
+        }
+        if (featuresTitle) {
+            scroll(
+                animate(
+                    featuresTitle as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        x: [80, 0, 0, -80],
+                        scale: [0.9, 1, 1, 0.9]
+                    }
+                ),
+                {
+                    target: featuresTitle as Element,
+                    offset: ["start end", "start 0.6", "end 0.4", "end start"]
+                }
+            );
+        }
+        if (featuresText) {
+            scroll(
+                animate(
+                    featuresText as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        y: [30, 0, 0, -30]
+                    }
+                ),
+                {
+                    target: featuresText as Element,
+                    offset: ["start end", "start 0.5", "end 0.5", "end start"]
+                }
+            );
+        }
+        if (usesTitle) {
+            scroll(
+                animate(
+                    usesTitle as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        x: [80, 0, 0, -80],
+                        scale: [0.9, 1, 1, 0.9]
+                    }
+                ),
+                {
+                    target: usesTitle as Element,
+                    offset: ["start end", "start 0.6", "end 0.4", "end start"]
+                }
+            );
+        }
+        if (useItems.length > 0) {
+            scroll(
+                animate(
+                    useItems,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        x: [40, 0, 0, -40]
+                    },
+                    {
+                        delay: stagger(0.1)
+                    }
+                ),
+                {
+                    target: usesTitle as Element,
+                    offset: ["start end", "start 0.5", "end 0.5", "end start"]
+                }
+            );
+        }
+    }
+
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(() => {
+            initProductDetailsAnimation();
+        });
+    } else {
+        setTimeout(() => {
+            initProductDetailsAnimation();
+        }, 100);
+    }
+
+    document.addEventListener('astro:page-load', () => {
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(() => {
+                initProductDetailsAnimation();
+            });
+        } else {
+            setTimeout(() => {
+                initProductDetailsAnimation();
+            }, 100);
+        }
+    });
+</script>
