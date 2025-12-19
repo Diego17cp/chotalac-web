@@ -1,14 +1,14 @@
 :root {
     --color-primary: #4F0097;
-    --color-primary-light: #EBE6F8;
+    --color-primary-light: #DCD3F38F;
     --color-secondary: #F5A0BA;
-    --color-secondary-light: #FFE0E2;
+    --color-secondary-light: #FFE0E296;
     --color-tertiary: #BFE2EF;
-    --color-tertiary-light: #E2F2F8;
+    --color-tertiary-light: #BFE2EF75;
     --color-quaternary: #EFE4BF;
-    --color-quaternary-light: #F8F3E2;
-    --font-titles: 'Unna', serif;
-    --font-titles-2: 'Rosario', sans-serif;
+    --color-quaternary-light: #EFE4BF75;
+    --font-titles: 'Lexend Deca', sans-serif;
+    --font-titles-2: 'Lexend Deca', sans-serif;
 }
 
 @import "tailwindcss";

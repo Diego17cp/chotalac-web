@@ -10,6 +10,9 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   },
-
-  integrations: [icon()]
+  integrations: [icon()],
+  redirects: {
+    "/cuenta": "/registrate",
+    "/cuenta/": "/registrate",
+  }
 });
