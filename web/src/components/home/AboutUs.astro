@@ -1,39 +1,100 @@
 <section class="py-12 md:py-16 lg:py-20 bg-secondary-light">
-	<div class="container mx-auto px-4">
-		<h2
-			class="text-3xl md:text-4xl lg:text-5xl font-titles-2 text-shadow-lg font-bold text-center mb-8 md:mb-12 text-gray-800"
-		>
-			Sobre Nosotros
-		</h2>
+    <div class="container mx-auto px-4">
+        <h2
+            class="about-title text-3xl md:text-4xl lg:text-5xl font-titles-2 text-shadow-lg font-bold text-center mb-8 md:mb-12 text-gray-800"
+        >
+            Sobre Nosotros
+        </h2>
 
-		<div
-			class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center"
-		>
-			<div class="order-2 lg:order-1">
-				<img
-					src="/images/about-us/home.webp"
-					alt="Sobre Nosotros - Chotalac"
-					class="w-full h-auto rounded-lg shadow-lg object-cover"
-				/>
-			</div>
-			<div class="order-1 lg:order-2 space-y-4 md:space-y-6">
-				<p class="text-gray-700 text-lg md:text-3xl leading-relaxed md:text-right text-justify">
-					<span class="font-bold text-primary">En Chotalac, trabajamos con pasión y compromiso,</span> 
+        <div
+            class="about-content grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center"
+        >
+            <div class="about-image order-2 lg:order-1">
+                <img
+                    src="/images/about-us/home.webp"
+                    alt="Sobre Nosotros - Chotalac"
+                    class="w-full h-auto rounded-lg shadow-lg object-cover"
+                />
+            </div>
+            <div class="about-text order-1 lg:order-2 space-y-4 md:space-y-6">
+                <p class="text-gray-700 text-lg md:text-3xl leading-relaxed md:text-right text-justify">
+                    <span class="font-bold text-primary">En Chotalac, trabajamos con pasión y compromiso,</span> 
                     cuidando cada detalle para ofrecer lo mejor a nuestros clientes,
-					<span class="font-bold text-primary">
-						creemos en la tradición, la innovación y en el poder de
-						compartir bienestar en cada sabor.
-					</span>
-				</p>
-				<div class="pt-4 flex items-center justify-center lg:justify-end">
-					<a
-						href="/sobre-nosotros"
-						class="inline-block bg-primary hover:bg-primary/90 hover:scale-110 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 ease-in-out"
-					>
-						Conoce más
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
+                    <span class="font-bold text-primary">
+                        creemos en la tradición, la innovación y en el poder de
+                        compartir bienestar en cada sabor.
+                    </span>
+                </p>
+                <div class="pt-4 flex items-center justify-center lg:justify-end">
+                    <a
+                        href="/sobre-nosotros"
+                        class="inline-block bg-primary hover:bg-primary/90 hover:scale-110 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 ease-in-out"
+                    >
+                        Conoce más
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+<script>
+    import { scroll, animate } from "motion";
+
+    function initAboutUsAnimation() {
+        const title = document.querySelector('.about-title');
+        const image = document.querySelector('.about-image');
+        const text = document.querySelector('.about-text');
+        if (title) {
+            scroll(
+                animate(
+                    title as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        y: [100, 0, 0, -100]
+                    }
+                ),
+                {
+                    target: title as Element,
+                    offset: ["start end", "start center", "end center", "end start"]
+                }
+            );
+        }
+
+        // Animación de la imagen (aparece primero)
+        if (image) {
+            scroll(
+                animate(
+                    image as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        x: [-150, 0, 0, 150],
+                        scale: [0.8, 1, 1, 0.8]
+                    }
+                ),
+                {
+                    target: image as Element,
+                    offset: ["start end", "start 0.6", "end 0.4", "end start"]
+                }
+            );
+        }
+        if (text) {
+            scroll(
+                animate(
+                    text as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        x: [150, 0, 0, -150]
+                    }
+                ),
+                {
+                    target: text as Element,
+                    offset: ["start 0.9", "start 0.5", "end 0.5", "end start"]
+                }
+            );
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', initAboutUsAnimation);
+    document.addEventListener('astro:page-load', initAboutUsAnimation);
+</script>

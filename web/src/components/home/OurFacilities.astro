@@ -1,26 +1,95 @@
 <section class="py-12 md:py-16 lg:py-20">
-	<div class="container mx-auto px-4">
-		<h2
-			class="text-3xl md:text-4xl lg:text-5xl font-titles-2 text-shadow-lg font-bold text-center mb-8 md:mb-12 text-gray-800"
-		>
-			Nuestras Instalaciones
-		</h2>
-		<div
-			class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center"
-		>
-            <div class="order-2 lg:order-1 space-y-4 md:space-y-6">
+    <div class="container mx-auto px-4">
+        <h2
+            class="facilities-title text-3xl md:text-4xl lg:text-5xl font-titles-2 text-shadow-lg font-bold text-center mb-8 md:mb-12 text-gray-800"
+        >
+            Nuestras Instalaciones
+        </h2>
+        <div
+            class="facilities-content grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center"
+        >
+            <div class="facilities-text order-2 lg:order-1 space-y-4 md:space-y-6">
                 <p class="text-gray-700 text-lg md:text-3xl leading-relaxed text-left">
-                    <span class="font-bold text-primary">Contamos con instalaciones modernas y tecnología de vanguardia</span> 
-                    que garantizan procesos seguros y controlados, desde la recepción de la leche hasta el envasado final.
+                    <span class="font-bold text-primary"
+                        >Contamos con instalaciones modernas y tecnología de
+                        vanguardia</span
+                    >
+                    que garantizan procesos seguros y controlados, desde la recepción
+                    de la leche hasta el envasado final.
                 </p>
             </div>
-			<div class="order-1 lg:order-2">
-				<img
-					src="/images/instalaciones/1.webp"
-					alt="Nuestras Instalaciones - Chotalac"
-					class="w-full h-auto rounded-lg shadow-lg object-cover"
-				/>
-			</div>
-		</div>
-	</div>
+            <div class="facilities-image order-1 lg:order-2">
+                <img
+                    src="/images/instalaciones/1.webp"
+                    alt="Nuestras Instalaciones - Chotalac"
+                    class="w-full h-auto rounded-lg shadow-lg object-cover"
+                />
+            </div>
+        </div>
+    </div>
 </section>
+
+<script>
+    import { scroll, animate } from "motion";
+
+    function initFacilitiesAnimation() {
+        const title = document.querySelector('.facilities-title');
+        const image = document.querySelector('.facilities-image');
+        const text = document.querySelector('.facilities-text');
+
+        // Animación del título
+        if (title) {
+            scroll(
+                animate(
+                    title as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        y: [100, 0, 0, -100]
+                    }
+                ),
+                {
+                    target: title as Element,
+                    offset: ["start end", "start center", "end center", "end start"]
+                }
+            );
+        }
+
+        // Animación de la imagen (aparece primero, desde la derecha)
+        if (image) {
+            scroll(
+                animate(
+                    image as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        x: [150, 0, 0, -150],
+                        scale: [0.8, 1, 1, 0.8]
+                    }
+                ),
+                {
+                    target: image as Element,
+                    offset: ["start end", "start 0.6", "end 0.4", "end start"]
+                }
+            );
+        }
+
+        // Animación del texto (aparece después, desde la izquierda)
+        if (text) {
+            scroll(
+                animate(
+                    text as Element,
+                    {
+                        opacity: [0, 1, 1, 0],
+                        x: [-150, 0, 0, 150]
+                    }
+                ),
+                {
+                    target: text as Element,
+                    offset: ["start 0.9", "start 0.5", "end 0.5", "end start"]
+                }
+            );
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', initFacilitiesAnimation);
+    document.addEventListener('astro:page-load', initFacilitiesAnimation);
+</script>
