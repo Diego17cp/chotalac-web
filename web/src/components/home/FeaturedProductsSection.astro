@@ -61,47 +61,48 @@ const lightColors = [
 </section>
 
 <script>
-    import { scroll, animate, stagger } from "motion";
+    import { animate, inView, stagger } from "motion";
 
     function initFeaturedProductsAnimation() {
         const title = document.querySelector('.featured-title');
-        const cardsContainer = document.querySelector('.featured-cards-container');
         const cards = document.querySelectorAll('.featured-card');
-
-        // Animación del título con scroll
         if (title) {
-            scroll(
-                animate(
-                    title as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        y: [100, 0, 0, -100]
-                    }
-                ),
-                {
-                    target: title as Element,
-                    offset: ["start end", "start center", "end center", "end start"]
-                }
+            inView(
+                title as Element,
+                () => {
+                    animate(
+                        title as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [100, 0]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
-
-        // Animación escalonada de las cards con scroll
-        if (cardsContainer && cards.length > 0) {
-            scroll(
-                animate(
-                    cards,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        x: [-150, 0, 0, 150]
-                    },
-                    {
-                        delay: stagger(0.1)
-                    }
-                ),
-                {
-                    target: cardsContainer as Element,
-                    offset: ["start end", "start center", "end center", "end start"]
-                }
+        if (cards.length > 0) {
+            inView(
+                cards[0],
+                () => {
+                    animate(
+                        cards,
+                        {
+                            opacity: [0, 1],
+                            x: [-150, 0]
+                        },
+                        {
+                            duration: 0.1,
+                            delay: stagger(0.1),
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.2 }
             );
         }
     }
