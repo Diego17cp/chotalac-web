@@ -1,83 +1,97 @@
 <section class="py-12 md:py-16 lg:py-20 bg-tertiary-light">
-	<div class="container mx-auto px-4">
-		<h2
-			class="title text-3xl md:text-4xl lg:text-5xl font-titles-2 text-shadow-lg font-bold text-center mb-8 md:mb-12 text-gray-800"
-		>
-			Nuestras Instalaciones
-		</h2>
-		<div
-			class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center"
-		>
+    <div class="container mx-auto px-4">
+        <h2
+            class="title text-3xl md:text-4xl lg:text-5xl font-titles-2 text-shadow-lg font-bold text-center mb-8 md:mb-12 text-gray-800"
+        >
+            Nuestras Instalaciones
+        </h2>
+        <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center"
+        >
             <div class="content order-2 lg:order-1 space-y-4 md:space-y-6">
                 <p class="text-gray-700 text-lg md:text-3xl leading-relaxed text-left">
                     <span class="font-bold text-primary">Contamos con instalaciones modernas y tecnología de vanguardia</span> 
                     que garantizan procesos seguros y controlados, desde la recepción de la leche hasta el envasado final.
                 </p>
             </div>
-			<div class="image order-1 lg:order-2">
-				<img
-					src="/images/instalaciones/2.webp"
-					alt="Nuestras Instalaciones - Chotalac"
-					class="w-full h-auto rounded-lg shadow-lg object-cover"
-				/>
-			</div>
-		</div>
-	</div>
+            <div class="image order-1 lg:order-2">
+                <img
+                    src="/images/instalaciones/2.webp"
+                    alt="Nuestras Instalaciones - Chotalac"
+                    class="w-full h-auto rounded-lg shadow-lg object-cover"
+                />
+            </div>
+        </div>
+    </div>
 </section>
+
 <script>
-	import { scroll, animate } from "motion";
+    import { animate, inView } from "motion";
 
-	function initFacilitiesAnimation() {
-		const title = document.querySelector('.title');
-		const image = document.querySelector('.image');
-		const content = document.querySelector('.content');
-		if (title) {
-			scroll(
-				animate(
-					title as Element,
-					{
-						opacity: [0, 1, 1, 0],
-						y: [100, 0, 0, -100]
-					}
-				),
-				{
-					target: title as Element,
-					offset: ["start end", "start center", "end center", "end start"]
-				}
-			);
-		}
-		if (image) {
-			scroll(
-				animate(
-					image as Element,
-					{
-						opacity: [0, 1, 1, 0],
-						x: [-100, 0, 0, 100]
-					}
-				),
-				{
-					target: image as Element,
-					offset: ["start end", "start center", "end center", "end start"]
-				}
-			);
-		}
-		if (content) {
-			scroll(
-				animate(
-					content as Element,
-					{
-						opacity: [0, 1, 1, 0],
-						x: [100, 0, 0, -100]
-					}
-				),
-				{
-					target: content as Element,
-					offset: ["start end", "start center", "end center", "end start"]
-				}
-			);
-		}
-	}
+    function initFacilitiesAnimation() {
+        const title = document.querySelector('.title');
+        const image = document.querySelector('.image');
+        const content = document.querySelector('.content');
 
-	document.addEventListener("DOMContentLoaded", initFacilitiesAnimation);
+        if (title) {
+            inView(
+                title as Element,
+                () => {
+                    animate(
+                        title as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [100, 0]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
+            );
+        }
+        if (content) {
+            inView(
+                content as Element,
+                () => {
+                    animate(
+                        content as Element,
+                        {
+                            opacity: [0, 1],
+                            x: [-100, 0]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
+            );
+        }
+        if (image) {
+            inView(
+                image as Element,
+                () => {
+                    animate(
+                        image as Element,
+                        {
+                            opacity: [0, 1],
+                            x: [100, 0]
+                        },
+                        {
+                            duration: 0.8,
+                            delay: 0.2,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
+            );
+        }
+    }
+    document.addEventListener("DOMContentLoaded", initFacilitiesAnimation);
     document.addEventListener("astro:page-load", initFacilitiesAnimation);
 </script>

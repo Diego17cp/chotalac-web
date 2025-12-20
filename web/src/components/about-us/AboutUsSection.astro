@@ -1,31 +1,105 @@
 <section class="py-12 md:py-16 lg:py-20 bg-primary-light">
-	<div class="container mx-auto px-4">
-		<h2
-			class="text-3xl md:text-4xl lg:text-6xl font-titles-2 text-shadow-lg font-bold text-center mb-8 md:mb-12 text-gray-800"
-		>
-			Sobre Nosotros
-		</h2>
+    <div class="container mx-auto px-4">
+        <h2
+            class="about-title text-3xl md:text-4xl lg:text-6xl font-titles-2 text-shadow-lg font-bold text-center mb-8 text-gray-800"
+        >
+            Sobre Nosotros
+        </h2>
 
-		<div
-			class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center"
-		>
-			<div class="order-2 lg:order-1">
-				<img
-					src="/images/about-us/factory.webp"
-					alt="Sobre Nosotros - Chotalac"
-					class="w-full h-auto rounded-lg object-cover"
-				/>
-			</div>
-			<div class="order-1 lg:order-2 space-y-4 md:space-y-6">
-				<p class="text-gray-700 text-lg md:text-3xl leading-relaxed md:text-right text-justify">
-					<span class="font-bold text-primary">En Chotalac, trabajamos con pasión y compromiso,</span> 
+        <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center"
+        >
+            <div class="about-image order-2 lg:order-1">
+                <img
+                    src="/images/about-us/factory.webp"
+                    alt="Sobre Nosotros - Chotalac"
+                    class="w-full h-auto rounded-lg object-cover"
+                />
+            </div>
+            <div class="about-text order-1 lg:order-2 space-y-4 md:space-y-6">
+                <p class="text-gray-700 text-lg md:text-3xl leading-relaxed md:text-right text-justify">
+                    <span class="font-bold text-primary">En Chotalac, trabajamos con pasión y compromiso,</span> 
                     cuidando cada detalle para ofrecer lo mejor a nuestros clientes,
-					<span class="font-bold text-primary">
-						creemos en la tradición, la innovación y en el poder de
-						compartir bienestar en cada sabor.
-					</span>
-				</p>
-			</div>
-		</div>
-	</div>
+                    <span class="font-bold text-primary">
+                        creemos en la tradición, la innovación y en el poder de
+                        compartir bienestar en cada sabor.
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
+
+<script>
+    import { animate, inView } from "motion";
+
+    function initAboutUsSectionAnimation() {
+        const title = document.querySelector('.about-title');
+        const image = document.querySelector('.about-image');
+        const text = document.querySelector('.about-text');
+        if (title) {
+            inView(
+                title as Element,
+                () => {
+                    animate(
+                        title as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [100, 0]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
+            );
+        }
+        if (image) {
+            inView(
+                image as Element,
+                () => {
+                    animate(
+                        image as Element,
+                        {
+                            opacity: [0, 1],
+                            x: [-150, 0],
+                            scale: [0.8, 1]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
+            );
+        }
+
+        // Animación del texto desde la derecha
+        if (text) {
+            inView(
+                text as Element,
+                () => {
+                    animate(
+                        text as Element,
+                        {
+                            opacity: [0, 1],
+                            x: [150, 0]
+                        },
+                        {
+                            duration: 0.8,
+                            delay: 0.2,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
+            );
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', initAboutUsSectionAnimation);
+    document.addEventListener('astro:page-load', initAboutUsSectionAnimation);
+</script>

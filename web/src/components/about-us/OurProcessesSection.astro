@@ -22,24 +22,30 @@ import ProcessCard from "./ProcessCard.astro";
         </div>
     </div>
 </section>
+
 <script>
-    import { scroll, animate } from "motion";
+    import { animate, inView } from "motion";
 
     function initProcessesAnimation() {
         const title = document.querySelector('.processes-title');
+        
         if (title) {
-            scroll(
-                animate(
-                    title as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        y: [100, 0, 0, -100]
-                    }
-                ),
-                {
-                    target: title as Element,
-                    offset: ["start end", "start center", "end center", "end start"]
-                }
+            inView(
+                title as Element,
+                () => {
+                    animate(
+                        title as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [100, 0]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
     }

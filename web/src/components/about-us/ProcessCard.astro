@@ -34,7 +34,7 @@ const isEven = index % 2 === 0;
 </div>
 
 <script>
-    import { scroll, animate } from "motion";
+    import { animate, inView } from "motion";
 
     function initProcessCardAnimation() {
         const cards = document.querySelectorAll('.process-card');
@@ -45,70 +45,87 @@ const isEven = index % 2 === 0;
             
             const image = card.querySelector('.process-image');
             const text = card.querySelector('.process-text');
+
             if (isEven) {
-                // Cards pares: Texto desde izquierda, Imagen desde derecha
                 if (text) {
-                    scroll(
-                        animate(
-                            text as Element,
-                            {
-                                opacity: [0, 1, 1, 0],
-                                x: [-150, 0, 0, 150]
-                            }
-                        ),
-                        {
-                            target: text as Element,
-                            offset: ["start end", "start 0.6", "end 0.4", "end start"]
-                        }
+                    inView(
+                        text as Element,
+                        () => {
+                            animate(
+                                text as Element,
+                                {
+                                    opacity: [0, 1],
+                                    x: [-150, 0]
+                                },
+                                {
+                                    duration: 0.8,
+                                    easing: "ease-out"
+                                }
+                            );
+                        },
+                        { amount: 0.3 }
                     );
                 }
                 if (image) {
-                    scroll(
-                        animate(
-                            image as Element,
-                            {
-                                opacity: [0, 1, 1, 0],
-                                x: [150, 0, 0, -150],
-                                scale: [0.8, 1, 1, 0.8]
-                            }
-                        ),
-                        {
-                            target: image as Element,
-                            offset: ["start 0.9", "start 0.5", "end 0.5", "end start"]
-                        }
+                    inView(
+                        image as Element,
+                        () => {
+                            animate(
+                                image as Element,
+                                {
+                                    opacity: [0, 1],
+                                    x: [150, 0],
+                                    scale: [0.8, 1]
+                                },
+                                {
+                                    duration: 0.8,
+                                    delay: 0.2,
+                                    easing: "ease-out"
+                                }
+                            );
+                        },
+                        { amount: 0.3 }
                     );
                 }
             } else {
-                // Cards impares: Imagen desde izquierda, Texto desde derecha (invertido)
                 if (image) {
-                    scroll(
-                        animate(
-                            image as Element,
-                            {
-                                opacity: [0, 1, 1, 0],
-                                x: [-150, 0, 0, 150],
-                                scale: [0.8, 1, 1, 0.8]
-                            }
-                        ),
-                        {
-                            target: image as Element,
-                            offset: ["start end", "start 0.6", "end 0.4", "end start"]
-                        }
+                    inView(
+                        image as Element,
+                        () => {
+                            animate(
+                                image as Element,
+                                {
+                                    opacity: [0, 1],
+                                    x: [-150, 0],
+                                    scale: [0.8, 1]
+                                },
+                                {
+                                    duration: 0.8,
+                                    easing: "ease-out"
+                                }
+                            );
+                        },
+                        { amount: 0.3 }
                     );
                 }
                 if (text) {
-                    scroll(
-                        animate(
-                            text as Element,
-                            {
-                                opacity: [0, 1, 1, 0],
-                                x: [150, 0, 0, -150]
-                            }
-                        ),
-                        {
-                            target: text as Element,
-                            offset: ["start 0.9", "start 0.5", "end 0.5", "end start"]
-                        }
+                    inView(
+                        text as Element,
+                        () => {
+                            animate(
+                                text as Element,
+                                {
+                                    opacity: [0, 1],
+                                    x: [150, 0]
+                                },
+                                {
+                                    duration: 0.8,
+                                    delay: 0.2,
+                                    easing: "ease-out"
+                                }
+                            );
+                        },
+                        { amount: 0.3 }
                     );
                 }
             }

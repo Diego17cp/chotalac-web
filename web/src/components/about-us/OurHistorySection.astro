@@ -62,7 +62,7 @@
 </section>
 
 <script>
-    import { scroll, animate } from "motion";
+    import { animate, inView } from "motion";
 
     function initHistoryAnimation() {
         const title = document.querySelector('.history-title');
@@ -74,82 +74,106 @@
         const image2 = document.querySelector('.history-image-2');
 
         if (title) {
-            scroll(
-                animate(
-                    title as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        y: [100, 0, 0, -100]
-                    }
-                ),
-                {
-                    target: title as Element,
-                    offset: ["start end", "start center", "end center", "end start"]
-                }
+            inView(
+                title as Element,
+                () => {
+                    animate(
+                        title as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [100, 0]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
+
         if (text1) {
-            scroll(
-                animate(
-                    text1 as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        x: [-150, 0, 0, 150]
-                    }
-                ),
-                {
-                    target: text1 as Element,
-                    offset: ["start end", "start 0.6", "end 0.4", "end start"]
-                }
+            inView(
+                text1 as Element,
+                () => {
+                    animate(
+                        text1 as Element,
+                        {
+                            opacity: [0, 1],
+                            x: [-150, 0]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
 
         if (image1) {
-            scroll(
-                animate(
-                    image1 as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        x: [150, 0, 0, -150],
-                        scale: [0.8, 1, 1, 0.8]
-                    }
-                ),
-                {
-                    target: image1 as Element,
-                    offset: ["start 0.9", "start 0.5", "end 0.5", "end start"]
-                }
+            inView(
+                image1 as Element,
+                () => {
+                    animate(
+                        image1 as Element,
+                        {
+                            opacity: [0, 1],
+                            x: [150, 0],
+                            scale: [0.8, 1]
+                        },
+                        {
+                            duration: 0.8,
+                            delay: 0.2,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
+
         if (image2) {
-            scroll(
-                animate(
-                    image2 as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        x: [-150, 0, 0, 150],
-                        scale: [0.8, 1, 1, 0.8]
-                    }
-                ),
-                {
-                    target: image2 as Element,
-                    offset: ["start end", "start 0.6", "end 0.4", "end start"]
-                }
+            inView(
+                image2 as Element,
+                () => {
+                    animate(
+                        image2 as Element,
+                        {
+                            opacity: [0, 1],
+                            x: [-150, 0],
+                            scale: [0.8, 1]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
 
         if (text2) {
-            scroll(
-                animate(
-                    text2 as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        x: [150, 0, 0, -150]
-                    }
-                ),
-                {
-                    target: text2 as Element,
-                    offset: ["start 0.9", "start 0.5", "end 0.5", "end start"]
-                }
+            inView(
+                text2 as Element,
+                () => {
+                    animate(
+                        text2 as Element,
+                        {
+                            opacity: [0, 1],
+                            x: [150, 0]
+                        },
+                        {
+                            duration: 0.8,
+                            delay: 0.2,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
     }

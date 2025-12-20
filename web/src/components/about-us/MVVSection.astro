@@ -96,46 +96,50 @@ import { Icon } from "astro-icon/components";
 </section>
 
 <script>
-    import { scroll, animate, stagger } from "motion";
+    import { animate, inView, stagger } from "motion";
 
     function initMVVAnimation() {
         const title = document.querySelector('.mvv-title');
-        const cardsContainer = document.querySelector('.mvv-cards-container');
         const cards = document.querySelectorAll('.mvv-card');
 
-        // Animación del título
         if (title) {
-            scroll(
-                animate(
-                    title as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        y: [100, 0, 0, -100]
-                    }
-                ),
-                {
-                    target: title as Element,
-                    offset: ["start end", "start center", "end center", "end start"]
-                }
+            inView(
+                title as Element,
+                () => {
+                    animate(
+                        title as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [100, 0]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
-        if (cardsContainer && cards.length > 0) {
-            scroll(
-                animate(
-                    cards,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        y: [100, 0, 0, -100],
-                        scale: [0.9, 1, 1, 0.9]
-                    },
-                    {
-                        delay: stagger(0.15)
-                    }
-                ),
-                {
-                    target: cardsContainer as Element,
-                    offset: ["start end", "start 0.6", "end 0.4", "end start"]
-                }
+        if (cards.length > 0) {
+            inView(
+                cards[0],
+                () => {
+                    animate(
+                        cards,
+                        {
+                            opacity: [0, 1],
+                            y: [100, 0],
+                            scale: [0.9, 1]
+                        },
+                        {
+                            duration: 0.6,
+                            delay: stagger(0.15),
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.2 }
             );
         }
     }
