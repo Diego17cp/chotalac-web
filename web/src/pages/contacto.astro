@@ -3,7 +3,7 @@ import Layout from "@/layouts/Layout.astro";
 import { Icon } from "astro-icon/components";
 ---
 
-<Layout title="Contáctanos - Chotalac" className="overflow-x-hidden">
+<Layout title="Contáctanos - Chotalac">
     <section class="py-12 md:py-16 lg:py-20">
         <div class="container mx-auto px-4">
             <h1
@@ -111,9 +111,7 @@ import { Icon } from "astro-icon/components";
                                         Mz. M, Lote 8 Cooperativa Vivienda El
                                         Olivar 39 - Los Olivos
                                     </p>
-                                </div>
-                                <div class="text-gray-500">
-                                    <p>
+                                    <p class="text-gray-500 text-sm mt-1">
                                         Referencia: Cuadra 32 de la Av.
                                         Universitaria, al costado del parque El
                                         Olivar.
@@ -146,6 +144,7 @@ import { Icon } from "astro-icon/components";
                 <div class="max-w-2xl mx-auto space-y-6">
                     <div
                         class="contact-item flex items-center justify-center gap-4 bg-quaternary-light rounded-lg p-6"
+                        data-index="0"
                     >
                         <Icon
                             name="phone-duotone"
@@ -160,6 +159,7 @@ import { Icon } from "astro-icon/components";
                     </div>
                     <div
                         class="contact-item flex items-center justify-center gap-4 bg-quaternary-light rounded-lg p-6"
+                        data-index="1"
                     >
                         <Icon
                             name="email-duotone"
@@ -190,7 +190,7 @@ import { Icon } from "astro-icon/components";
 </Layout>
 
 <script>
-    import { scroll, animate, stagger, inView } from "motion";
+    import { animate, stagger, inView } from "motion";
 
     function initContactAnimations() {
         const title = document.querySelector('.contact-title');
@@ -200,15 +200,20 @@ import { Icon } from "astro-icon/components";
         const otherContactsTitle = document.querySelector('.other-contacts-title');
         const contactItems = document.querySelectorAll('.contact-item');
         const whatsappButton = document.querySelector('.whatsapp-button');
-
         if (title) {
             inView(
                 title as Element,
                 () => {
                     animate(
                         title as Element,
-                        { opacity: [0, 1], y: [50, 0] },
-                        { duration: 0.8, easing: "ease-out" }
+                        {
+                            opacity: [0, 1],
+                            y: [50, 0]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
                     );
                 },
                 { amount: 0.3 }
@@ -220,8 +225,14 @@ import { Icon } from "astro-icon/components";
                 () => {
                     animate(
                         locationsSubtitle as Element,
-                        { opacity: [0, 1], y: [30, 0] },
-                        { duration: 0.6, easing: "ease-out" }
+                        {
+                            opacity: [0, 1],
+                            y: [30, 0]
+                        },
+                        {
+                            duration: 0.6,
+                            easing: "ease-out"
+                        }
                     );
                 },
                 { amount: 0.3 }
@@ -233,47 +244,80 @@ import { Icon } from "astro-icon/components";
                 () => {
                     animate(
                         locationCards,
-                        { opacity: [0, 1], y: [50, 0], scale: [0.9, 1] },
-                        { duration: 0.5, delay: stagger(0.15), easing: "ease-out" }
+                        {
+                            opacity: [0, 1],
+                            y: [50, 0],
+                            scale: [0.9, 1]
+                        },
+                        {
+                            duration: 0.5,
+                            delay: stagger(0.15),
+                            easing: "ease-out"
+                        }
                     );
                 },
                 { amount: 0.2 }
             );
         }
         if (otherContactsTitle) {
-            scroll(
-                animate(
-                    otherContactsTitle as Element,
-                    { opacity: [0, 1, 1, 0], y: [100, 0, 0, -100] }
-                ),
-                {
-                    target: otherContactsTitle as Element,
-                    offset: ["start end", "start center", "end center", "end start"]
-                }
+            inView(
+                otherContactsTitle as Element,
+                () => {
+                    animate(
+                        otherContactsTitle as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [30, 0]
+                        },
+                        {
+                            duration: 0.6,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
-        contactItems.forEach((item, index) => {
-            scroll(
-                animate(
-                    item as Element,
-                    { opacity: [0, 1, 1, 0], x: index % 2 === 0 ? [-100, 0, 0, 100] : [100, 0, 0, -100], scale: [0.9, 1, 1, 0.9] }
-                ),
-                {
-                    target: item as Element,
-                    offset: ["start end", "start 0.7", "end 0.3", "end start"]
-                }
+        if (contactItems.length > 0) {
+            inView(
+                contactItems[0],
+                () => {
+                    animate(
+                        contactItems,
+                        {
+                            opacity: [0, 1],
+                            y: [30, 0],
+                            scale: [0.95, 1]
+                        },
+                        {
+                            duration: 0.5,
+                            delay: stagger(0.1),
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.2 }
             );
-        });
+        }
         if (whatsappButton) {
-            scroll(
-                animate(
-                    whatsappButton as Element,
-                    { opacity: [0, 1], y: [50, 0] }
-                ),
-                {
-                    target: whatsappButton as Element,
-                    offset: ["start end", "start center"]
-                }
+            inView(
+                whatsappButton as Element,
+                () => {
+                    animate(
+                        whatsappButton as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [30, 0],
+                            scale: [0.9, 1]
+                        },
+                        {
+                            duration: 0.6,
+                            delay: 0.2,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.2 }
             );
         }
     }
