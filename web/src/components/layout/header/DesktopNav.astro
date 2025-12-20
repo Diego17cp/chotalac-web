@@ -21,7 +21,7 @@ import { Icon } from 'astro-icon/components';
         </button>
         <div
             id="searchInput"
-            class="absolute right-0 -top-2 w-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out p-2"
+            class="absolute right-0 -top-2 scale-0 opacity-0 origin-right transition-all duration-300 ease-in-out p-2"
         >
             <div class="flex items-center bg-white border border-gray-300 rounded-full">
                 <input
@@ -36,7 +36,7 @@ import { Icon } from 'astro-icon/components';
         </div>
     </div>
     <a
-        href="/cuenta"
+        href="/registrate"
         class="p-2 hover:bg-gray-100 text-gray-600 rounded-full transition-colors"
         aria-label="Mi cuenta"
     >
@@ -62,12 +62,12 @@ import { Icon } from 'astro-icon/components';
         searchToggle?.addEventListener("click", () => {
             isSearchOpen = !isSearchOpen;
             if (isSearchOpen) {
-                searchInput?.classList.remove("w-0", "opacity-0");
-                searchInput?.classList.add("w-auto", "opacity-100");
+                searchInput?.classList.remove("scale-0", "opacity-0");
+                searchInput?.classList.add("scale-100", "opacity-100");
                 searchInput?.querySelector("input")?.focus();
             } else {
-                searchInput?.classList.add("w-0", "opacity-0");
-                searchInput?.classList.remove("w-auto", "opacity-100");
+                searchInput?.classList.add("scale-0", "opacity-0");
+                searchInput?.classList.remove("scale-100", "opacity-100");
             }
         });
 
@@ -78,8 +78,8 @@ import { Icon } from 'astro-icon/components';
                 !searchInput?.contains(e.target as Node)
             ) {
                 isSearchOpen = false;
-                searchInput?.classList.add("w-0", "opacity-0");
-                searchInput?.classList.remove("w-auto", "opacity-100");
+                searchInput?.classList.add("scale-0", "opacity-0");
+                searchInput?.classList.remove("scale-100", "opacity-100");
             }
         });
     }
