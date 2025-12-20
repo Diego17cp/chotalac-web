@@ -72,7 +72,7 @@ const { specifications, description, featuresDetails, uses } = Astro.props;
 </div>
 
 <script>
-    import { scroll, animate, stagger } from "motion";
+    import { animate, inView, stagger } from "motion";
 
     function initProductDetailsAnimation() {
         const specificationsTitle = document.querySelector('.specifications-title');
@@ -85,151 +85,185 @@ const { specifications, description, featuresDetails, uses } = Astro.props;
         const featuresText = document.querySelector('.features-text');
         const usesTitle = document.querySelector('.uses-title');
         const useItems = document.querySelectorAll('.use-item');
-
         if (specificationsTitle) {
-            scroll(
-                animate(
-                    specificationsTitle as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        x: [-80, 0, 0, 80],
-                        scale: [0.9, 1, 1, 0.9]
-                    }
-                ),
-                {
-                    target: specificationsTitle as Element,
-                    offset: ["start end", "start 0.6", "end 0.4", "end start"]
-                }
+            inView(
+                specificationsTitle as Element,
+                () => {
+                    animate(
+                        specificationsTitle as Element,
+                        {
+                            opacity: [0, 1],
+                            x: [-80, 0],
+                            scale: [0.9, 1]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
         if (specificationsTable) {
-            scroll(
-                animate(
-                    specificationsTable as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        y: [50, 0, 0, -50],
-                        scale: [0.95, 1, 1, 0.95]
-                    }
-                ),
-                {
-                    target: specificationsTable as Element,
-                    offset: ["start end", "start 0.5", "end 0.5", "end start"]
-                }
+            inView(
+                specificationsTable as Element,
+                () => {
+                    animate(
+                        specificationsTable as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [50, 0],
+                            scale: [0.95, 1]
+                        },
+                        {
+                            duration: 0.8,
+                            delay: 0.2,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
-        if (specificationRows.length > 0) {
-            scroll(
-                animate(
-                    specificationRows,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        x: [-30, 0, 0, 30]
-                    },
-                    {
-                        delay: stagger(0.05)
-                    }
-                ),
-                {
-                    target: specificationsTable as Element,
-                    offset: ["start end", "start 0.4", "end 0.6", "end start"]
-                }
+        if (specificationRows.length > 0 && specificationsTable) {
+            inView(
+                specificationsTable as Element,
+                () => {
+                    animate(
+                        specificationRows,
+                        {
+                            opacity: [0, 1],
+                            x: [-30, 0]
+                        },
+                        {
+                            duration: 0.5,
+                            delay: stagger(0.05, { start: 0.4 }),
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
         if (descriptionTitle) {
-            scroll(
-                animate(
-                    descriptionTitle as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        x: [80, 0, 0, -80],
-                        scale: [0.9, 1, 1, 0.9]
-                    }
-                ),
-                {
-                    target: descriptionTitle as Element,
-                    offset: ["start end", "start 0.6", "end 0.4", "end start"]
-                }
+            inView(
+                descriptionTitle as Element,
+                () => {
+                    animate(
+                        descriptionTitle as Element,
+                        {
+                            opacity: [0, 1],
+                            x: [80, 0],
+                            scale: [0.9, 1]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
         if (descriptionText) {
-            scroll(
-                animate(
-                    descriptionText as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        y: [30, 0, 0, -30]
-                    }
-                ),
-                {
-                    target: descriptionText as Element,
-                    offset: ["start end", "start 0.5", "end 0.5", "end start"]
-                }
+            inView(
+                descriptionText as Element,
+                () => {
+                    animate(
+                        descriptionText as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [30, 0]
+                        },
+                        {
+                            duration: 0.6,
+                            delay: 0.2,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
         if (featuresTitle) {
-            scroll(
-                animate(
-                    featuresTitle as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        x: [80, 0, 0, -80],
-                        scale: [0.9, 1, 1, 0.9]
-                    }
-                ),
-                {
-                    target: featuresTitle as Element,
-                    offset: ["start end", "start 0.6", "end 0.4", "end start"]
-                }
+            inView(
+                featuresTitle as Element,
+                () => {
+                    animate(
+                        featuresTitle as Element,
+                        {
+                            opacity: [0, 1],
+                            x: [80, 0],
+                            scale: [0.9, 1]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
         if (featuresText) {
-            scroll(
-                animate(
-                    featuresText as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        y: [30, 0, 0, -30]
-                    }
-                ),
-                {
-                    target: featuresText as Element,
-                    offset: ["start end", "start 0.5", "end 0.5", "end start"]
-                }
+            inView(
+                featuresText as Element,
+                () => {
+                    animate(
+                        featuresText as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [30, 0]
+                        },
+                        {
+                            duration: 0.6,
+                            delay: 0.2,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
         if (usesTitle) {
-            scroll(
-                animate(
-                    usesTitle as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        x: [80, 0, 0, -80],
-                        scale: [0.9, 1, 1, 0.9]
-                    }
-                ),
-                {
-                    target: usesTitle as Element,
-                    offset: ["start end", "start 0.6", "end 0.4", "end start"]
-                }
+            inView(
+                usesTitle as Element,
+                () => {
+                    animate(
+                        usesTitle as Element,
+                        {
+                            opacity: [0, 1],
+                            x: [80, 0],
+                            scale: [0.9, 1]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
-        if (useItems.length > 0) {
-            scroll(
-                animate(
-                    useItems,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        x: [40, 0, 0, -40]
-                    },
-                    {
-                        delay: stagger(0.1)
-                    }
-                ),
-                {
-                    target: usesTitle as Element,
-                    offset: ["start end", "start 0.5", "end 0.5", "end start"]
-                }
+        if (useItems.length > 0 && usesTitle) {
+            inView(
+                usesTitle as Element,
+                () => {
+                    animate(
+                        useItems,
+                        {
+                            opacity: [0, 1],
+                            x: [40, 0]
+                        },
+                        {
+                            duration: 0.5,
+                            delay: stagger(0.1, { start: 0.2 }),
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
     }

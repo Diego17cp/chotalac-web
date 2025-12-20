@@ -33,70 +33,63 @@ const { name, presentations, cardBg } = Astro.props;
 </div>
 
 <script>
-    import { scroll, animate } from "motion";
-
-    let animationsInitialized = false;
+    import { animate, inView, stagger } from "motion";
 
     function initProductSectionAnimation() {
-        if (animationsInitialized) return;
-        animationsInitialized = true;
-
         const sections = document.querySelectorAll('.product-section');
-        const allCards = document.querySelectorAll('.presentation-card');
 
         sections.forEach((section) => {
             const title = section.querySelector('.product-section-title');
-            scroll(
-                animate(
-                    section as Element,
-                    {
-                        opacity: [0, 1, 1, 0]
-                    }
-                ),
-                {
-                    target: section as Element,
-                    offset: ["start end", "start 0.8", "end 0.2", "end start"]
-                }
-            );
+            const cardsContainer = section.querySelector('.product-cards-container');
+            const cards = section.querySelectorAll('.presentation-card');
+
+            // Animación del título
             if (title) {
-                scroll(
-                    animate(
-                        title as Element,
-                        {
-                            opacity: [0, 1, 1, 0],
-                            y: [80, 0, 0, -80],
-                            scale: [0.9, 1, 1, 0.9]
-                        }
-                    ),
-                    {
-                        target: title as Element,
-                        offset: ["start end", "start 0.6", "end 0.4", "end start"]
-                    }
+                inView(
+                    title as Element,
+                    () => {
+                        animate(
+                            title as Element,
+                            {
+                                opacity: [0, 1],
+                                y: [80, 0],
+                                scale: [0.9, 1]
+                            },
+                            {
+                                duration: 0.8,
+                                easing: "ease-out"
+                            }
+                        );
+                    },
+                    { amount: 0.3 }
+                );
+            }
+
+            // Animación escalonada de las cards
+            if (cardsContainer && cards.length > 0) {
+                inView(
+                    cardsContainer as Element,
+                    () => {
+                        animate(
+                            cards,
+                            {
+                                opacity: [0, 1],
+                                y: [60, 0],
+                                scale: [0.8, 1]
+                            },
+                            {
+                                duration: 0.5,
+                                delay: stagger(0.05),
+                                easing: "ease-out"
+                            }
+                        );
+                    },
+                    { amount: 0.2 }
                 );
             }
         });
-        allCards.forEach((card) => {
-            const index = parseInt((card as HTMLElement).dataset.index || '0');
-            const delay = index * 0.05;
-            scroll(
-                animate(
-                    card as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        y: [60, 0, 0, -60],
-                        scale: [0.8, 1, 1, 0.8]
-                    },
-                    {
-                        delay: delay
-                    }
-                ),
-                {
-                    target: card as Element,
-                    offset: ["start end", "start 0.5", "end 0.5", "end start"]
-                }
-            );
-        });
     }
+
     if ('requestIdleCallback' in window) {
         requestIdleCallback(() => {
             initProductSectionAnimation();
@@ -106,8 +99,8 @@ const { name, presentations, cardBg } = Astro.props;
             initProductSectionAnimation();
         }, 100);
     }
+
     document.addEventListener('astro:page-load', () => {
-        animationsInitialized = false;
         if ('requestIdleCallback' in window) {
             requestIdleCallback(() => {
                 initProductSectionAnimation();

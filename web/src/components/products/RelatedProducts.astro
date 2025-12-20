@@ -53,45 +53,51 @@ const lightColors = [
 </section>
 
 <script>
-    import { scroll, animate, stagger } from "motion";
+    import { animate, inView, stagger } from "motion";
 
     function initRelatedProductsAnimation() {
         const title = document.querySelector('.related-products-title');
         const productsGrid = document.querySelector('.related-products-grid');
         const productCards = document.querySelectorAll('.related-product-card');
         if (title) {
-            scroll(
-                animate(
-                    title as Element,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        y: [80, 0, 0, -80],
-                        scale: [0.9, 1, 1, 0.9]
-                    }
-                ),
-                {
-                    target: title as Element,
-                    offset: ["start end", "start 0.6", "end 0.4", "end start"]
-                }
+            inView(
+                title as Element,
+                () => {
+                    animate(
+                        title as Element,
+                        {
+                            opacity: [0, 1],
+                            y: [80, 0],
+                            scale: [0.9, 1]
+                        },
+                        {
+                            duration: 0.8,
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.3 }
             );
         }
         if (productsGrid && productCards.length > 0) {
-            scroll(
-                animate(
-                    productCards,
-                    {
-                        opacity: [0, 1, 1, 0],
-                        y: [60, 0, 0, -60],
-                        scale: [0.85, 1, 1, 0.85]
-                    },
-                    {
-                        delay: stagger(0.1)
-                    }
-                ),
-                {
-                    target: productsGrid as Element,
-                    offset: ["start end", "start 0.5", "end 0.5", "end start"]
-                }
+            inView(
+                productsGrid as Element,
+                () => {
+                    animate(
+                        productCards,
+                        {
+                            opacity: [0, 1],
+                            y: [60, 0],
+                            scale: [0.85, 1]
+                        },
+                        {
+                            duration: 0.5,
+                            delay: stagger(0.1),
+                            easing: "ease-out"
+                        }
+                    );
+                },
+                { amount: 0.2 }
             );
         }
     }
