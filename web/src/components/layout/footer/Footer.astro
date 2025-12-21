@@ -1,5 +1,5 @@
 ---
-import { NAV_ITEMS } from "@/constants";
+import { NAV_ITEMS, SOCIAL_LINKS } from "@/constants";
 import { Icon } from "astro-icon/components"
 ---
 
@@ -89,27 +89,38 @@ import { Icon } from "astro-icon/components"
 		<div
 			class="flex flex-col items-center space-y-4 py-6 border-t border-gray-300"
 		>
-			<div class="flex items-center space-x-6">
+			<div class="flex items-center gap-4">
 				<a
-					href="#"
+					href={SOCIAL_LINKS.FACEBOOK}
+					target="_blank"
 					class="text-gray-600 hover:text-primary/60 transition-colors"
 					aria-label="Facebook"
 				>
 					<Icon name="facebook-filled" size={28} />
 				</a>
 				<a
-					href="#"
+					href={SOCIAL_LINKS.INSTAGRAM}
+					target="_blank"
 					class="text-gray-600 hover:text-primary/60 transition-colors"
 					aria-label="Instagram"
 				>
 					<Icon name="instagram-filled" size={28} />
 				</a>
 				<a
-					href="#"
+					href={SOCIAL_LINKS.WHATSAPP}
+					target="_blank"
 					class="text-gray-600 hover:text-primary/60 transition-colors"
 					aria-label="WhatsApp"
 				>
 					<Icon name="whatsapp-filled" size={28} />
+				</a>
+				<a
+					href={SOCIAL_LINKS.TIKTOK}
+					target="_blank"
+					class="text-gray-600 hover:text-primary/60 transition-colors"
+					aria-label="TikTok"
+				>
+					<Icon name="tiktok-filled" size={28} />
 				</a>
 			</div>
 			<p class="text-sm text-gray-600">2025, Chotalac</p>
