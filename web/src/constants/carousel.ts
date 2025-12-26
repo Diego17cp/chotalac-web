@@ -2,9 +2,9 @@ import type { CarouselItem } from "@/types";
 
 export const CAROUSEL_MOCK: CarouselItem[] = [
     {
-        id: 13,
+        id: 12,
         title: "Queso de Corte",
-        imageUrl: "/images/carousel/queso-de-corte.webp",
+        imageUrl: "/images/carousel/queso-fresco.webp",
     },
     {
         id: 70,
