@@ -1,13 +1,42 @@
 ---
 import { Footer, Header } from "@/components/layout";
 import BaseLayout from "./BaseLayout.astro";
+import { Icon } from "astro-icon/components";
+
 const { title = "Chotalac", className = "" } = Astro.props;
 ---
 
 <BaseLayout title={title}>
-	<Header />
-	<main class={`grow ${className}`}>
-		<slot />
-	</main>
-	<Footer />
+    <Header />
+    <main class={`grow ${className}`}>
+        <slot />
+    </main>
+    <a
+        href="https://wa.me/51934149055?text=Hola, estoy interesado en sus productos"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="whatsapp-float fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-2xl transition-all duration-300 hover:scale-110 flex items-center justify-center group"
+        aria-label="Contactar por WhatsApp"
+    >
+        <Icon name="whatsapp-filled" class="w-8 h-8 relative z-10" />
+        <span class="whatsapp-text absolute right-full mr-3 px-4 py-2 bg-green-500 rounded-lg transition-all duration-300 font-semibold whitespace-nowrap shadow-lg pointer-events-none">
+            ¿Necesitas ayuda?
+        </span>
+    </a>
+    
+    <Footer />
 </BaseLayout>
+
+<style>
+    @media (max-width: 640px) {
+        .whatsapp-float {
+            bottom: 1rem;
+            right: 1rem;
+            padding: 0.75rem;
+        }
+        
+        .whatsapp-text {
+            display: none;
+        }
+    }
+</style>
