@@ -28,7 +28,7 @@ export const OUR_PROCESSES: Process[] = [
     {
         title: "Área de maduración",
         description: "Quesos como el suizo y el parmesano reposan en cámaras controladas de temperatura y humedad.",
-        imagePath: "/images/processes/maturation.webp"
+        imagePath: "/images/processes/maturation2.webp"
     },
     {
         title: "Envasado y almacenamiento",
