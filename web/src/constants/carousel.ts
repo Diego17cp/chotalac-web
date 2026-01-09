@@ -4,17 +4,17 @@ export const CAROUSEL_MOCK: CarouselItem[] = [
     {
         id: 51,
         title: "Yogurt",
-        imageUrl: "/images/carousel/yogurtx2.webp",
+        imageUrl: "/images/carousel/yogurt.webp",
     },
     {
         id: 16,
         title: "Queso Fresco",
-        imageUrl: "/images/carousel/queso-frescox.webp",
+        imageUrl: "/images/carousel/queso-fresco.webp",
     },
     {
         id: 70,
         title: "Leche",
-        imageUrl: "/images/carousel/lechex.webp",
+        imageUrl: "/images/carousel/leche.webp",
     },
     {
         id: 5,
