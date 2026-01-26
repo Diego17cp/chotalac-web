@@ -1,4 +1,6 @@
 ---
+import { SOCIAL_LINKS } from '@/constants';
+
 interface Props {
     name: string;
     presentationName?: string;
@@ -28,7 +30,7 @@ const { name, presentationName, meditionUnit, productId } = Astro.props;
 
     <div class="pt-4">
         <a
-            href={`https://wa.me/51910017026?text=Hola, estoy interesado en el producto: ${name}${presentationName ? ' - ' + presentationName : ''}`}
+            href={`${SOCIAL_LINKS.WHATSAPP_PRODUCTS} ${name}${presentationName ? ' - ' + presentationName : ''}`}
             target="_blank"
             rel="noopener noreferrer"
             class="product-cta inline-block bg-primary hover:bg-primary/90 text-white font-bold text-lg px-8 py-4 rounded-lg transition-colors shadow-lg hover:shadow-xl w-full text-center"
